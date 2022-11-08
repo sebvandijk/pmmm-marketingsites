@@ -1,0 +1,13 @@
+.button {
+    background-color: yellow;
+
+    &.brand {
+        background-color: color(Brand);
+        color: color(Light);
+    }
+
+    &.naked {
+        background-color: transparent;
+        color: color(Light);
+    }
+}

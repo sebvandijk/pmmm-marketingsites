@@ -1,0 +1,14 @@
+.our-brands {
+    background-color: lightpink;
+
+    .brands {
+        display: flex;
+
+        .brand {
+            img {
+                max-width: 150px;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+<?php
+/**
+ * The header for our theme
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * @package pmmm-marketing
+ */
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+
+<head>
+
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <link rel="apple-touch-icon" sizes="152x152"
+          href="<?= get_template_directory_uri() ?>/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="<?= get_template_directory_uri() ?>/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="<?= get_template_directory_uri() ?>/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="<?= get_template_directory_uri() ?>/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="<?= get_template_directory_uri() ?>/assets/favicons/safari-pinned-tab.svg"
+          color="#f5f5f5">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="theme-color" content="#f5f5f5">
+	
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class( ! is_front_page() ? 'subpage' : '' ); ?>>
+
+<?php
+$main_menu = get_menu_items_by_registered_slug( 'header_menu' );
+?>
+<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'pmmm-marketing' ); ?></a>
+<header class="header header--login" id="header">
+    <div class="header__outer">
+
+        <div class="header__inner row">
+            <div class="header__logo column medium-12 small-12">
+                <a href="<?= home_url() ?>">
+                    <span class="sr-only">Homepage</span>
+                    <div class="big"><?= svg( 'pmmm-marketing' ) ?></div>
+
+                </a>
+            </div>
+            <div class="header__nav column medium-12">
+				<?php if ( $main_menu ): ?>
+                    <nav class="nav nav--top" aria-label="Top navigation">
+                        <ul class="nav__list nav__list--main">
+							<?php foreach ( $main_menu as $item ):
+								if ( is_array( $item->classes ) ) {
+									$classes = implode( ' ', $item->classes );
+								} else {
+									$classes = false;
+								}
+								?>
+								<?php $target = $item->target ? 'target="_blank" rel="noopener"' : ''; ?>
+                                <li class="nav__item">
+                                    <a class="nav__link <?= $classes ?>"
+                                       href="<?= $item->url ?>" <?= $target ?>>
+										<?= $item->title ?>
+                                    </a>
+                                </li>
+							<?php endforeach ?>
+                        </ul>
+                    </nav>
+				<?php endif; ?>
+            </div>
+
+        </div>
+    </div>
+</header>
+<main id="main">

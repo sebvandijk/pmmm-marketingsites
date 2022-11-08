@@ -1,0 +1,25 @@
+$fontprimary: (
+    font-family: (LinearSans, sans-serif),
+    load: true,
+    weights: (
+        'Black': 800,
+        'Bold': 700,
+        'Heavy' : 900,
+        'Light' : 300,
+        'Regular' : 400,
+        'SemiBold': 600
+    ),
+    font-weights: true,
+    path: '~Fonts',
+    files: (
+        'woff',
+        'woff2'
+    ),
+    use: (
+        'body'
+    ),
+    types: (
+        'normal',
+        'italic'
+    )
+);
