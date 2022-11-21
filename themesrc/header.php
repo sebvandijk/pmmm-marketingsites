@@ -26,7 +26,7 @@
           color="#f5f5f5">
     <meta name="msapplication-TileColor" content="#f5f5f5">
     <meta name="theme-color" content="#f5f5f5">
-	
+
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class( ! is_front_page() ? 'subpage' : '' ); ?>>
@@ -34,19 +34,18 @@
 <?php
 $main_menu = get_menu_items_by_registered_slug( 'header_menu' );
 ?>
-<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'pmmm-marketing' ); ?></a>
-<header class="header header--login" id="header">
+<header class="header" id="header">
     <div class="header__outer">
 
         <div class="header__inner row">
-            <div class="header__logo column medium-12 small-12">
+            <div class="header__logo column">
                 <a href="<?= home_url() ?>">
                     <span class="sr-only">Homepage</span>
                     <div class="big"><?= svg( 'pmmm-marketing' ) ?></div>
 
                 </a>
             </div>
-            <div class="header__nav column medium-12">
+            <div class="header__nav column">
 				<?php if ( $main_menu ): ?>
                     <nav class="nav nav--top" aria-label="Top navigation">
                         <ul class="nav__list nav__list--main">

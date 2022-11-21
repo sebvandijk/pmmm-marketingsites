@@ -1,3 +1,158 @@
-.intro-stats {
-    background-color: purple;
+// Intro
+.intro{
+  .inner{
+    position: relative;
+    z-index: 1;
+  }
+  h1{
+    padding-top: 120px;
+    max-width: 660px;
+    @media  #{$large-down}{
+
+    }
+    @media  #{$medium-down}{
+
+    }
+    @media  #{$small-only}{
+
+    }
+  }
+  .content{
+    max-width: 540px;
+    @media  #{$large-down}{
+
+    }
+    @media  #{$medium-down}{
+
+    }
+    @media  #{$small-only}{
+
+    }
+    p{
+      color: color(Light, .8);
+    }
+  }
+  .button-row{
+    display: flex;
+    padding-bottom: 60px;
+    @media  #{$large-down}{
+
+    }
+    @media  #{$medium-down}{
+
+    }
+    @media  #{$small-only}{
+
+    }
+  }
+}
+
+// Stats
+.stats{
+  background: color(Brand);
+  position: relative;
+  &:after{
+    content: '';
+    width: grid(20);
+    height: grid(20);
+    border-radius: grid(10);
+    position: absolute;
+    background: radial-gradient(circle, rgba(183,20,44,1) 0%, rgba(242,17,43,0) 50%);
+    bottom: 0;
+    transform: translateY(50%);
+    right: -50%;
+    display: block;
+  }
+  .row{
+    position: relative;
+    z-index: 1;
+    div{
+      margin: 0;
+    }
+  }
+  .image-holder{
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    background-color: color(Dark);
+    img{
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .stats-container{
+    width: 40%;
+    padding: 3rem 60px;
+    h6{
+      color: color(Light);
+    }
+    .stat{
+      width: 100%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid color(Brand-Dark, .2);
+      &:last-child{
+        border-bottom: 0;
+      }
+      .number{
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1.6px;
+        font-weight: 700;
+        position: relative;
+        @media  #{$large-down}{
+
+        }
+        @media  #{$medium-down}{
+
+        }
+        @media  #{$small-only}{
+
+        }
+        i{
+          font-style: normal;
+          font-size: 30px;
+          line-height: 1;
+          position: absolute;
+          top: .5rem;
+          padding-left: .5rem;
+          @media  #{$large-down}{
+
+          }
+          @media  #{$medium-down}{
+
+          }
+          @media  #{$small-only}{
+
+          }
+        }
+      }
+      .label{
+        padding-top: 1.25rem;
+        color: color(Brand-Dark, .8);
+        font-weight: 500;
+      }
+    }
+  }
+}
+#main{
+  .stats{
+    &.inner-round{
+      margin-bottom: 60px;
+      @media  #{$large-down}{
+
+      }
+      @media  #{$medium-down}{
+
+      }
+      @media  #{$small-only}{
+
+      }
+    }
+  }
 }

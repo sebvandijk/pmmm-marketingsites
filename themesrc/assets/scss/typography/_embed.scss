@@ -1,13 +1,13 @@
 $fontprimary: (
-    font-family: (LinearSans, sans-serif),
+    font-family: (Roobert, sans-serif),
     load: true,
     weights: (
-        'Black': 800,
+        'Heavy': 800,
         'Bold': 700,
-        'Heavy' : 900,
-        'Light' : 300,
+        'SemiBold': 600,
+        'Medium': 500,
         'Regular' : 400,
-        'SemiBold': 600
+        'Light' : 300,
     ),
     font-weights: true,
     path: '~Fonts',
@@ -19,7 +19,6 @@ $fontprimary: (
         'body'
     ),
     types: (
-        'normal',
-        'italic'
+        'normal'
     )
 );

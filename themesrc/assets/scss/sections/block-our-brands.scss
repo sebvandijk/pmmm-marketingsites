@@ -1,14 +1,63 @@
-.our-brands {
-    background-color: lightpink;
+// Our brands
+.our-brands{
+  background-color: color(Light);
+  color: color(Dark);
+  padding: 60px 0;
+  .inner{
+    &.centered{
+      padding: 0 270px 36px;
+      @media  #{$large-down}{
 
-    .brands {
-        display: flex;
+      }
+      @media  #{$medium-down}{
 
-        .brand {
-            img {
-                max-width: 150px;
-                height: auto;
-            }
-        }
+      }
+      @media  #{$small-only}{
+
+      }
     }
+  }
+  .brands {
+    display: flex;
+    column-gap: 30px;
+    padding: 0 60px;
+    .brand {
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+      background-color: color(Light);
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      padding: 3rem 2.5rem 60px;
+      overflow: hidden;
+      &:hover{
+        transform: scale(1.0625);
+      }
+      .image-holder{
+        height: 1.75rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      img {
+        object-position: left;
+        object-fit: contain;
+        height: 1.75rem;
+      }
+    }
+  }
+}
+
+.circle-bg{
+  width: grid(16);
+  height: grid(16);
+  left: -240px;
+  border-radius: grid(8);
+  position: absolute;
+  background: radial-gradient(circle, rgba(62,139,195,.2) 0%, rgba(255,255,255,1) 50%);
+  display: block;
+  z-index: -1;
+}
+
+.advertise, .contact{
+  display: none;
 }

@@ -34,7 +34,7 @@ sass/
 |
 - app.scss                // Main Sass file
 
- */
+*/
 @import 'core/all';
 @import '~matise-gryd/gryd-index';
 @import '~matise-gryd/gryd-once';
@@ -44,34 +44,75 @@ sass/
 @import 'pages/all';
 @import 'sections/all';
 
-.screen-reader-text, .sr-only {
-    display: none;
+// Site
+.screen-reader-text, .sr-only{
+  display: none;
 }
 
-::selection {
-    color: color(Light);
-    background: color(Dark);
+::selection{
+  color: color(Light);
+  background: color(Dark);
 }
 
-html {
-    overflow-x: hidden;
-    background: color(Dark);
-    color: color(Brand);
-    min-height: 100vh;
+html{
+  overflow-x: hidden;
+  background: color(Light);
+  color: color(Light);
+  min-height: 100vh;
 
 }
 
-body {
-    min-height: 100vh;
-    overflow-x: hidden;
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-#main {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+#main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &:after{
+    content: '';
+    width: grid(32);
+    height: grid(32);
+    border-radius: grid(16);
+    position: absolute;
+    background: radial-gradient(circle, rgba(32,84,121,1) 0%, rgba(6,29,39,1) 50%);
+    top: grid(-4);
+    right: -50%;
+    display: block;
+    z-index: -1;
+  }
+  &:before{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: color(Dark);
+    z-index: -1;
+  }
+  section{
+    position: relative;
+    z-index: 1;
+  }
+  .inner{
+    max-width: 1200px;
+    width: grid(20);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .inner-round{
+    max-width: 1320px;
+    width: grid(22);
+    margin: 0 auto;
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+  .row{
+    display: flex;
+  }
 }
-
-//* {
-//    outline: 1px solid #f00 !important;
-//}

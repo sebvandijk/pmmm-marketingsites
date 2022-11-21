@@ -8,12 +8,8 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 	$blocks = get_fields( get_the_ID() );
-	
+
 	?>
-
-    <h2 class="medium-heading"><?php the_title() ?></h2>
-
-
     <div class="block-holder">
 		<?php
 		if ( isset( $blocks ) && is_array( $blocks ) && is_array( $blocks['content_blocks'] ) ) {

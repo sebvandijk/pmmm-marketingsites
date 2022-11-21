@@ -1,3 +1,62 @@
-.text-image-cta {
-    background-color: white;
+// Text-image-cta
+.text-image-cta{
+    background-color: color(Light);
+    color: color(Dark);
+    padding: 60px 0;
+    .inner{
+      padding: 0 60px;
+    }
+    .content-holder{
+      width: 50%;
+      padding: 3rem 120px 120px 0;
+      @media  #{$large-down}{
+
+      }
+      @media  #{$medium-down}{
+
+      }
+      @media  #{$small-only}{
+
+      }
+    }
+    .image-holder{
+      border-radius: $border-radius;
+      width: 50%;
+      overflow: hidden;
+      position: relative;
+      background-color: color(Dark);
+      .cta-holder{
+        position: absolute;
+        z-index: 2;
+        background-color: color(Dark);
+        border-radius: $border-radius;
+        padding: 3rem 60px;
+        color: color(Light);
+        left: 60px;
+        bottom: 60px;
+        width: calc(100% - 120px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media  #{$large-down}{
+
+        }
+        @media  #{$medium-down}{
+
+        }
+        @media  #{$small-only}{
+
+        }
+      }
+      img{
+        position: absolute;
+        min-width: 100%;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
 }

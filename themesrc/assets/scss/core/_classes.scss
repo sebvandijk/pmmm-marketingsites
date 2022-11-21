@@ -1,19 +1,40 @@
+// classes
 .invert {
-    background-color: color(Brand);
-    color: color(Light);
+  background-color: color(Brand);
+  color: color(Light);
 }
 
 .rounded {
-    border-radius: 20px;
-    padding: 25px 35px;
+  border-radius: 20px;
+  padding: 25px 35px;
 }
 
 .dark-bg {
-    background-color: color(Dark);
-    color: color(Light);
+  background-color: color(Dark);
+  color: color(Light);
 }
 
 .brand-bg {
-    background-color: color(Brand);
-    color: color(Light);
+  background-color: color(Brand);
+  color: color(Light);
+}
+
+// variables
+$border-radius: 1.5rem;
+$box-shadow: 0 12px 30px 6px color(Dark, 0.05);
+
+// tests
+body{
+  @media  #{$large-up}{
+    // background: red;
+  }
+  @media  #{$large-down}{
+    background: green;
+  }
+  @media  #{$medium-down}{
+    background: teal;
+  }
+  @media  #{$small-only}{
+    background: violet;
+  }
 }

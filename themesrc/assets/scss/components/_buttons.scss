@@ -1,13 +1,69 @@
+// Main buttons
 .button {
-    background-color: yellow;
+  height: 3rem;
+  border-radius: 1.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: .75rem 1.25rem .75rem 1rem;
+  display: block;
+  font-weight: 600!important;
+  display: flex;
+  align-items: center;
+  &:hover{
+    text-decoration: none;
+  }
+  &.brand{
+    background-color: color(Brand);
+    color: color(Light);
+  }
 
-    &.brand {
-        background-color: color(Brand);
-        color: color(Light);
+  &.naked{
+    background-color: transparent;
+    color: color(Light);
+    padding-left: 0;
+  }
+  &.transparent{
+    background-color: transparent;
+    color: color(Dark);
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 1.5rem;
+    position: relative;
+    &:after{
+      content: '';
+      width: 100vw;
+      height: 100vh;
+      top: -50vh;
+      left: -50vw;
+      position: absolute;
+      z-index: 0;
     }
+    svg{
+      path, g{
+        fill: color(Dark);
+      }
+    }
+  }
+  &.icon{
+    &.brand{
+      margin-right: 1.5rem;
+    }
+    svg{
+      position: relative;
+      margin-right: .75rem;
+      display: block;
+      width: 10px;
+      height: 6px;
+    }
+  }
+}
 
-    &.naked {
-        background-color: transparent;
-        color: color(Light);
-    }
+// Exeptions
+.nav__list{
+  .button{
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    padding: .5rem 1.25rem .5rem 1rem;
+  }
 }
