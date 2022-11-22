@@ -30,8 +30,11 @@
       box-shadow: $box-shadow;
       padding: 3rem 2.5rem 60px;
       overflow: hidden;
+      transition: all .3s ease;
+      cursor: pointer;
       &:hover{
-        transform: scale(1.0625);
+        border-radius: 0;
+        box-shadow: none;
       }
       .image-holder{
         height: 1.75rem;
@@ -56,8 +59,4 @@
   background: radial-gradient(circle, rgba(62,139,195,.2) 0%, rgba(255,255,255,1) 50%);
   display: block;
   z-index: -1;
-}
-
-.advertise, .contact{
-  display: none;
 }

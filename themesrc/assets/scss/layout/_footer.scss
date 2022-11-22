@@ -1,0 +1,46 @@
+// Footer
+footer{
+  .inner{
+    max-width: 1200px;
+    margin: 1.875rem auto 0;
+    padding: 3rem 60px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media  #{$large-down}{
+
+    }
+    @media  #{$medium-down}{
+
+    }
+    @media  #{$small-only}{
+    }
+    .logo{
+      height: 40px;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      li{
+        padding-left: 2rem;
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+      a{
+        color: color(Light, .5);
+        font-size: 1rem;
+        letter-spacing: -.44px;
+        line-height: 1.5;
+        font-weight: 500;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

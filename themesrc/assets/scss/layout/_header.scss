@@ -37,6 +37,9 @@
       letter-spacing: -.44px;
       line-height: 1.5;
       font-weight: 500;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
