@@ -26,6 +26,10 @@
           color="#f5f5f5">
     <meta name="msapplication-TileColor" content="#f5f5f5">
     <meta name="theme-color" content="#f5f5f5">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
 	<?php wp_head(); ?>
 </head>

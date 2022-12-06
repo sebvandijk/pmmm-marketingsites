@@ -19,7 +19,7 @@ $fields['cta_button']['icon'] = 'arrow';
 	<div class="inner">
 		<div class="row">
 			<div class="content-holder">
-				<h6>DEZE MIST SEB</h6>
+				<h6><?= $fields['label'] ?></h6>
 				<h3><?= $fields['title'] ?></h3>
 				<div class="content">
 					<?= $fields['content'] ?>

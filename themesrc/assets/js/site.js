@@ -1,32 +1,108 @@
 import '../scss/app.scss'
 
+// import gsap
+import {
+	gsap
+} from 'gsap'
+
+// scroll specific
+import {
+	ScrollTrigger
+} from 'gsap/ScrollTrigger'
+
+import {
+	ScrollToPlugin
+} from 'gsap/ScrollToPlugin'
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+
+const vh = (coef) => window.innerHeight * (coef/100)
+const vw = (coef) => window.innerWidth * (coef/100)
+
+// tabs
+const tab = document.getElementsByClassName('tab')
+const tabContent = document.getElementsByClassName('tab-content')
+
 // wait until DOM is ready
 const initApp = () => {
 
+	// tabs
+	hideTabsContent(1)
+	tab[0].classList.add('active')
+	tabContent[0].classList.add('show')
 
-    window.onscroll = function () {
-        scrollFunction()
-    };
+	document.getElementById('tabs').onclick= function (event) {
+		var target=event.target;
+		if (target.className=='tab') {
+			for (var i=0; i<tab.length; i++) {
+				if (target == tab[i]) {
+					showTabsContent(i)
+					break;
+				}
+			}
+		}
+	}
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.body.classList.add("headerFix");
-        } else {
-            document.body.classList.remove("headerFix");
-        }
-    }
+	function hideTabsContent(a) {
+		for (var i=a; i<tabContent.length; i++) {
+			tabContent[i].classList.remove('show')
+			tabContent[i].classList.add("hide")
+			tab[i].classList.remove('active')
+		}
+	}
 
-    // smooth scroll on anchors
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+	function showTabsContent(b){
+		if (tabContent[b].classList.contains('hide')) {
+			hideTabsContent(0)
+			tab[b].classList.add('active')
+			tabContent[b].classList.remove('hide')
+			tabContent[b].classList.add('show')
+		}
+	}
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+	// scroll element with GSAP
+	const benefits = document.querySelector('.benefits-slider .benefits')
+	const benefitsWidth = benefits.clientWidth - 1200
 
+	gsap.to('.stats .image-holder img', {
+		y: 0,
+		scrollTrigger: {
+			trigger: '.stats',
+			start: 'top 180',
+			// end: 'center 50%',
+			scrub: true
+		}
+	})
+
+	gsap.to('.text-image-cta .image-holder img', {
+		y: 0,
+		scrollTrigger: {
+			trigger: '.text-image-cta',
+			start: 'top 50%',
+			// end: 'center 50%',
+			scrub: true
+		}
+	})
+
+	gsap.to('.advertise .image-holder img', {
+		y: 0,
+		scrollTrigger: {
+			trigger: '.advertise',
+			start: 'top 50%',
+			// end: 'center 50%',
+			scrub: true
+		}
+	})
+
+	gsap.to('.benefits-slider .benefits', {
+		x: - benefitsWidth,
+		scrollTrigger: {
+			trigger: '.benefits-slider .benefits',
+			start: 'top 25%',
+			end: 'bottom 50%',
+			scrub: 1
+		}
+	})
 }
 
 document.addEventListener('DOMContentLoaded', initApp)

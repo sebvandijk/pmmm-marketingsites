@@ -10,45 +10,50 @@ a{
 }
 
 h1{
-	font-size: 60px;
-	line-height: 1;
-	letter-spacing: -1.6px;
-	font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1.6px;
+  font-weight: 400;
   padding-bottom: 2rem;
   strong, b, span{
     font-weight: 800;
   }
-	// @media  #{$large-down}{
-	// 	font-size: 48px;
-	// }
+  // @media  #{$large-down}{
+  // 	font-size: 48px;
+  // }
+  & + h2{
+    font-size: 1.5rem;
+    line-height: 1.25;
+    letter-spacing: -.6px;
+  }
 }
 
 h2{
-	font-size: 2.25rem;
-	line-height: 1.125;
-	letter-spacing: -.9px;
-	font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.125;
+  letter-spacing: -.9px;
+  font-weight: 400;
   padding-bottom: 1.5rem;
   strong, b, span{
     font-weight: 800;
   }
-	// @media  #{$large-down}{
-	// 	font-size: 48px;
-	// }
+  // @media  #{$large-down}{
+  // 	font-size: 48px;
+  // }
 }
 
 h3{
-	font-size: 1.875rem;
-	line-height: 1.2;
-	letter-spacing: -.75px;
-	font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  letter-spacing: -.75px;
+  font-weight: 400;
   padding-bottom: 1.5rem;
   strong, b, span{
     font-weight: 800;
   }
-	// @media  #{$large-down}{
-	// 	font-size: 48px;
-	// }
+  // @media  #{$large-down}{
+  // 	font-size: 48px;
+  // }
 }
 
 h4{
@@ -94,5 +99,48 @@ p{
   &.intro{
     font-size: .875rem;
     color: color(Dark, .8);
+  }
+}
+
+// All content blocks
+.content{
+  p{
+    span{
+      text-decoration: none!important;
+      color: color(Brand);
+      font-weight: 600;
+    }
+    a{
+      color: color(Brand);
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  h6{
+    margin-bottom: 1rem;
+  }
+  ul {
+    display: block;
+    margin-left: -1rem;
+    li{
+      display: block;
+      position: relative;
+      margin-bottom: 2rem;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: .4rem;
+        left: -1.5rem;
+        background: color(Brand);
+        height: .5rem;
+        width: .5rem;
+        border-radius: 50%;
+      }
+    }
   }
 }

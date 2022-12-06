@@ -66,3 +66,11 @@ function button( $args, $opt_classes = false ) {
 
 //===================
 require_once( 'inc/includes.php' );
+
+//tims magie
+function filter_wpseo_breadcrumb_separator($this_options_breadcrumbs_sep) {
+    return '<i></i>';
+};
+
+// add the filter
+add_filter('wpseo_breadcrumb_separator', 'filter_wpseo_breadcrumb_separator', 10, 1);
