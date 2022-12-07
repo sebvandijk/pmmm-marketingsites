@@ -23,8 +23,6 @@ if ( isset( $args ) ) {
 						<div class="tab"><?= $usp['usp_title'] ?></div>
 						<div class="image-holder tab-content">
 							<?= wp_get_attachment_image( $usp['usp_image'], 'large' ) ?>
-							<?= $usp['usp_position_x'] ?>
-							<?= $usp['usp_position_y'] ?>
 						</div>
 					<?php } ?>
 				</div>

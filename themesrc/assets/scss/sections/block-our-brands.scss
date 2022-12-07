@@ -19,6 +19,7 @@
   }
   .brands {
     display: flex;
+    justify-content: center;
     column-gap: 30px;
     padding: 0 60px;
     div.brand {

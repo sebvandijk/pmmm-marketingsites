@@ -4,6 +4,6 @@
 // Load all fonts
 
 @include font-load($fontprimary);
-//@include font-load($font-secondary);
+@include font-load($fontsecondary);
 //@include font-load($font-tertiary);
 //@include font-load($font-quaternary);

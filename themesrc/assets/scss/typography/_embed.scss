@@ -22,3 +22,23 @@ $fontprimary: (
         'normal'
     )
 );
+
+$fontsecondary: (
+    font-family: (Inter, sans-serif),
+    load: true,
+    weights: (
+        'Bold': 700,
+    ),
+    font-weights: true,
+    path: '~Fonts',
+    files: (
+        'woff',
+        'woff2'
+    ),
+    use: (
+        '.left'
+    ),
+    types: (
+        'normal'
+    )
+);
