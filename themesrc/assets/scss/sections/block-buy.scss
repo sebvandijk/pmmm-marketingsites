@@ -1,0 +1,174 @@
+// Buy
+.buy{
+  background-color: color(Light);
+  color: color(Dark);
+  padding: 60px 0 30px;
+  .inner{
+    &.centered{
+      padding: 0 270px 36px;
+      &:last-of-type{
+        padding-bottom: 0;
+      }
+      @media  #{$large-down}{
+
+      }
+      @media  #{$medium-down}{
+
+      }
+      @media  #{$small-only}{
+
+      }
+    }
+  }
+  .packages{
+    display: flex;
+    column-gap: 30px;
+    padding: 0 60px;
+    justify-content: center;
+    & + .inner{
+      opacity: .75;
+      .content{
+        padding-top: 1.5rem;
+      }
+    }
+    div.package {
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+      background-color: color(Light);
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      padding: 3.75rem 0 60px;
+      overflow: hidden;
+      transition: all .3s ease;
+      position: relative;
+      &.selected{
+        .package_line{
+          .left{
+            color: color(Brand);
+          }
+        }
+        &:before{
+          content: 'Meest gekozen';
+          @extend h6;
+          text-align: center;
+          position: absolute;
+          width: 100px;
+          height: auto;
+          padding: 4rem 4rem 1rem;
+          top: -2.5rem;
+          right: -80px;
+          transform: rotate(30deg);
+          line-height: 1;
+          color: color(Light);
+          background-color: color(Brand);
+        }
+        a.button{
+          align-self: center;
+          color: color(Light);
+          background-color: color(Brand);
+          svg{
+            path, g{
+              fill: color(Light);
+            }
+          }
+          &:hover{
+            color: color(Brand);
+            background-color: color(Light);
+            svg{
+              path, g{
+                fill: color(Brand);
+              }
+            }
+          }
+        }
+      }
+      h5{
+        text-align: center;
+        font-size: 1.75rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+      .package-price{
+        display: flex;
+        justify-content: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 20px;
+        span{
+          height: 30px;
+          line-height: 30px;
+          &.price{
+            font-size: 1.5rem;
+            padding-right: .5rem;
+          }
+          &.amount{
+            opacity: .75;
+            font-size: 12px;
+          }
+        }
+      }
+      .package_line{
+        .left{
+          font-weight: 700;
+          min-width: 1.5rem;
+          width: auto;
+          padding-right: .25rem;
+          display: inline-block;
+        }
+        .right{
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          b, strong, span{
+            font-weight: 400;
+            opacity: .25;
+          }
+        }
+        color: color(Dark, .75);
+        border-top: 1px solid color(Dark, .1);
+        padding: .5rem 1.5rem;
+        font-size: 14px;
+        line-height: 1.5;
+        &:last-of-type{
+          border-bottom: 1px solid color(Dark, .1);
+          margin-bottom: 1.5rem;
+        }
+      }
+      a.button{
+        align-self: center;
+        svg{
+          path, g{
+            fill: color(Brand);
+          }
+        }
+        &:hover{
+          color: color(Light);
+          background-color: color(Brand);
+          svg{
+            path, g{
+              fill: color(Light);
+            }
+          }
+        }
+      }
+      &:hover{
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .image-holder{
+        height: 1.75rem * 2;
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      img {
+        object-position: left;
+        object-fit: contain;
+        height: 1.75rem * 2;
+        .home &{
+          height: 1.75rem;
+        }
+      }
+    }
+  }
+}

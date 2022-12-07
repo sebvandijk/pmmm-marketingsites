@@ -1,9 +1,54 @@
+#main{
+  .intro{
+    .inner{
+      z-index: 2;
+    }
+    #breadcrumbs{
+      position: absolute;
+      // background: white;
+      margin-top: 1rem;
+      z-index: 2;
+      display: flex;
+      span, a{
+        overflow: hidden;
+        font-size: .75rem;
+        line-height: 20px;
+        height: 20px;
+        display: flex;
+        a{
+          color: color(Light, .5);
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        i{
+          display: block;
+          position: relative;
+          height: 20px;
+          width: 1rem;
+          &:before {
+            content: "";
+            position: absolute;
+            background-color: color(Light, .5);
+            height: .25rem;
+            width: .25rem;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      #text{
+        display: none;
+        color: red;
+      }
+    }
+  }
+}
+
 // Intro
 .intro{
-  .inner{
-    position: relative;
-    z-index: 1;
-  }
   h1{
     padding-top: 120px;
     max-width: 660px;
@@ -35,6 +80,11 @@
   .button-row{
     display: flex;
     padding-bottom: 60px;
+    .button{
+      &:first-child{
+        margin-right: .75rem;
+      }
+    }
     @media  #{$large-down}{
 
     }
@@ -43,6 +93,83 @@
     }
     @media  #{$small-only}{
 
+    }
+  }
+  // brands specific
+  &--brands{
+    background-color: color(Dark);
+    padding-bottom: 120px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    &:after{
+      content: '';
+      width: grid(32);
+      height: grid(32);
+      border-radius: grid(16);
+      position: absolute;
+      background: radial-gradient(circle, rgba(32,84,121,1) 0%, rgba(6,29,39,1) 50%);
+      top: grid(-16);
+      right: -50%;
+      display: block;
+      z-index: -1;
+    }
+    &:before{
+      content: '';
+      width: grid(24);
+      height: grid(24);
+      border-radius: grid(6);
+      position: absolute;
+      background: radial-gradient(circle, rgba(6,29,39,1) 0%, rgba(6,29,39,0) 50%);
+      top: 0;
+      left: grid(-6);
+      display: block;
+      z-index: 1;
+    }
+    @media  #{$large-down}{
+
+    }
+    @media  #{$medium-down}{
+
+    }
+    @media  #{$small-only}{
+
+    }
+    h1{
+      padding-bottom: 1rem;
+    }
+    h2{
+      padding-bottom: 0px;
+      max-width: 660px;
+    }
+    p strong{
+      color: color(Light);
+      font-weight: 600;
+    }
+    .image-holder{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      &:after{
+        content: '';
+        width: 100vw;
+        height: 240px;
+        position: absolute;
+        background: linear-gradient(to bottom, #00131f, rgba(0, 19, 31, 0));
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+      }
+      img{
+        width: auto;
+        height: calc(100%);
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+      }
     }
   }
 }
@@ -77,12 +204,12 @@
     background-color: color(Dark);
     img{
       width: auto;
-      height: 100%;
+      height: calc(100% + 60px);
       object-fit: cover;
       object-position: center;
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -60px);
     }
   }
   .stats-container{
@@ -139,11 +266,98 @@
       }
     }
   }
+  // brands specific
+  &--brands{
+    background: transparent;
+    padding-bottom: 60px;
+    z-index: 2!important;
+    &:after{
+      content: none;
+    }
+    .row{
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      @media  #{$large-down}{
+
+      }
+      @media  #{$medium-down}{
+
+      }
+      @media  #{$small-only}{
+
+      }
+    }
+    .stats-container{
+      width: 480px;
+      padding: 3rem 60px;
+      background-color: color(Brand);
+      border-radius: $border-radius;
+      position: relative;
+      overflow: hidden;
+      @media  #{$large-down}{
+
+      }
+      @media  #{$medium-down}{
+
+      }
+      @media  #{$small-only}{
+
+      }
+      &:after{
+        content: '';
+        width: grid(20);
+        height: grid(20);
+        border-radius: grid(10);
+        position: absolute;
+        background: radial-gradient(circle, rgba(183,20,44,1) 0%, rgba(242,17,43,0) 50%);
+        bottom: 0;
+        transform: translateY(50%);
+        right: -50%;
+        display: block;
+      }
+      .stat{
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .content-holder{
+      position: relative;
+      padding: 60px 0 0 120px;
+      max-width: 600px;
+      color: color(Dark);
+      @media  #{$large-down}{
+
+      }
+      @media  #{$medium-down}{
+
+      }
+      @media  #{$small-only}{
+
+      }
+      h6{
+        // color: color(Brand);
+      }
+    }
+  }
 }
 #main{
   .stats{
     &.inner-round{
       margin-bottom: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      .home &{
+        max-width: 1320px;
+        background-color: color(Brand);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: $border-radius;
+        overflow: hidden;
+      }
       @media  #{$large-down}{
 
       }

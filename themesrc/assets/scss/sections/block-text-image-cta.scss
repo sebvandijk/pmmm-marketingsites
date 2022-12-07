@@ -1,8 +1,11 @@
 // Text-image-cta
 .text-image-cta{
-    background-color: color(Light);
     color: color(Dark);
     padding: 60px 0;
+    .home &{
+      background-color: color(Light);
+      z-index: 2!important;
+    }
     .inner{
       padding: 0 60px;
     }
@@ -52,11 +55,10 @@
         position: absolute;
         min-width: 100%;
         width: auto;
-        height: 100%;
+        height: calc(100% + 60px);
         object-fit: cover;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -60px);
       }
     }
 }

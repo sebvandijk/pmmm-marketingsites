@@ -27,7 +27,7 @@ if ( isset( $args ) ) {
         <p class="intro">
 					<?= $brand['brand_intro'] ?>
         </p>
-				<?= button( $brand['brand_cta'], 'transparent' ) ?>
+				<?= button( $brand['brand_cta'], 'brand' ) ?>
       </div>
 			<?php } ?>
     </div>

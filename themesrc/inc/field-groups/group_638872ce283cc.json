@@ -1,9 +1,9 @@
 {
-    "key": "group_630facbc85c50",
-    "title": "Blocks",
+    "key": "group_638872ce283cc",
+    "title": "Blocks - Brands",
     "fields": [
         {
-            "key": "field_630facc162d10",
+            "key": "field_638872ce30e89",
             "label": "Content Blocks",
             "name": "content_blocks",
             "aria-label": "",
@@ -17,69 +17,14 @@
                 "id": ""
             },
             "layouts": {
-                "layout_635698d4f5335": {
-                    "key": "layout_635698d4f5335",
-                    "name": "image_with_title",
-                    "label": "Image with title",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_635698def5336",
-                            "label": "Title",
-                            "name": "title",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_635698e3f5337",
-                            "label": "Image",
-                            "name": "image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_636a485c05f03": {
                     "key": "layout_636a485c05f03",
-                    "name": "intro_stats",
-                    "label": "Intro + stats",
+                    "name": "intro_stats_brands",
+                    "label": "Intro (on brand page + stats)",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_636a48f605f08",
+                            "key": "field_638872ce34b5b",
                             "label": "Intro content",
                             "name": "",
                             "aria-label": "",
@@ -96,7 +41,7 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_636a488705f04",
+                            "key": "field_638872ce34b9c",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -116,11 +61,11 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_636a48a905f05",
-                            "label": "Intro",
-                            "name": "intro",
+                            "key": "field_638875ec61871",
+                            "label": "Subtitle",
+                            "name": "subtitle",
                             "aria-label": "",
-                            "type": "textarea",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -130,13 +75,53 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
                             "maxlength": "",
-                            "rows": 2,
-                            "new_lines": ""
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
                         },
                         {
-                            "key": "field_636a48ba05f06",
+                            "key": "field_638872ce34bdf",
+                            "label": "Intro",
+                            "name": "intro",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6388c8c362b54",
+                            "label": "CTA (scroll)",
+                            "name": "cta_scroll",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "If filled this CTA will scroll to #buy section, other CTA's will hide in front-end",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_638872ce34c20",
                             "label": "CTA1 (color)",
                             "name": "cta1_color",
                             "aria-label": "",
@@ -152,7 +137,7 @@
                             "return_format": "array"
                         },
                         {
-                            "key": "field_636a48d105f07",
+                            "key": "field_638872ce34c62",
                             "label": "CTA2 link",
                             "name": "cta2_link",
                             "aria-label": "",
@@ -168,8 +153,8 @@
                             "return_format": "array"
                         },
                         {
-                            "key": "field_636a490405f09",
-                            "label": "Image and stats",
+                            "key": "field_638872ce34ca3",
+                            "label": "Image (on brand page + stats)",
                             "name": "",
                             "aria-label": "",
                             "type": "tab",
@@ -185,7 +170,210 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_636a491505f0a",
+                            "key": "field_638872ce34ce4",
+                            "label": "Image",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_638872ce34d27",
+                            "label": "Stats label",
+                            "name": "stats_label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "Bereik de beslissers",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6388789ed0cab",
+                            "label": "Stats title",
+                            "name": "stats_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "If you leave this field empty the stats section won't appear",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_638878bed0cac",
+                            "label": "Stats content",
+                            "name": "stats_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_638872ce34d6a",
+                            "label": "Stat",
+                            "name": "stat",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 3,
+                            "layout": "table",
+                            "button_label": "Add stat",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_638872ce531e1",
+                                    "label": "Number",
+                                    "name": "number",
+                                    "aria-label": "",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": "",
+                                    "parent_repeater": "field_638872ce34d6a"
+                                },
+                                {
+                                    "key": "field_638872ce5322b",
+                                    "label": "add plus",
+                                    "name": "plus",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "parent_repeater": "field_638872ce34d6a"
+                                },
+                                {
+                                    "key": "field_638872ce5326f",
+                                    "label": "Label",
+                                    "name": "label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "parent_repeater": "field_638872ce34d6a"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_635698d4f5335": {
+                    "key": "layout_635698d4f5335",
+                    "name": "image_with_title",
+                    "label": "Image with title",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_638872ce34acc",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_638872ce34b17",
                             "label": "Image",
                             "name": "image",
                             "aria-label": "",
@@ -208,114 +396,6 @@
                             "max_height": "",
                             "max_size": "",
                             "mime_types": ""
-                        },
-                        {
-                            "key": "field_636a492805f0b",
-                            "label": "Stats label",
-                            "name": "stats_label",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "Bereik de beslissers",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_636a493905f0c",
-                            "label": "Stat",
-                            "name": "stat",
-                            "aria-label": "",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 3,
-                            "layout": "table",
-                            "button_label": "Add stat",
-                            "sub_fields": [
-                                {
-                                    "key": "field_636a494905f0d",
-                                    "label": "Number",
-                                    "name": "number",
-                                    "aria-label": "",
-                                    "type": "number",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "min": "",
-                                    "max": "",
-                                    "step": "",
-                                    "parent_repeater": "field_636a493905f0c"
-                                },
-                                {
-                                    "key": "field_636a495705f0e",
-                                    "label": "add plus",
-                                    "name": "plus",
-                                    "aria-label": "",
-                                    "type": "true_false",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "message": "",
-                                    "default_value": 0,
-                                    "ui": 0,
-                                    "ui_on_text": "",
-                                    "ui_off_text": "",
-                                    "parent_repeater": "field_636a493905f0c"
-                                },
-                                {
-                                    "key": "field_636a497705f0f",
-                                    "label": "Label",
-                                    "name": "label",
-                                    "aria-label": "",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "parent_repeater": "field_636a493905f0c"
-                                }
-                            ],
-                            "rows_per_page": 20
                         }
                     ],
                     "min": "",
@@ -328,7 +408,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_636a4d468a5f8",
+                            "key": "field_638872ce34dab",
                             "label": "Options",
                             "name": "",
                             "aria-label": "",
@@ -345,7 +425,7 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_636a4d648a5fa",
+                            "key": "field_638872ce34ded",
                             "label": "Layout",
                             "name": "layout",
                             "aria-label": "",
@@ -373,7 +453,7 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_636a4d508a5f9",
+                            "key": "field_638872ce34e30",
                             "label": "Content",
                             "name": "",
                             "aria-label": "",
@@ -390,7 +470,7 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_637def84b1141",
+                            "key": "field_638872ce34e72",
                             "label": "Label",
                             "name": "label",
                             "aria-label": "",
@@ -410,7 +490,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_636a4ded8a5fb",
+                            "key": "field_638872ce34eb4",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -430,7 +510,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_636a4df48a5fc",
+                            "key": "field_638872ce34ef5",
                             "label": "Content",
                             "name": "content",
                             "aria-label": "",
@@ -450,7 +530,7 @@
                             "delay": 0
                         },
                         {
-                            "key": "field_636a4e008a5fd",
+                            "key": "field_638872ce34f37",
                             "label": "Image",
                             "name": "image",
                             "aria-label": "",
@@ -460,14 +540,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_636a4d648a5fa",
+                                        "field": "field_638872ce34ded",
                                         "operator": "==",
                                         "value": "textleft-cta"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_636a4d648a5fa",
+                                        "field": "field_638872ce34ded",
                                         "operator": "==",
                                         "value": "textright-cta"
                                     }
@@ -490,7 +570,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_636a4e268a5ff",
+                            "key": "field_638872ce34f79",
                             "label": "Cta title",
                             "name": "cta_title",
                             "aria-label": "",
@@ -500,14 +580,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_636a4d648a5fa",
+                                        "field": "field_638872ce34ded",
                                         "operator": "==",
                                         "value": "textleft-cta"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_636a4d648a5fa",
+                                        "field": "field_638872ce34ded",
                                         "operator": "==",
                                         "value": "textright-cta"
                                     }
@@ -525,7 +605,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_636a4e3f8a601",
+                            "key": "field_638872ce34fbb",
                             "label": "CTA button",
                             "name": "cta_button",
                             "aria-label": "",
@@ -535,14 +615,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_636a4d648a5fa",
+                                        "field": "field_638872ce34ded",
                                         "operator": "==",
                                         "value": "textleft-cta"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_636a4d648a5fa",
+                                        "field": "field_638872ce34ded",
                                         "operator": "==",
                                         "value": "textright-cta"
                                     }
@@ -562,11 +642,11 @@
                 "layout_636a5218e9898": {
                     "key": "layout_636a5218e9898",
                     "name": "our_brands",
-                    "label": "Onze merken",
+                    "label": "Advertise options",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_636a5993e5c1a",
+                            "key": "field_638872ce34ffc",
                             "label": "Content",
                             "name": "",
                             "aria-label": "",
@@ -583,7 +663,7 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_636a5225e9899",
+                            "key": "field_638872ce3503d",
                             "label": "Label",
                             "name": "label",
                             "aria-label": "",
@@ -603,7 +683,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_636a5236e989a",
+                            "key": "field_638872ce3507e",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -623,7 +703,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_636a524be989b",
+                            "key": "field_638872ce350c0",
                             "label": "Content",
                             "name": "content",
                             "aria-label": "",
@@ -643,7 +723,7 @@
                             "delay": 0
                         },
                         {
-                            "key": "field_636a59a1e5c1b",
+                            "key": "field_638872ce35101",
                             "label": "Merken",
                             "name": "",
                             "aria-label": "",
@@ -660,7 +740,7 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_636a5258e989c",
+                            "key": "field_638872ce35142",
                             "label": "Brands",
                             "name": "brands",
                             "aria-label": "",
@@ -678,9 +758,10 @@
                             "max": 0,
                             "layout": "table",
                             "button_label": "Add brand",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_636a5263e989d",
+                                    "key": "field_638872ce85e6b",
                                     "label": "Brand logo",
                                     "name": "brand_logo",
                                     "aria-label": "",
@@ -703,10 +784,10 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": "",
-                                    "parent_repeater": "field_636a5258e989c"
+                                    "parent_repeater": "field_638872ce35142"
                                 },
                                 {
-                                    "key": "field_636a5278e989e",
+                                    "key": "field_638872ce85eb6",
                                     "label": "Brand title",
                                     "name": "brand_title",
                                     "aria-label": "",
@@ -724,10 +805,10 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": "",
-                                    "parent_repeater": "field_636a5258e989c"
+                                    "parent_repeater": "field_638872ce35142"
                                 },
                                 {
-                                    "key": "field_636a527de989f",
+                                    "key": "field_638872ce85efa",
                                     "label": "Brand intro",
                                     "name": "brand_intro",
                                     "aria-label": "",
@@ -745,10 +826,10 @@
                                     "maxlength": "",
                                     "rows": 3,
                                     "new_lines": "",
-                                    "parent_repeater": "field_636a5258e989c"
+                                    "parent_repeater": "field_638872ce35142"
                                 },
                                 {
-                                    "key": "field_636a5286e98a0",
+                                    "key": "field_638872ce85f3b",
                                     "label": "Brand CTA",
                                     "name": "brand_cta",
                                     "aria-label": "",
@@ -762,190 +843,22 @@
                                         "id": ""
                                     },
                                     "return_format": "array",
-                                    "parent_repeater": "field_636a5258e989c"
+                                    "parent_repeater": "field_638872ce35142"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
                     "max": ""
                 },
-                "layout_636a563dbb87c": {
-                    "key": "layout_636a563dbb87c",
-                    "name": "wheel_of_fortune_animation",
-                    "label": "Wheel of fortune animation",
+                "layout_6390565938237": {
+                    "key": "layout_6390565938237",
+                    "name": "buy",
+                    "label": "Buy",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_636a5656bb87d",
-                            "label": "Wheel of fortune",
-                            "name": "",
-                            "aria-label": "",
-                            "type": "tab",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "placement": "top",
-                            "endpoint": 0
-                        },
-                        {
-                            "key": "field_636a570e1af50",
-                            "label": "Top label",
-                            "name": "top_label",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_636a5676bb87e",
-                            "label": "Center title",
-                            "name": "center_title",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Merken",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_636a5695bb87f",
-                            "label": "Center content",
-                            "name": "center_content",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Solids Processing, Fluids Processing & MB Maintenance",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_636a56c3bb880",
-                            "label": "Elements",
-                            "name": "elements",
-                            "aria-label": "",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 5,
-                            "max": 5,
-                            "layout": "table",
-                            "button_label": "Add element",
-                            "sub_fields": [
-                                {
-                                    "key": "field_636a56cebb881",
-                                    "label": "Icon",
-                                    "name": "icon",
-                                    "aria-label": "",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "id",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": "",
-                                    "parent_repeater": "field_636a56c3bb880"
-                                },
-                                {
-                                    "key": "field_636a56ddbb882",
-                                    "label": "Label",
-                                    "name": "label",
-                                    "aria-label": "",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "parent_repeater": "field_636a56c3bb880"
-                                }
-                            ],
-                            "rows_per_page": 20
-                        },
-                        {
-                            "key": "field_636a57181af51",
-                            "label": "Bottom label",
-                            "name": "bottom_label",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_636a572798048",
+                            "key": "field_6390565938238",
                             "label": "Content",
                             "name": "",
                             "aria-label": "",
@@ -962,8 +875,28 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_636a573098049",
-                            "label": "TitleGa ook aan de slag met uw content-marketingstrategie",
+                            "key": "field_6390565938239",
+                            "label": "Label",
+                            "name": "label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Onze merken",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_639056593823a",
+                            "label": "Title",
                             "name": "title",
                             "aria-label": "",
                             "type": "text",
@@ -975,14 +908,14 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Ga ook aan de slag met <span>uw content-marketingstrategie<\/span>",
+                            "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
+                            "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "append": ""
                         },
                         {
-                            "key": "field_636a57509804a",
+                            "key": "field_639056593823b",
                             "label": "Content",
                             "name": "content",
                             "aria-label": "",
@@ -997,9 +930,613 @@
                             },
                             "default_value": "",
                             "tabs": "all",
-                            "toolbar": "full",
+                            "toolbar": "basic",
                             "media_upload": 1,
                             "delay": 0
+                        },
+                        {
+                            "key": "field_639056593823c",
+                            "label": "Table",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_639056593823d",
+                            "label": "Package",
+                            "name": "package",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add package",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6390570a38244",
+                                    "label": "Most chosen",
+                                    "name": "most_chosen",
+                                    "aria-label": "",
+                                    "type": "checkbox",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "yes": "Yes",
+                                        "no": "No"
+                                    },
+                                    "default_value": [
+                                        "no"
+                                    ],
+                                    "return_format": "value",
+                                    "allow_custom": 0,
+                                    "save_custom": 0,
+                                    "layout": "vertical",
+                                    "toggle": 0,
+                                    "parent_repeater": "field_639056593823d"
+                                },
+                                {
+                                    "key": "field_639056593823f",
+                                    "label": "Package title",
+                                    "name": "package_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_639056593823d"
+                                },
+                                {
+                                    "key": "field_639056d338242",
+                                    "label": "Package price",
+                                    "name": "package_price",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_639056593823d"
+                                },
+                                {
+                                    "key": "field_639056ed38243",
+                                    "label": "Package amount",
+                                    "name": "package_amount",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_639056593823d"
+                                },
+                                {
+                                    "key": "field_6390565938241",
+                                    "label": "Package CTA",
+                                    "name": "package_cta",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_639056593823d"
+                                },
+                                {
+                                    "key": "field_63905760daecc",
+                                    "label": "Package Line",
+                                    "name": "package_line",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "pagination": 0,
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Add Row",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_63905777daecd",
+                                            "label": "Left",
+                                            "name": "left",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63905760daecc"
+                                        },
+                                        {
+                                            "key": "field_6390578cdaece",
+                                            "label": "Right",
+                                            "name": "right",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63905760daecc"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_639056593823d"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_639057b2f0678",
+                            "label": "Additional content",
+                            "name": "additional_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6388ce08d3562": {
+                    "key": "layout_6388ce08d3562",
+                    "name": "benefits_slider",
+                    "label": "Benefits slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6388ce09d3563",
+                            "label": "Content",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6388ce09d3564",
+                            "label": "Label",
+                            "name": "label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Onze merken",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6388ce09d3565",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6388ce09d3566",
+                            "label": "Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6388ce09d3567",
+                            "label": "Benefits",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6388ce09d3568",
+                            "label": "Benefits",
+                            "name": "benefits",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add benefit",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6388ce09d3569",
+                                    "label": "Benefit icon",
+                                    "name": "benefit_icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "thumbnail",
+                                    "parent_repeater": "field_6388ce09d3568"
+                                },
+                                {
+                                    "key": "field_6388ce09d356a",
+                                    "label": "Benefit title",
+                                    "name": "benefit_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6388ce09d3568"
+                                },
+                                {
+                                    "key": "field_6388ce09d356b",
+                                    "label": "Benefit intro",
+                                    "name": "benefit_intro",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "rows": 3,
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "parent_repeater": "field_6388ce09d3568"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6389f15acea1d": {
+                    "key": "layout_6389f15acea1d",
+                    "name": "usps_slider",
+                    "label": "USPS Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6389f15acea1e",
+                            "label": "Content",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6389f15acea1f",
+                            "label": "Label",
+                            "name": "label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Onze merken",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6389f15acea20",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6389f15acea21",
+                            "label": "Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6389f15acea22",
+                            "label": "USPS",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6389f15acea23",
+                            "label": "USPS",
+                            "name": "usps",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add usp",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6389f15acea24",
+                                    "label": "UPS image",
+                                    "name": "usp_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "thumbnail",
+                                    "parent_repeater": "field_6389f15acea23"
+                                },
+                                {
+                                    "key": "field_6389f15acea25",
+                                    "label": "USP title",
+                                    "name": "usp_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6389f15acea23"
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -1012,7 +1549,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_636a59eb640a9",
+                            "key": "field_638872ce353d2",
                             "label": "Label",
                             "name": "label",
                             "aria-label": "",
@@ -1032,7 +1569,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_636a5b410c952",
+                            "key": "field_638872ce35415",
                             "label": "Image",
                             "name": "image",
                             "aria-label": "",
@@ -1057,7 +1594,7 @@
                             "preview_size": "medium"
                         },
                         {
-                            "key": "field_636a59f3640aa",
+                            "key": "field_638872ce35458",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -1077,7 +1614,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_636a59fa640ab",
+                            "key": "field_638872ce3549a",
                             "label": "content",
                             "name": "content",
                             "aria-label": "",
@@ -1097,7 +1634,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_636a5a09640ac",
+                            "key": "field_638872ce354db",
                             "label": "CTA",
                             "name": "cta",
                             "aria-label": "",
@@ -1123,7 +1660,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_636a5aa2cfb2b",
+                            "key": "field_638872ce3551c",
                             "label": "image",
                             "name": "image",
                             "aria-label": "",
@@ -1148,7 +1685,7 @@
                             "preview_size": "medium"
                         },
                         {
-                            "key": "field_636a5ab0cfb2c",
+                            "key": "field_638872ce3555d",
                             "label": "content",
                             "name": "content",
                             "aria-label": "",
@@ -1168,7 +1705,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_636a5ad7cfb2d",
+                            "key": "field_638872ce3559f",
                             "label": "contact CTA",
                             "name": "contact_cta",
                             "aria-label": "",
@@ -1182,6 +1719,53 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6390971bc0c64": {
+                    "key": "layout_6390971bc0c64",
+                    "name": "simple_content",
+                    "label": "Simple content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6390971bc0c66",
+                            "label": "Simple content",
+                            "name": "simple_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6390b98d5e36a",
+                            "label": "Table",
+                            "name": "table_name",
+                            "aria-label": "",
+                            "type": "table",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "use_header": 0,
+                            "use_caption": 2
                         }
                     ],
                     "min": "",
@@ -1201,9 +1785,21 @@
                 "value": "page-blocks.php"
             },
             {
-                "param": "page",
+                "param": "page_parent",
                 "operator": "==",
-                "value": "5"
+                "value": "98"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-blocks.php"
+            },
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "100"
             }
         ]
     ],
@@ -1219,5 +1815,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1669886646
+    "modified": 1670429204
 }

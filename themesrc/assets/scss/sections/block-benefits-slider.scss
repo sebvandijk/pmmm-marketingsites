@@ -1,8 +1,10 @@
-// Our brands
-.our-brands{
+// Benefits slider
+.benefits-slider{
   background-color: color(Light);
   color: color(Dark);
-  padding: 60px 0;
+  padding: 120px 0 60px;
+  overflow: hidden;
+  top: -60px;
   .inner{
     &.centered{
       padding: 0 270px 36px;
@@ -17,14 +19,13 @@
       }
     }
   }
-  .brands {
+  .benefits {
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
     column-gap: 30px;
     padding: 0 60px;
-    div.brand {
-      display: flex;
-      flex-direction: column;
+    width: fit-content;
+    div.benefit {
       width: 340px;
       background-color: color(Light);
       border-radius: $border-radius;
@@ -32,38 +33,15 @@
       padding: 3rem 2.5rem 60px;
       overflow: hidden;
       transition: all .3s ease;
-      a.brand{
-        align-self: flex-start;
-        &:hover{
-          color: color(Brand);
-        }
-        .home &{
-          @extend .button.transparent;
-          box-shadow: none;
-          &:hover{
-            color: color(Dark);
-          }
-        }
-      }
-      &:hover{
-        border-radius: 0;
-        box-shadow: none;
-      }
       .image-holder{
         height: 1.75rem * 2;
         width: 100%;
         margin-bottom: 1.5rem;
-        .home &{
-          height: 1.75rem;
-        }
       }
       img {
         object-position: left;
         object-fit: contain;
         height: 1.75rem * 2;
-        .home &{
-          height: 1.75rem;
-        }
       }
     }
   }
@@ -73,14 +51,10 @@
   width: grid(16);
   height: grid(16);
   right: -240px;
-  top: 0%;
+  top: -50%;
   border-radius: grid(8);
   position: absolute;
   background: radial-gradient(circle, rgba(62,139,195,.2) 0%, rgba(255,255,255,1) 50%);
   display: block;
   z-index: -1;
-  .home &{
-    top: 50%;
-    left: -240px;
-  }
 }
