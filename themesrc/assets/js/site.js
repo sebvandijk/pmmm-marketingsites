@@ -19,16 +19,16 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 const vh = (coef) => window.innerHeight * (coef/100)
 const vw = (coef) => window.innerWidth * (coef/100)
 
-// tabs
-const tab = document.getElementsByClassName('tab')
-const tabContent = document.getElementsByClassName('tab-content')
-
 // wait until DOM is ready
 const initApp = () => {
 
 	// tabs
-	const ifTabs = document.getElementsByClassName('tabs');
+	const ifTabs = document.getElementsByClassName('tab-content');
 		if (ifTabs.length > 0) {
+
+		// tabs
+		const tab = document.getElementsByClassName('tab')
+		const tabContent = document.getElementsByClassName('tab-content')
 
 		hideTabsContent(1)
 		tab[0].classList.add('active')
