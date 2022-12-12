@@ -2,9 +2,9 @@
 .benefits-slider{
   background-color: color(Light);
   color: color(Dark);
-  padding: 120px 0 60px;
+  padding: 120px 0 120px;
   overflow: hidden;
-  top: -60px;
+  margin-top: -60px;
   .inner{
     &.centered{
       padding: 0 270px 36px;

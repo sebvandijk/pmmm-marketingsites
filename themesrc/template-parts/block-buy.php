@@ -44,7 +44,7 @@ if ( isset( $args ) ) {
   </div>
 	<?php } ?>
 	<?php if ($fields['additional_content']): ?>
-	<div class="inner centered">
+	<div class="inner centered additional">
 		<div class="content">
 			<?= $fields['additional_content'] ?>
 		</div>
