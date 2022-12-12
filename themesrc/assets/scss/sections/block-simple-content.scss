@@ -41,6 +41,11 @@
           padding: 12px .5rem 1rem 1rem;
           border-bottom: 1px solid color(Dark, .2);
           background-color: color(Light);
+          span{
+            font-size: 12px;
+            opacity: .5;
+            font-weight: 400;
+          }
           &:first-of-type{
             width: 33%;
             background: transparent;
@@ -53,6 +58,9 @@
           }
           &:last-of-type{
             border-radius: 0 1rem 0 0;
+            &:nth-child(2){
+              border-radius: 1rem 1rem 0 0;
+            }
           }
         }
       }
@@ -67,6 +75,9 @@
               }
               &:last-of-type{
                 border-radius: 0 0 1rem 0;
+                &:nth-child(2){
+                  border-radius: 1rem 1rem 0 0;
+                }
               }
             }
           }

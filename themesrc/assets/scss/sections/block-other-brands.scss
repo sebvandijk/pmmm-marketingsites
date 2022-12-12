@@ -1,0 +1,87 @@
+// Our brands
+.other-brands{
+  background-color: color(Light);
+  color: color(Dark);
+  padding: 60px 0 120px;
+  margin-bottom: -30px;
+  overflow: hidden;
+  .inner{
+    &.centered{
+      padding: 0 270px 36px;
+      @media  #{$large-down}{
+
+      }
+      @media  #{$medium-down}{
+
+      }
+      @media  #{$small-only}{
+
+      }
+    }
+  }
+  .brands {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 0 60px;
+    div.brand{
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+      background-color: color(Light);
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      padding: 3rem 2.5rem 60px;
+      overflow: hidden;
+      transition: all .3s ease;
+      overflow: hidden;
+      position: relative;
+      a.brand{
+        position: relative;
+        overflow: initial;
+        height: 0;
+        text-indent: -9999px;
+        opacity: 0;
+        position: absolute;
+        margin-bottom: 0;
+        &:before{
+          position: absolute;
+          width: 100vw;
+          height: 100vw;
+          display: block;
+          content: '';
+          left: -25vw;
+          top: -25vw;
+        }
+      }
+      .image-holder{
+        height: 28px;
+        width: 100%;
+        margin-top: 1rem;
+        .home &{
+          height: 1.75rem;
+        }
+      }
+      img {
+        object-position: left;
+        object-fit: contain;
+        height: 28px;
+      }
+      &:hover{
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  .circle-bg{
+    width: grid(16);
+    height: grid(16);
+    right: -240px;
+    top: 0%;
+    border-radius: grid(8);
+    position: absolute;
+    background: radial-gradient(circle, rgba(62,139,195,.2) 0%, rgba(255,255,255,1) 50%);
+    display: block;
+    z-index: -1;
+  }
+}

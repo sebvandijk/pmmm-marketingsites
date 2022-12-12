@@ -6,8 +6,8 @@
 if ( isset( $args ) ) {
 	$fields = $args;
 }
-$fields['cta1_color']['icon'] = 'arrow';
-$fields['cta2_link']['icon']  = 'arrow';
+// $fields['cta1_color']['icon'] = 'arrow';
+// $fields['cta2_link']['icon']  = 'arrow';
 $image                        = wp_get_attachment_image( $fields['image'], 'large' );
 ?>
 
@@ -43,11 +43,12 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 				<?= $fields['cta_scroll'] ?>
 			</a>
 		</div>
-		<?php else: ?>
-			<div class="button-row">
-				<?= button( $fields['cta1_color'], 'ghost' ) ?>
-				<?= button( $fields['cta2_link'], 'ghost' ) ?>
-			</div>
+		<?php endif; ?>
+		<?php if ($fields['cta1_color']): ?>
+		<div class="button-row">
+			<?= button( $fields['cta1_color'], 'ghost' ) ?>
+			<?php if ($fields['cta2_link']): ?><?= button( $fields['cta2_link'], 'ghost' ) ?><?php endif; ?>
+		</div>
 		<?php endif; ?>
 	</div>
 	<div class="image-holder">

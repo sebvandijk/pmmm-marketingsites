@@ -9,6 +9,13 @@
       &:last-of-type{
         padding-bottom: 0;
       }
+      &.additional{
+        padding-top: 1rem;
+        p{
+          font-size: .875rem;
+          opacity: .75;
+        }
+      }
       @media  #{$large-down}{
 
       }
