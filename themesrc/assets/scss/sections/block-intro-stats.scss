@@ -361,6 +361,11 @@
         // color: color(Brand);
       }
     }
+    & + .background-correction{
+      & + .other-brands{
+        overflow: auto;
+      }
+    }
   }
 }
 #main{
