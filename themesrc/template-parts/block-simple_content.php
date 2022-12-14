@@ -8,7 +8,7 @@ if ( isset( $args ) ) {
 ?>
 
 <!-- simple content -->
-<section class="block simple-content">
+<section id="buy" class="block simple-content">
 	<div class="inner centered">
 		<div class="content">
 			<?= $fields['simple_content'] ?>

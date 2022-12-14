@@ -20,12 +20,10 @@ if ( isset( $args ) ) {
 	<?php if ( is_array( $fields['package'] ) ) { ?>
   <div class="packages row">
 		<?php foreach ( $fields['package'] as $singlepackage ) { $singlepackage['package_cta']['icon'] = 'arrow'; ?>
-		<?php $selected = $singlepackage['most_chosen'];
-		if( $selected && in_array('yes', $selected) ): ?>
+		<?php $selected = $singlepackage['most_chosen']; if( $selected && in_array('yes', $selected) ): ?>
 		<div class="package selected">
 		<?php else : ?>
 		<div class="package">
-
 		<?php endif; ?>
 			<h5><?= $singlepackage['package_title'] ?></h5>
 			<div class="package-price">
