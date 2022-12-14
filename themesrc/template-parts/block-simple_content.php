@@ -81,9 +81,3 @@ if ( isset( $args ) ) {
 	</div>
 </section>
 <!-- end simple content -->
-
-<pre style="background: black;">
-<?php
-debug( $fields )
-?>
-</pre>
