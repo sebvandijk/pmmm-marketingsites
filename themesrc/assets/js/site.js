@@ -19,11 +19,38 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 const vh = (coef) => window.innerHeight * (coef/100)
 const vw = (coef) => window.innerWidth * (coef/100)
 
+// check active menu
+const checkActiveItems = () => {
+	const items = [...document.querySelectorAll('.nav__link')]
+	items.forEach(item => {
+		item.classList.remove('is-active')
+		if (item.hasAttribute('href') && item.href == window.location.href) {
+			item.classList.add('is-active')
+		}
+	})
+}
+
 // wait until DOM is ready
 const initApp = () => {
 
+	// check nav
+	checkActiveItems()
+
+	// if buy
+	document.querySelectorAll('#to-buy').forEach((btn, index) => {
+	  btn.addEventListener('click', () => {
+	    gsap.to(window, {
+				duration: 1,
+				scrollTo:{
+					y: '#buy', 
+					offsetY: 0
+				}
+			})
+	  })
+	})
+
 	// tabs
-	const ifTabs = document.getElementsByClassName('tab-content');
+	const ifTabs = document.getElementsByClassName('tab-content')
 		if (ifTabs.length > 0) {
 
 		// tabs
@@ -49,7 +76,7 @@ const initApp = () => {
 		function hideTabsContent(a) {
 			for (var i=a; i<tabContent.length; i++) {
 				tabContent[i].classList.remove('show')
-				tabContent[i].classList.add("hide")
+				tabContent[i].classList.add('hide')
 				tab[i].classList.remove('active')
 			}
 		}
