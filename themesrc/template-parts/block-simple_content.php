@@ -1,6 +1,6 @@
 <?php
 /* Created by sebvandijk
-  08/11/2022 - 14:02
+08/11/2022 - 14:02
 */
 if ( isset( $args ) ) {
 	$fields = $args;
@@ -11,58 +11,79 @@ if ( isset( $args ) ) {
 <section class="block simple-content">
 	<div class="inner centered">
 		<div class="content">
-		<?= $fields['simple_content'] ?>
-		<?php
-		$table = $fields['table_name'];
+			<?= $fields['simple_content'] ?>
+			<?php if ( is_array( $fields['ad_sizes'] ) ) { ?>
+				<!-- size container -->
+				<div class="size-container">
+					<?php foreach ( $fields['ad_sizes'] as $ad_size ) { ?>
+						<div class="size">
+							<h5 class="title"><strong><?= $ad_size['title'] ?></strong></h5>
+							<div class="image-holder"><?= wp_get_attachment_image( $ad_size['ad_image'], 'large' ) ?></div>
+							<div class="content">
+								<?= $ad_size['content'] ?>
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+				<!-- end size container -->
+			<?php } ?>
+			<!-- table -->
+			<?php $table = $fields['table_name'];
+			if ( ! empty ( $table ) ) {
 
-if ( ! empty ( $table ) ) {
+				echo '<table border="0">';
 
-    echo '<table border="0">';
+				if ( ! empty( $table['caption'] ) ) {
 
-        if ( ! empty( $table['caption'] ) ) {
+					echo '<caption>' . $table['caption'] . '</caption>';
+				}
 
-            echo '<caption>' . $table['caption'] . '</caption>';
-        }
+				if ( ! empty( $table['header'] ) ) {
 
-        if ( ! empty( $table['header'] ) ) {
+					echo '<thead>';
 
-            echo '<thead>';
+					echo '<tr>';
 
-                echo '<tr>';
+					foreach ( $table['header'] as $th ) {
 
-                    foreach ( $table['header'] as $th ) {
+						echo '<th>';
+						echo $th['c'];
+						echo '</th>';
+					}
 
-                        echo '<th>';
-                            echo $th['c'];
-                        echo '</th>';
-                    }
+					echo '</tr>';
 
-                echo '</tr>';
+					echo '</thead>';
+				}
 
-            echo '</thead>';
-        }
+				echo '<tbody>';
 
-        echo '<tbody>';
+				foreach ( $table['body'] as $tr ) {
 
-            foreach ( $table['body'] as $tr ) {
+					echo '<tr>';
 
-                echo '<tr>';
+					foreach ( $tr as $td ) {
 
-                    foreach ( $tr as $td ) {
+						echo '<td>';
+						echo $td['c'];
+						echo '</td>';
+					}
 
-                        echo '<td>';
-                            echo $td['c'];
-                        echo '</td>';
-                    }
+					echo '</tr>';
+				}
 
-                echo '</tr>';
-            }
+				echo '</tbody>';
 
-        echo '</tbody>';
-
-    echo '</table>';
-}?>
+				echo '</table>';
+			}?>
+			<!-- end table -->
 		</div>
 	</div>
 </section>
 <!-- end simple content -->
+
+<pre style="background: black;">
+<?php
+debug( $fields )
+?>
+</pre>
