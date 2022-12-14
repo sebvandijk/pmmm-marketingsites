@@ -6,8 +6,6 @@
 if ( isset( $args ) ) {
 	$fields = $args;
 }
-// $fields['cta1_color']['icon'] = 'arrow';
-// $fields['cta2_link']['icon']  = 'arrow';
 $image                        = wp_get_attachment_image( $fields['image'], 'large' );
 ?>
 
@@ -51,7 +49,7 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 		</div>
 		<?php endif; ?>
 	</div>
-	<div class="image-holder">
+	<div class="image-holder <?= $fields['fullscreen_image'] ?>">
 		<?= $image ?>
 	</div>
 </section>

@@ -195,6 +195,32 @@
                             "preview_size": "thumbnail"
                         },
                         {
+                            "key": "field_6399f3b5eca5a",
+                            "label": "Fullscreen image",
+                            "name": "fullscreen_image",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "yes": "Yes",
+                                "no": "No"
+                            },
+                            "default_value": "no",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_638872ce34d27",
                             "label": "Stats label",
                             "name": "stats_label",
@@ -2097,5 +2123,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671015010
+    "modified": 1671033921
 }
