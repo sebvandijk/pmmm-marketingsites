@@ -7,7 +7,9 @@ if ( isset( $args ) ) {
 	$fields = $args;
 }
 $fields['cta1_color']['icon'] = 'arrow';
+if ($fields['cta2_link']):
 $fields['cta2_link']['icon']  = 'arrow';
+endif;
 $image                        = wp_get_attachment_image( $fields['image'], 'large' );
 ?>
 
@@ -19,8 +21,12 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 			<p class="large"><?= $fields['intro'] ?></p>
 		</div>
 		<div class="button-row">
+			<?php if ($fields['cta1_color']): ?>
 			<?= button( $fields['cta1_color'], 'brand' ) ?>
+			<?php endif; ?>
+			<?php if ($fields['cta2_link']): ?>
 			<?= button( $fields['cta2_link'], 'naked' ) ?>
+			<?php endif; ?>
 		</div>
 	</div>
 </section>

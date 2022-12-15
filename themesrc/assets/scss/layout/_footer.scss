@@ -1,5 +1,7 @@
 // Footer
 footer{
+  position: relative;
+  z-index: 2;
   .inner{
     max-width: 1200px;
     margin: 1.875rem auto 0;
