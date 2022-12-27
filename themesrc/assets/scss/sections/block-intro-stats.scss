@@ -1,3 +1,7 @@
+.page-parent.page-child{
+  overflow: visible;
+}
+
 #main{
   .intro{
     .inner{
@@ -5,7 +9,6 @@
     }
     #breadcrumbs{
       position: absolute;
-      // background: white;
       margin-top: 1rem;
       z-index: 2;
       display: flex;
@@ -298,8 +301,8 @@
     .row{
       max-width: 1200px;
       margin: 0 auto;
-      display: flex;
-      align-items: flex-start;
+      // display: flex;
+      // align-items: flex-start;
       @media  #{$large-down}{
 
       }
@@ -312,11 +315,17 @@
     }
     .stats-container{
       width: 480px;
-      padding: 3rem 60px;
-      background-color: color(Brand);
-      border-radius: $border-radius;
       position: relative;
-      overflow: hidden;
+      overflow: visible!important;
+      padding: 0;
+      .sticky{
+        padding: 3rem 60px;
+        background-color: color(Brand);
+        border-radius: $border-radius;
+        position: relative;
+        position: sticky;
+        top: 60px;
+      }
       @media  #{$large-down}{
 
       }
@@ -325,18 +334,6 @@
       }
       @media  #{$small-only}{
 
-      }
-      &:after{
-        content: '';
-        width: grid(20);
-        height: grid(20);
-        border-radius: grid(10);
-        position: absolute;
-        background: radial-gradient(circle, rgba(183,20,44,1) 0%, rgba(242,17,43,0) 50%);
-        bottom: 0;
-        transform: translateY(50%);
-        right: -50%;
-        display: block;
       }
       .stat{
         position: relative;

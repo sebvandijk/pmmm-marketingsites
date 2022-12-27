@@ -29,11 +29,13 @@
       background-color: color(Light);
       border-radius: $border-radius;
       box-shadow: $box-shadow;
-      padding: 3rem 2.5rem 60px;
+      padding: 3rem 2.5rem 108px;
       overflow: hidden;
       transition: all .3s ease;
+      position: relative;
       a.brand{
-        align-self: flex-start;
+        position: absolute;
+        bottom: 60px;
         &:hover{
           color: color(Brand);
         }

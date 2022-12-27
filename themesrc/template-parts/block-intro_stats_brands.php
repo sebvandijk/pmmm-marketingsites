@@ -61,14 +61,16 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 		<div class="row">
 			<?php if ( is_array( $fields['stat'] ) ) { ?>
 				<div class="stats-container inner-round">
-					<?php foreach ( $fields['stat'] as $stat ) { ?>
-						<div class="stat">
-							<span class="number"><?= $stat['number'] ?><i><?= $stat['plus'] ? '<sup>+</sup>' : false ?></i></span>
-							<div class="label">
-								<?= $stat['label'] ?>
+					<div class="sticky">
+						<?php foreach ( $fields['stat'] as $stat ) { ?>
+							<div class="stat">
+								<span class="number"><?= $stat['number'] ?><i><?= $stat['plus'] ? '<sup>+</sup>' : false ?></i></span>
+								<div class="label">
+									<?= $stat['label'] ?>
+								</div>
 							</div>
-						</div>
-					<?php } ?>
+						<?php } ?>
+					</div>
 				</div>
 				<div class="content-holder">
 					<h6><?= $fields['stats_label'] ?></h6>
