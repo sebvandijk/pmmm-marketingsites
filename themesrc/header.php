@@ -60,8 +60,9 @@ $main_menu = get_menu_items_by_registered_slug( 'header_menu' );
 									$classes = false;
 								}
 								?>
+                <?php $active = checkActive($item->object_id) ? 'active' : ''; ?>
 								<?php $target = $item->target ? 'target="_blank" rel="noopener"' : ''; ?>
-                                <li class="nav__item">
+                                <li class="nav__item <?=$active?>">
                                     <a class="nav__link <?= $classes ?>"
                                        href="<?= $item->url ?>" <?= $target ?>>
 										<?= $item->title ?>

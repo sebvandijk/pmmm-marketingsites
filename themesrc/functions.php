@@ -68,8 +68,31 @@ function button( $args, $opt_classes = false ) {
 require_once( 'inc/includes.php' );
 
 //tims magie
+
+// breadcrumbs
 function filter_wpseo_breadcrumb_separator($this_options_breadcrumbs_sep) {
     return '<i></i>';
 };
 
 add_filter('wpseo_breadcrumb_separator', 'filter_wpseo_breadcrumb_separator', 10, 1);
+
+// active links
+function checkActive($post_id) {
+	$overview_pages = get_field('overview_pages', 'options');
+	if ($post_id == get_the_id()) {
+		return true;
+	}
+	if (isset($overview_pages[get_post_type()]) && $overview_pages[get_post_type()] == $post_id) {
+		return true;
+	}
+}
+
+// page body class
+function add_slug_body_class( $classes ) {
+	global $post;
+	if ( isset( $post ) ) {
+		$classes[] = $post->post_name;
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );

@@ -29,6 +29,13 @@
         &:first-child{
           padding-left: 0;
         }
+        &:hover, &.active{
+          a{
+            &:before{
+              animation: showLine .45s 0s forwards;
+            }
+          }
+        }
       }
     }
     a.nav__link{
@@ -52,11 +59,6 @@
         transform: translate(-100%);
         display: block;
         animation: hideLine .45s 0s forwards;
-      }
-      &:hover, &.is-active{
-        &:before{
-          animation: showLine .45s 0s forwards;
-        }
       }
     }
   }
