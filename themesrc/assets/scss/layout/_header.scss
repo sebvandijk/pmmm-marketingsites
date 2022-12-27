@@ -29,6 +29,15 @@
         &:first-child{
           padding-left: 0;
         }
+        .solidsprocessing &, .fluidsprocessing  &, .mbprocessing &, .online-adverteren &, .offline-adverteren &, .nieuwsbrief &{
+          &:first-child{
+            a{
+              &:before{
+                animation: showLine .45s 0s forwards;
+              }
+            }
+          }
+        }
         &:hover, &.active{
           a{
             &:before{

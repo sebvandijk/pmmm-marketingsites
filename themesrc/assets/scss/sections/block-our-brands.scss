@@ -41,6 +41,7 @@
         }
         .home &{
           @extend .button.transparent;
+          position: absolute;
           box-shadow: none;
           &:hover{
             color: color(Dark);
