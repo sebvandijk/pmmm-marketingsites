@@ -55,23 +55,32 @@ sass/
 }
 
 html{
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background: color(Light);
   color: color(Light);
-  min-height: 100vh;
+  // min-height: 100vh;
 
 }
 
 body{
-  min-height: 100vh;
-  overflow-x: hidden;
+  // min-height: 100vh;
+  // overflow-x: hidden;
 }
 
 #main{
   width: 100%;
   height: 100%;
   position: relative;
+  // overflow-x: hidden;
+  // padding-top: 22px;
+  // top: -22px;
   // home specific
+  .home &{
+    overflow-x: hidden;
+  }
+  .block-holder{
+    width: 100vw;
+  }
   .home &{
     &:after{
       content: '';

@@ -1,7 +1,6 @@
 // header
 .header{
-  max-width: 1200px;
-  margin: 1.875rem auto 0;
+  margin: 0 auto;
   @media  #{$medium-down}{
     margin: 1.5rem auto 0;
   }
@@ -9,11 +8,19 @@
     margin: 1rem auto 0;
   }
   position: relative;
-  z-index: 2;
+  z-index: 5;
+  &__outer{
+    top: 22px;
+    padding: 8px 0px;
+    width: 100%;
+    position: fixed;
+  }
   &__logo{
     height: 40px;
   }
   &__inner{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +50,12 @@
             &:before{
               animation: showLine .45s 0s forwards;
             }
+          }
+        }
+        .button.brand{
+          height: 40px;
+          &:before{
+            content: none;
           }
         }
       }
