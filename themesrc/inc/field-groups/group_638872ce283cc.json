@@ -2078,6 +2078,53 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_63ad7c372f42f": {
+                    "key": "layout_63ad7c372f42f",
+                    "name": "table_link",
+                    "label": "Table with link",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63ad7c372f430",
+                            "label": "Simple content",
+                            "name": "simple_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_63ad7c372f435",
+                            "label": "Table",
+                            "name": "table_name",
+                            "aria-label": "",
+                            "type": "table",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "use_header": 0,
+                            "use_caption": 2
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -2123,5 +2170,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671033921
+    "modified": 1672313952
 }

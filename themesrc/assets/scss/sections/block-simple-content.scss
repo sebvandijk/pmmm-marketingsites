@@ -2,6 +2,53 @@
 .simple-content{
   color: color(Dark);
   padding: 30px 0;
+  &.table-link{
+    .inner{
+      &.centered{
+        padding: 0 140px 0;
+        h4{
+          padding-left: 130px;
+          padding-right: 130px;
+        }
+      }
+      table{
+        &:after{
+          width: 75%;
+        }
+        thead{
+          th{
+            span{
+              font-size: 14px;
+            }
+            &:first-of-type{
+              width: 25%;
+            }
+          }
+        }
+        thead{
+          th{
+            span{
+              font-size: 14px;
+            }
+          }
+        }
+        tbody{
+          font-size: .875rem;
+          td{
+            span{
+              font-size: 14px;
+            }
+            a{
+              font-weight: 600;
+              color: color(Brand);
+              float: right;
+              padding-right: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .inner{
     &.centered{
       padding: 0 270px 36px;

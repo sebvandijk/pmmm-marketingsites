@@ -3,6 +3,8 @@
   background-color: color(Light);
   color: color(Dark);
   padding: 60px 0;
+  width: 100vw;
+  // overflow-x: hidden;
   .inner{
     &.centered{
       padding: 0 270px 36px;
@@ -75,7 +77,7 @@
 .circle-bg{
   width: grid(16);
   height: grid(16);
-  right: -240px;
+  left: -240px;
   top: 0%;
   border-radius: grid(8);
   position: absolute;
