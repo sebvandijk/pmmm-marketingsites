@@ -38,8 +38,20 @@
       a.brand{
         position: absolute;
         bottom: 60px;
+        .home &{
+          overflow: visible;
+        }
         &:hover{
           color: color(Brand);
+        }
+        &:before{
+          position: absolute;
+          width: 100vw;
+          height: 100vh;
+          background: gray;
+          content: '';
+          z-index: -1;
+          left: -60px;
         }
         .home &{
           @extend .button.transparent;

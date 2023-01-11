@@ -16,7 +16,7 @@ $fontprimary: (
         'woff2'
     ),
     use: (
-        'body'
+        'body, .ginput_container input, textarea, .gform_button'
     ),
     types: (
         'normal'
