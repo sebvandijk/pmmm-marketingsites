@@ -4,18 +4,29 @@
   color: color(Dark);
   padding: 60px 0;
   width: 100vw;
-  // overflow-x: hidden;
+  @media  #{$large-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$medium-down}{
+    padding: 2rem 0;
+  }
   .inner{
     &.centered{
       padding: 0 270px 36px;
       @media  #{$large-down}{
-
+        padding: 0 200px 24px!important;
       }
       @media  #{$medium-down}{
-
+        padding: 0 2rem 8px!important;
       }
       @media  #{$small-only}{
-
+        padding: 0 1rem 8px!important;
+      }
+    }
+    &.makewide{
+      @media  #{$large-down}{
+        width: 100%!important;
+        margin: 0 2rem;
       }
     }
   }
@@ -24,6 +35,12 @@
     justify-content: center;
     column-gap: 30px;
     padding: 0 60px;
+    @media  #{$large-down}{
+      padding: 0;
+    }
+    @media  #{$medium-down}{
+      column-gap: 0;
+    }
     div.brand {
       display: flex;
       flex-direction: column;
@@ -35,11 +52,46 @@
       overflow: hidden;
       transition: all .3s ease;
       position: relative;
+      @media  #{$large-down}{
+        width: calc(33% - 20px);
+        padding: 2.5rem 2rem 64px;
+      }
+      @media  #{$medium-down}{
+        width: calc(100%);
+        margin-bottom: 2rem;
+        border-radius: 1.25rem;
+        padding: 2.5rem 2rem 48px;
+      }
+      @media  #{$small-only}{
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        padding: 2rem 1rem 48px;
+      }
       a.brand{
         position: absolute;
         bottom: 60px;
+        @media  #{$large-down}{
+          bottom: 3rem;
+        }
+        @media  #{$medium-down}{
+          bottom: 2rem;
+        }
+        @media  #{$small-only}{
+          bottom: 2.5rem;
+        }
+        .home &{
+          overflow: visible;
+        }
         &:hover{
           color: color(Brand);
+        }
+        &:before{
+          position: absolute;
+          width: 100vw;
+          height: 100vh;
+          content: '';
+          z-index: -1;
+          left: -60px;
         }
         .home &{
           @extend .button.transparent;
@@ -60,6 +112,17 @@
         margin-bottom: 1.5rem;
         .home &{
           height: 1.75rem;
+          @media  #{$large-down}{
+            height: 1.5rem;
+          }
+          @media  #{$medium-down}{
+            height: 1.5rem;
+            margin-bottom: 1.25rem;
+          }
+          @media  #{$small-only}{
+            height: 1.25rem;
+            margin-bottom: 1rem;
+          }
         }
       }
       img {
@@ -68,6 +131,15 @@
         height: 1.75rem * 2;
         .home &{
           height: 1.75rem;
+          @media  #{$large-down}{
+            height: 1.5rem;
+          }
+          @media  #{$medium-down}{
+            height: 1.5rem;
+          }
+          @media  #{$small-only}{
+            height: 1.25rem;
+          }
         }
       }
     }
@@ -85,7 +157,6 @@
   display: block;
   z-index: -1;
   .home &{
-    top: 50%;
     left: -240px;
   }
 }

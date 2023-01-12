@@ -2,26 +2,41 @@
 .wheel-of-fortune{
   color: color(Dark);
   padding: 120px 0 60px;
+  @media  #{$large-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$medium-down}{
+    padding: 2rem 0;
+  }
   .inner{
     padding: 0 60px;
+    @media  #{$large-down}{
+      padding: 0!important;
+    }
+  }
+  .row{
+    @media  #{$medium-down}{
+      flex-direction: column-reverse;
+    }
   }
   .content-holder{
     width: 50%;
     padding: 3rem 60px 120px 60px;
-    @media  #{$large-down}{
-
-    }
     @media  #{$medium-down}{
-
+      width: 100%;
+      padding: 0rem 2rem 2rem;
     }
     @media  #{$small-only}{
-
+      padding: 0rem 1rem 2rem;
     }
   }
   .animation-holder{
     width: 50%;
     overflow: hidden;
     position: relative;
+    @media  #{$medium-down}{
+      width: 100%;
+    }
     .label{
       width: 100%;
       text-align: center;
@@ -31,6 +46,9 @@
         line-height: 1;
         letter-spacing: -.5px;
         padding-bottom: .5rem;
+        @media  #{$small-only}{
+          padding-bottom: 0;
+        }
       }
     }
     .circle{
@@ -42,6 +60,9 @@
       transform: translateX(-50%);
       margin: 3rem 0 5rem;
       box-shadow: 0 12px 90px 8px color(Dark, .25);
+      @media  #{$small-only}{
+        transform: translateX(-50%) scale(.9);
+      }
       &:after{
         content: '';
         display: block;

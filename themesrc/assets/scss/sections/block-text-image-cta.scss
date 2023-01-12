@@ -1,64 +1,97 @@
 // Text-image-cta
 .text-image-cta{
-    color: color(Dark);
-    padding: 60px 0;
-    .home &{
-      background-color: color(Light);
-      z-index: 2!important;
+  color: color(Dark);
+  padding: 60px 0;
+  @media  #{$large-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$medium-down}{
+    padding: 2rem 0;
+  }
+  .home &{
+    background-color: color(Light);
+    z-index: 2!important;
+  }
+  .inner{
+    padding: 0 60px;
+  }
+  .content-holder{
+    width: 50%;
+    padding: 3rem 120px 120px 0;
+    @media  #{$large-down}{
+      padding: 3rem 90px 90px 0;
+      width: 60%;
     }
-    .inner{
-      padding: 0 60px;
+    @media  #{$medium-down}{
+      padding: 3rem 60px 36px 0;
+      width: 100%;
     }
-    .content-holder{
-      width: 50%;
-      padding: 3rem 120px 120px 0;
+    @media  #{$small-only}{
+      padding: 0 0 .5rem;
+      width: 100%;
+    }
+  }
+  .image-holder{
+    border-radius: $border-radius;
+    @media  #{$large-down}{
+      border-radius: 1.25rem;
+      width: 40%;
+    }
+    @media  #{$medium-down}{
+      border-radius: 1rem;
+      min-height: calc(100vw / 3 * 2);
+      width: 100%;
+    }
+    @media  #{$small-only}{
+      min-height: 100vw;
+    }
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: color(Dark);
+    .cta-holder{
+      position: absolute;
+      z-index: 2;
+      background-color: color(Dark);
+      border-radius: $border-radius;
+      padding: 3rem 60px;
+      color: color(Light);
+      left: 60px;
+      bottom: 60px;
+      width: calc(100% - 120px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       @media  #{$large-down}{
-
+        border-radius: 1.25rem;
+        padding: 3rem;
+        width: calc(100% - 96px);
+        left: 3rem;
+        bottom: 3rem;
       }
       @media  #{$medium-down}{
-
+        border-radius: 1rem;
+        padding: 2rem;
+        width: calc(100% - 4rem);
+        left: 2rem;
+        bottom: 2rem;
       }
       @media  #{$small-only}{
-
+        padding: 2rem 1rem;
+        width: calc(100%);
+        left: 0rem;
+        bottom: 0rem;
+        border-radius: 0 0 1rem 1rem;
       }
     }
-    .image-holder{
-      border-radius: $border-radius;
-      width: 50%;
-      overflow: hidden;
-      position: relative;
-      background-color: color(Dark);
-      .cta-holder{
-        position: absolute;
-        z-index: 2;
-        background-color: color(Dark);
-        border-radius: $border-radius;
-        padding: 3rem 60px;
-        color: color(Light);
-        left: 60px;
-        bottom: 60px;
-        width: calc(100% - 120px);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        @media  #{$large-down}{
-
-        }
-        @media  #{$medium-down}{
-
-        }
-        @media  #{$small-only}{
-
-        }
-      }
-      img{
-        position: absolute;
-        min-width: 100%;
-        width: auto;
-        height: calc(100% + 60px);
-        object-fit: cover;
-        left: 50%;
-        transform: translate(-50%, -60px);
-      }
+    img{
+      position: absolute;
+      min-width: 100%;
+      width: auto;
+      height: calc(100% + 60px);
+      object-fit: cover;
+      left: 50%;
+      transform: translate(-50%, -60px);
     }
+  }
 }

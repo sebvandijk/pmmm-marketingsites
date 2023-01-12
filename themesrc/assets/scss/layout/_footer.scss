@@ -12,21 +12,36 @@ footer{
     justify-content: space-between;
     align-items: center;
     @media  #{$large-down}{
-
+      padding: 2rem 60px;
     }
     @media  #{$medium-down}{
-
+      padding: 2rem;
     }
     @media  #{$small-only}{
+      padding: 1.5rem 1rem;
     }
     .logo{
       height: 40px;
+      @media  #{$medium-down}{
+        height: 1.5rem;
+        .big{
+          height: 1.5rem;
+          width: 124px;
+          svg{
+            height: 1.5rem;
+            width: 124px;
+          }
+        }
+      }
     }
     ul{
       display: flex;
       align-items: center;
       list-style: none;
       padding: 0;
+      @media  #{$medium-down}{
+        display: none;
+      }
       li{
         padding-left: 2rem;
         &:first-child{

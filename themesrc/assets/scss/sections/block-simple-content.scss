@@ -43,6 +43,9 @@
               color: color(Brand);
               float: right;
               padding-right: 1.5rem;
+              &:hover{
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -50,6 +53,54 @@
     }
   }
   .inner{
+    .gform_wrapper{
+      .gfield_label{
+        color: color(Dark);
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        .gfield_required{
+          font-style: normal;
+          color: color(Brand);
+        }
+      }
+      .ginput_container{
+        input, select, textarea{
+          border: 1px solid color(Dark, .2);
+          border-radius: 4px;
+          font-size: 1rem;
+          padding: .75rem 1rem .75rem .75rem;
+          color: color(Dark);
+          transition: all .2s ease;
+          margin-bottom: .5rem;
+          &:hover{
+            border-color: color(Dark, .4);
+          }
+        }
+        select{
+          background-color: color(Brand-Grey, .5);
+          appearance: none;
+        }
+        textarea{
+          resize: vertical;
+        }
+      }
+      .ginput_container_select{
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          right: 16px;
+          top: 19px;
+          width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+
+border-top: 5px solid color(Dark);
+        }
+      }
+    }
     &.centered{
       padding: 0 270px 36px;
       @media  #{$large-down}{

@@ -24,6 +24,9 @@
     justify-content: center;
     column-gap: 30px;
     padding: 0 60px;
+    @media  #{$large-down}{
+      padding: 0;
+    }
     div.brand{
       display: flex;
       flex-direction: column;
