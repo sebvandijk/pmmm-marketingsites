@@ -18,6 +18,9 @@
         line-height: 20px;
         height: 20px;
         display: flex;
+        @media  #{$medium-down}{
+          font-size: 10px;
+        }
         a{
           color: color(Light, .5);
           &:hover{
@@ -29,6 +32,9 @@
           position: relative;
           height: 20px;
           width: 1rem;
+          @media  #{$medium-down}{
+            width: 12px;
+          }
           &:before {
             content: "";
             position: absolute;
@@ -39,6 +45,11 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            @media  #{$medium-down}{
+              width: .125rem;
+              height: .125rem;
+              margin-top: 2px;
+            }
           }
         }
       }
@@ -52,6 +63,11 @@
 
 // Intro
 .intro{
+  & + .stats--brands{
+    @media  #{$small-only}{
+      margin-top: -60px;
+    }
+  }
   h1{
     padding-top: 120px;
     max-width: 660px;
@@ -62,7 +78,6 @@
     @media  #{$medium-down}{
       padding-top: 80px;
       max-width: 100%;
-
     }
     @media  #{$small-only}{
       padding-top: 3rem;
@@ -99,6 +114,9 @@
     margin-bottom: 60px;
     overflow: hidden;
     min-height: 660px;
+    @media  #{$medium-down}{
+      min-height: 480px;
+    }
     &:after{
       content: '';
       width: grid(32);
@@ -122,15 +140,6 @@
       left: grid(-6);
       display: block;
       z-index: 1;
-    }
-    @media  #{$large-down}{
-
-    }
-    @media  #{$medium-down}{
-
-    }
-    @media  #{$small-only}{
-
     }
     h1{
       padding-bottom: 1rem;
@@ -170,6 +179,9 @@
           height: auto;
           transform: none;
           object-fit: cover;
+          @media  #{$medium-down}{
+            height: 100%;
+          }
         }
       }
       &:after{
@@ -327,16 +339,12 @@
     .row{
       max-width: 1200px;
       margin: 0 auto;
-      // display: flex;
-      // align-items: flex-start;
       @media  #{$large-down}{
-
-      }
-      @media  #{$medium-down}{
-
+        max-width: 1264px;
+        padding: 0 2rem;
       }
       @media  #{$small-only}{
-
+        padding: 0 0rem;
       }
     }
     .stats-container{
@@ -344,6 +352,10 @@
       position: relative;
       overflow: visible!important;
       padding: 0;
+      @media  #{$medium-down}{
+        width: 100%;
+        margin-top: -60px + 32px!important;
+      }
       .sticky{
         padding: 3rem 60px;
         background-color: color(Brand);
@@ -351,6 +363,13 @@
         position: relative;
         position: sticky;
         top: 64px;
+        @media  #{$medium-down}{
+          width: 100%;
+        }
+        @media  #{$small-only}{
+          margin-top: 0;
+          border-radius: 0!important;
+        }
       }
       @media  #{$large-down}{
 
@@ -372,16 +391,17 @@
       max-width: 600px;
       color: color(Dark);
       @media  #{$large-down}{
-
+        padding: 3rem 0 0 60px;
+        min-width: auto;
+        max-width: calc(100% - 600px);
       }
       @media  #{$medium-down}{
-
+        width: 100%;
+        max-width: 100%;
+        padding: 3rem 0rem 0rem;
       }
       @media  #{$small-only}{
 
-      }
-      h6{
-        // color: color(Brand);
       }
     }
     & + .background-correction{
@@ -397,6 +417,16 @@
       margin-bottom: 60px;
       margin-left: auto;
       margin-right: auto;
+      @media  #{$large-down}{
+        margin-bottom: 0;
+        border-radius: 1.25rem;
+      }
+      @media  #{$medium-down}{
+        border-radius: 1rem;
+      }
+      @media  #{$small-only}{
+        border-radius: 0;
+      }
       .home &{
         max-width: 1320px;
         background-color: color(Brand);
@@ -415,7 +445,8 @@
           border-radius: 1rem;
         }
         @media  #{$small-only}{
-          margin: 3rem 1rem 1rem;
+          border-radius: 0;
+          margin: 3rem 0 1rem;
         }
       }
     }
