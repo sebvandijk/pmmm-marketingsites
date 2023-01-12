@@ -20,14 +20,11 @@
       position: relative;
       margin-top: -360px;
       height: 360px;
-      @media  #{$large-down}{
-        background: green;
-      }
       @media  #{$medium-down}{
-        background: teal;
+
       }
       @media  #{$small-only}{
-        background: violet;
+
       }
     }
   }

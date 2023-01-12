@@ -18,13 +18,27 @@ h1{
   strong, b, span{
     font-weight: 800;
   }
-  // @media  #{$large-down}{
-  // 	font-size: 48px;
-  // }
+  @media  #{$large-down}{
+  	font-size: 48px;
+    letter-spacing: -1.28px;
+    padding-bottom: 1.5rem;
+  }
+  @media  #{$medium-down}{
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding-bottom: 1.25rem;
+  }
   & + h2{
     font-size: 1.5rem;
     line-height: 1.25;
     letter-spacing: -.6px;
+    @media  #{$large-down}{
+      font-size: 1.25rem;
+      letter-spacing: -.5px;
+    }
+    @media  #{$medium-down}{
+      font-size: 16px;
+    }
   }
 }
 
@@ -37,9 +51,16 @@ h2{
   strong, b, span{
     font-weight: 800;
   }
-  // @media  #{$large-down}{
-  // 	font-size: 48px;
-  // }
+  @media  #{$medium-down}{
+  	font-size: 2rem;
+    letter-spacing: -.8px;
+    padding-bottom: 1.25rem;
+  }
+  @media  #{$small-only}{
+  	font-size: 28px;
+    letter-spacing: -.75px;
+    padding-bottom: 1rem;
+  }
 }
 
 h3{
@@ -51,9 +72,16 @@ h3{
   strong, b, span{
     font-weight: 800;
   }
-  // @media  #{$large-down}{
-  // 	font-size: 48px;
-  // }
+  @media  #{$medium-down}{
+  	font-size: 28px;
+    letter-spacing: -.7px;
+    padding-bottom: 1.25rem;
+  }
+  @media  #{$small-only}{
+  	font-size: 24px;
+    letter-spacing: -.6px;
+    padding-bottom: 1rem;
+  }
 }
 
 h4{
@@ -65,6 +93,16 @@ h4{
   strong, b, span{
     font-weight: 800;
   }
+  @media  #{$medium-down}{
+    font-size: 18px;
+    letter-spacing: -.1875px;
+    padding-bottom: 1.25rem;
+  }
+  @media  #{$small-only}{
+    font-size: 18px;
+    letter-spacing: -.1875px;
+    padding-bottom: 1rem;
+  }
 }
 
 h5{
@@ -73,6 +111,14 @@ h5{
   letter-spacing: -0.5px;
   font-weight: 800;
   padding-bottom: .5rem;
+  @media  #{$medium-down}{
+    font-size: 18px;
+    letter-spacing: -.1875px;
+  }
+  @media  #{$small-only}{
+    font-size: 18px;
+    letter-spacing: -.1875px;
+  }
 }
 
 h6{
@@ -83,6 +129,11 @@ h6{
   letter-spacing: 1.2px;
   color: color(Brand);
   margin-bottom: 1.5rem;
+  @media  #{$small-only}{
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
 }
 
 p{
@@ -95,6 +146,10 @@ p{
     font-size: 1.125rem;
     margin-bottom: 1.6875rem;
     font-family: 'Roobert';
+    @media  #{$medium-down}{
+      font-size: 16px;
+      margin-bottom: 1.25rem;
+    }
   }
   &.intro{
     font-size: .875rem;

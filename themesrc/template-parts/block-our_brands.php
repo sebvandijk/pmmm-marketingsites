@@ -17,7 +17,7 @@ if ( isset( $args ) ) {
 		<?= $fields['content'] ?>
 		</div>
 	</div>
-	<div class="inner">
+	<div class="inner makewide">
 	<?php if ( is_array( $fields['brands'] ) ) { ?>
   	<div class="brands row">
 		<?php foreach ( $fields['brands'] as $brand ) { $brand['brand_cta']['icon'] = 'arrow'; ?>

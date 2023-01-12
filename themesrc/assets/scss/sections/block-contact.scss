@@ -2,40 +2,38 @@
 .contact{
   color: color(Dark);
   padding: 30px 0 60px;
+  @media  #{$large-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$medium-down}{
+    padding: 2rem 0;
+  }
   .inner{
     padding: 0 60px;
+    @media  #{$medium-down}{
+      padding: 0;
+    }
     .subpage &{
       .row{
         margin: 0 auto;
         max-width: 720px;
         padding: 0!important;
+        @media  #{$medium-down}{
+          width: 100%;
+          max-width: 100%;
+        }
         h5{
           max-width: 300px;
         }
       }
     }
-    @media  #{$large-down}{
-
-    }
-    @media  #{$medium-down}{
-
-    }
-    @media  #{$small-only}{
-
-    }
   }
   .row{
     justify-content: center;
     align-items: center;
-  }
-  @media  #{$large-down}{
-
-  }
-  @media  #{$medium-down}{
-
-  }
-  @media  #{$small-only}{
-
+    @media  #{$medium-down}{
+      justify-content: flex-start;
+    }
   }
   h5{
     width: auto;
@@ -45,17 +43,19 @@
     font-weight: 400;
     margin-bottom: 0;
     padding-bottom: 0;
+    @media  #{$medium-down}{
+      margin-left: 16px;
+      margin-right: 16px;
+      max-width: 100%;
+      width: calc(100% - 108px);
+    }
     strong, b, span{
       font-weight: 800;
     }
-    @media  #{$large-down}{
-
-    }
+  }
+  .button{
     @media  #{$medium-down}{
-
-    }
-    @media  #{$small-only}{
-
+      margin-top: 1.5rem;
     }
   }
   .image-holder{
@@ -65,6 +65,10 @@
     overflow: hidden;
     background: color(Dark);
     position: relative;
+    @media  #{$medium-down}{
+      width: 72px;
+      height: 72px;
+    }
     img{
       position: absolute;
       min-width: 100%;

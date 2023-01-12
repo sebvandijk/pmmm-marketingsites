@@ -1,12 +1,6 @@
 // header
 .header{
   margin: 0 auto;
-  @media  #{$medium-down}{
-    margin: 1.5rem auto 0;
-  }
-  @media  #{$small-only}{
-    margin: 1rem auto 0;
-  }
   position: relative;
   z-index: 5;
   &__outer{
@@ -14,6 +8,14 @@
     padding: 8px 0px;
     width: 100%;
     position: fixed;
+    @media  #{$medium-down}{
+      top: 22px;
+      padding: 8px 2rem;
+    }
+    @media  #{$small-only}{
+      top: 22px;
+      padding: 8px 1rem;
+    }
   }
   &__logo{
     height: 40px;
@@ -24,8 +26,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media  #{$large-down}{
+      max-width: 1264px;
+      padding: 0 2rem;
+    }
+    @media  #{$medium-down}{
+      padding: 0;
+    }
   }
   &__nav{
+    @media  #{$medium-down}{
+      display: none;
+    }
     ul{
       display: flex;
       align-items: center;

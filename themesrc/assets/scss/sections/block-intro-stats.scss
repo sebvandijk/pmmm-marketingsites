@@ -56,13 +56,16 @@
     padding-top: 120px;
     max-width: 660px;
     @media  #{$large-down}{
+      padding-top: 96px;
 
     }
     @media  #{$medium-down}{
+      padding-top: 80px;
+      max-width: 100%;
 
     }
     @media  #{$small-only}{
-
+      padding-top: 3rem;
     }
   }
   .content{
@@ -82,20 +85,11 @@
   }
   .button-row{
     display: flex;
-    padding-bottom: 60px;
+    padding-bottom: 0rem;
     .button{
       &:first-child{
         margin-right: .75rem;
       }
-    }
-    @media  #{$large-down}{
-
-    }
-    @media  #{$medium-down}{
-
-    }
-    @media  #{$small-only}{
-
     }
   }
   // brands specific
@@ -236,18 +230,46 @@
       left: 50%;
       transform: translate(-50%, -60px);
     }
+    @media  #{$medium-down}{
+      width: 100%;
+      height: calc(100vw / 3 * 2);
+    }
   }
   .stats-container{
     width: 40%;
     padding: 3rem 60px;
+    @media  #{$large-down}{
+      padding: 3rem 3rem;
+    }
+    @media  #{$medium-down}{
+      padding: 3rem 2rem;
+      width: 100%;
+    }
+    @media  #{$small-only}{
+      padding: 1.5rem 1rem;
+    }
     h6{
       color: color(Light);
+      @media  #{$large-down}{
+        margin-bottom: 1.5rem;
+      }
+      @media  #{$medium-down}{
+        margin-bottom: 0rem;
+      }
     }
     .stat{
       width: 100%;
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       border-bottom: 1px solid color(Brand-Dark, .2);
+      @media  #{$large-down}{
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+      }
+      @media  #{$medium-down}{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
       &:last-child{
         border-bottom: 0;
       }
@@ -258,13 +280,12 @@
         font-weight: 700;
         position: relative;
         @media  #{$large-down}{
-
+          font-size: 56px;
+          letter-spacing: -1.48px;
         }
         @media  #{$medium-down}{
-
-        }
-        @media  #{$small-only}{
-
+          font-size: 48px;
+          letter-spacing: -1.28px;
         }
         i{
           font-style: normal;
@@ -288,6 +309,10 @@
         padding-top: 1.25rem;
         color: color(Brand-Dark, .8);
         font-weight: 500;
+        @media  #{$medium-down}{
+          padding-top: .75rem;
+          font-size: 14px;
+        }
       }
     }
   }
@@ -381,15 +406,17 @@
         margin-right: auto;
         border-radius: $border-radius;
         overflow: hidden;
-      }
-      @media  #{$large-down}{
-
-      }
-      @media  #{$medium-down}{
-
-      }
-      @media  #{$small-only}{
-
+        @media  #{$large-down}{
+          max-width: 1440px;
+          margin: 60px 2rem 0;
+          border-radius: 1.25rem;
+        }
+        @media  #{$medium-down}{
+          border-radius: 1rem;
+        }
+        @media  #{$small-only}{
+          margin: 3rem 1rem 1rem;
+        }
       }
     }
   }

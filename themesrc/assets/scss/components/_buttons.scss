@@ -13,7 +13,7 @@
   &.brand, &.gform_button{
     background-color: color(Brand);
     color: color(Light);
-    box-shadow: inset 0 0 0 1.5px color(Brand);
+    box-shadow: inset 0 0 0 1px color(Brand);
     transition: background-color .3s ease;
     border: none;
     cursor: pointer;
@@ -21,14 +21,14 @@
   &.gform_button{
     &:hover{
       color: color(Brand);
-      box-shadow: inset 0 0 0 1.5px color(Brand);
+      box-shadow: inset 0 0 0 1px color(Brand);
       background-color: transparent;
     }
   }
   &.brand-ghost{
     background-color: color(Light);
     color: color(Brand);
-    box-shadow: inset 0 0 0 1.5px color(Brand);
+    box-shadow: inset 0 0 0 1px color(Brand);
     transition: background-color .3s ease;
   }
   &.ghost{
