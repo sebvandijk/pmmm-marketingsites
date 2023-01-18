@@ -65,7 +65,7 @@
 .intro{
   & + .stats--brands{
     @media  #{$small-only}{
-      margin-top: -60px;
+      margin-top: -2rem;
     }
   }
   h1{
@@ -116,6 +116,9 @@
     min-height: 660px;
     @media  #{$medium-down}{
       min-height: 480px;
+    }
+    @media  #{$small-only}{
+      padding-bottom: 60px;
     }
     &:after{
       content: '';
@@ -333,6 +336,9 @@
     background: transparent;
     padding-bottom: 60px;
     z-index: 2!important;
+    @media  #{$medium-down}{
+      padding-bottom: 0;
+    }
     &:after{
       content: none;
     }
@@ -365,10 +371,13 @@
         top: 64px;
         @media  #{$medium-down}{
           width: 100%;
+          padding: 3rem 2rem;
         }
         @media  #{$small-only}{
+          padding: 1.5rem 1rem;
           margin-top: 0;
           border-radius: 0!important;
+          margin-bottom: 1rem;
         }
       }
       @media  #{$large-down}{
@@ -398,10 +407,10 @@
       @media  #{$medium-down}{
         width: 100%;
         max-width: 100%;
-        padding: 3rem 0rem 0rem;
+        padding: 3rem 0rem .5rem;
       }
       @media  #{$small-only}{
-
+        padding: 2rem 1rem .5rem;
       }
     }
     & + .background-correction{
