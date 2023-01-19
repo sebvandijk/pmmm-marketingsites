@@ -5,17 +5,23 @@
   padding: 60px 0 120px;
   margin-bottom: -30px;
   overflow: hidden;
+  @media  #{$medium-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$small-only}{
+    padding: 2rem 0;
+  }
   .inner{
     &.centered{
       padding: 0 270px 36px;
       @media  #{$large-down}{
-
+        padding: 0 200px 1.5rem !important;
       }
       @media  #{$medium-down}{
-
+        padding: 0 2rem 1.5rem !important;
       }
       @media  #{$small-only}{
-
+        padding: 0 1rem 1.5rem !important;
       }
     }
   }
@@ -26,6 +32,10 @@
     padding: 0 60px;
     @media  #{$large-down}{
       padding: 0;
+    }
+    @media  #{$medium-down}{
+      column-gap: 0;
+      flex-direction: column;
     }
     div.brand{
       display: flex;
@@ -39,6 +49,21 @@
       transition: all .3s ease;
       overflow: hidden;
       position: relative;
+      @media  #{$medium-down}{
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 1.25;
+      }
+      @media  #{$small-only}{
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 1rem;
+      }
       a.brand{
         position: relative;
         overflow: initial;

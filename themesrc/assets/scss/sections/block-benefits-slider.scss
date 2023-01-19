@@ -5,17 +5,26 @@
   padding: 120px 0 120px;
   overflow: hidden;
   margin-top: -60px;
+  @media  #{$large-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$small-only}{
+    padding: 3rem 0 2rem;
+  }
   .inner{
     &.centered{
       padding: 0 270px 36px;
       @media  #{$large-down}{
-
+        max-width: 1264px;
+        width: 100%;
+        padding: 0 200px 1.5rem!important;
       }
       @media  #{$medium-down}{
-
+        max-width: 100%;
+        padding: 0 2rem 1.5rem!important;
       }
       @media  #{$small-only}{
-
+        padding: 0 1rem 1.5rem!important;
       }
     }
   }
@@ -25,6 +34,15 @@
     column-gap: 30px;
     padding: 0 60px;
     width: fit-content;
+    @media  #{$medium-down}{
+      padding: 0;
+      column-gap: 1rem;
+    }
+    @media  #{$small-only}{
+      overflow-x: scroll;
+      width: 400vw;
+      padding-bottom: 60px;
+    }
     div.benefit {
       width: 340px;
       background-color: color(Light);
@@ -33,6 +51,15 @@
       padding: 3rem 2.5rem 60px;
       overflow: hidden;
       transition: all .3s ease;
+      @media  #{$medium-down}{
+        width: calc((100vw - 2rem - 4rem) / 3);
+        border-radius: 1.25rem;
+        padding: 2.5rem 2rem 3rem;
+      }
+      @media  #{$small-only}{
+        border-radius: 1rem;
+        width: calc(100vw - 2rem);
+      }
       .image-holder{
         height: 1.75rem * 2;
         width: 100%;

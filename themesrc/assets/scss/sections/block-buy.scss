@@ -3,6 +3,12 @@
   background-color: color(Light);
   color: color(Dark);
   padding: 60px 0 30px;
+  @media  #{$large-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$medium-down}{
+    padding: 2rem 0;
+  }
   .inner{
     &.centered{
       padding: 0 270px 36px;
@@ -11,19 +17,26 @@
       }
       &.additional{
         padding-top: 1rem;
+        @media  #{$small-only}{
+          margin-bottom: 0!important;
+          padding-bottom: 0!important;
+        }
         p{
           font-size: .875rem;
           opacity: .75;
         }
       }
       @media  #{$large-down}{
-
+        max-width: 1264px;
+        width: 100%;
+        padding: 0 200px 1.5rem!important;
       }
       @media  #{$medium-down}{
-
+        max-width: 100%;
+        padding: 0 2rem 1.5rem!important;
       }
       @media  #{$small-only}{
-
+        padding: 0 1rem 1.5rem!important;
       }
     }
   }
@@ -36,7 +49,21 @@
       opacity: .75;
       .content{
         padding-top: 1.5rem;
+        @media  #{$small-only}{
+          padding-top: 1rem;
+          p{
+            font-size: 14px;
+          }
+        }
       }
+    }
+    @media  #{$medium-down}{
+      column-gap: 0;
+      width: 100%!important;
+      padding: 0 2rem;
+    }
+    @media  #{$small-only}{
+      padding: 0 1rem;
     }
     div.package{
       display: flex;
@@ -49,6 +76,16 @@
       overflow: hidden;
       transition: all .3s ease;
       position: relative;
+      @media  #{$medium-down}{
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 2.5rem 0 3rem;
+        border-radius: 1.25;
+      }
+      @media  #{$small-only}{
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+      }
       &.selected{
         .package_line{
           .left{
@@ -69,6 +106,13 @@
           line-height: 1;
           color: color(Light);
           background-color: color(Brand);
+          @media  #{$small-only}{
+            font-size: 10px;
+            overflow-wrap: anywhere;
+            width: 72px;
+            right: -80px;
+            top: -2.75rem;
+          }
         }
         a.button{
           align-self: center;

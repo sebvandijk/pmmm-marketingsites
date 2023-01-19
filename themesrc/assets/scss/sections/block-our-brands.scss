@@ -54,7 +54,7 @@
       position: relative;
       @media  #{$large-down}{
         width: calc(33% - 20px);
-        padding: 2.5rem 2rem 64px;
+        padding: 2.5rem 2rem 108px;
       }
       @media  #{$medium-down}{
         width: calc(100%);
