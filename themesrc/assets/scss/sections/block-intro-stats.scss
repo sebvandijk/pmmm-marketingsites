@@ -65,7 +65,7 @@
 .intro{
   & + .stats--brands{
     @media  #{$small-only}{
-      margin-top: -60px;
+      margin-top: -2rem;
     }
   }
   h1{
@@ -96,6 +96,9 @@
     }
     p{
       color: color(Light, .8);
+      @media  #{$small-only}{
+        font-size: .875rem;
+      }
     }
   }
   .button-row{
@@ -117,6 +120,9 @@
     @media  #{$medium-down}{
       min-height: 480px;
     }
+    @media  #{$small-only}{
+      padding-bottom: 60px;
+    }
     &:after{
       content: '';
       width: grid(32);
@@ -128,6 +134,14 @@
       right: -50%;
       display: block;
       z-index: -1;
+      @media  #{$medium-down}{
+        width: 100%;
+        height: 100%;
+        left: -50%;
+        right: 0;
+        bottom: 0;
+        top: 0;
+      }
     }
     &:before{
       content: '';
@@ -140,6 +154,20 @@
       left: grid(-6);
       display: block;
       z-index: 1;
+      @media  #{$medium-down}{
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        left: 0;
+        background: color(Dark, .5);
+      }
+      @media  #{$small-only}{
+        background: color(Dark, .75);
+      }
     }
     h1{
       padding-bottom: 1rem;
@@ -170,7 +198,6 @@
           height: 100%;
           position: absolute;
           background: color(Dark, .75);
-          background-blend-mode: multiply;
           display: block;
           z-index: 1;
         }
@@ -201,6 +228,11 @@
         object-fit: cover;
         position: absolute;
         right: 0;
+        @media  #{$medium-down}{
+          left: 50%;
+          min-width: 50%;
+          height: 100%;
+        }
       }
     }
   }
@@ -333,6 +365,9 @@
     background: transparent;
     padding-bottom: 60px;
     z-index: 2!important;
+    @media  #{$medium-down}{
+      padding-bottom: 0;
+    }
     &:after{
       content: none;
     }
@@ -365,10 +400,13 @@
         top: 64px;
         @media  #{$medium-down}{
           width: 100%;
+          padding: 3rem 2rem;
         }
         @media  #{$small-only}{
+          padding: 1.5rem 1rem;
           margin-top: 0;
           border-radius: 0!important;
+          margin-bottom: 1rem;
         }
       }
       @media  #{$large-down}{
@@ -398,10 +436,10 @@
       @media  #{$medium-down}{
         width: 100%;
         max-width: 100%;
-        padding: 3rem 0rem 0rem;
+        padding: 3rem 0rem .5rem;
       }
       @media  #{$small-only}{
-
+        padding: 2rem 1rem .5rem;
       }
     }
     & + .background-correction{

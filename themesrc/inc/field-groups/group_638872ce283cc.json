@@ -2058,6 +2058,26 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_63c7d48d15d66",
+                            "label": "Side content",
+                            "name": "side_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
                             "key": "field_6399a5905f724",
                             "label": "Ad Sizes",
                             "name": "ad_sizes",
@@ -2272,5 +2292,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673435990
+    "modified": 1674040509
 }

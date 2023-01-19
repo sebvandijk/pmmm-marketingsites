@@ -9,8 +9,19 @@ if ( isset( $args ) ) {
 
 <!-- simple content -->
 <section id="buy" class="block simple-content">
+		<?php $side = $fields['side_content'];
+			if ( ! empty ( $side ) ) { ?>
+			<div class="inner centered withSide">
+			<div class="side_content">
+			<?= $fields['side_content'] ?>
+			</div>
+			<div class="content withSide">
+		<?php } ?>
+		<?php $side = $fields['side_content'];
+			if ( empty ( $side ) ) { ?>
 	<div class="inner centered">
 		<div class="content">
+			<?php } ?>
 			<?= $fields['simple_content'] ?>
 			<?php if ( is_array( $fields['ad_sizes'] ) ) { ?>
 				<!-- size container -->

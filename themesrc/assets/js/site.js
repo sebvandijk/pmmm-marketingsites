@@ -147,16 +147,74 @@ const initApp = () => {
 		if (ifBenefitsSlider.length > 0) {
 
 		const benefits = document.querySelector('.benefits-slider .benefits')
-		const benefitsWidth = benefits.clientWidth - 1200
+		const benefitsWidthDesktop = benefits.clientWidth - 1200
+		const benefitsWidthTablet = benefits.clientWidth
 
-		gsap.to('.benefits-slider .benefits', {
-			x: - benefitsWidth,
-			scrollTrigger: {
-				trigger: '.benefits-slider .benefits',
-				start: 'top 25%',
-				end: 'bottom 50%',
-				scrub: 1
+		ScrollTrigger.matchMedia({
+			// large up
+			"(min-width: 1025px)": function() {
+				gsap.to('.benefits-slider .benefits', {
+					x: - benefitsWidthDesktop,
+					scrollTrigger: {
+						trigger: '.benefits-slider .benefits',
+						start: 'top 25%',
+						end: 'bottom 50%',
+						scrub: 1
+					}
+				})
 			}
+		})
+
+		ScrollTrigger.matchMedia({
+			// medium down
+			"(max-width: 1024px)": function() {
+				gsap.to('.benefits-slider .benefits', {
+					x: '-32.5vw',
+					scrollTrigger: {
+						trigger: '.benefits-slider .benefits',
+						start: 'top 50%',
+						end: 'bottom 25%',
+						scrub: 1
+					}
+				})
+			}
+		})
+
+		ScrollTrigger.matchMedia({
+			// small only
+			"(max-width: 750px)": function() {
+				gsap.to('.benefits-slider .benefits', {
+					x: '0',
+					scrollTrigger: {
+						trigger: '.benefits-slider .benefits',
+						start: 'top 50%',
+						end: 'bottom 25%',
+						scrub: 1
+					}
+				})
+			}
+		})
+	}
+
+	// menu
+	let menuArrows = document.querySelectorAll('.menu__arrow')
+	if (menuArrows.length > 0) {
+		for (let index = 0; index < menuArrows.length; index++) {
+			const menuArrow = menuArrows[index]
+			menuArrow.addEventListener('click', function (e) {
+				menuArrow.parentElement.classList.toggle('_active')
+			})
+		}
+	}
+
+	// < menu burger
+	const iconMenu = document.querySelector('.menu__icon')
+	const menuBody = document.querySelector('.nav--top')
+	if (iconMenu) {
+		iconMenu.addEventListener('click', function (e) {
+			document.body.classList.toggle('lock')
+			iconMenu.classList.toggle('_active')
+			menuBody.classList.toggle('_active')
 		})
 	}
 

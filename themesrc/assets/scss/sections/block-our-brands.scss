@@ -54,7 +54,7 @@
       position: relative;
       @media  #{$large-down}{
         width: calc(33% - 20px);
-        padding: 2.5rem 2rem 64px;
+        padding: 2.5rem 2rem 108px;
       }
       @media  #{$medium-down}{
         width: calc(100%);
@@ -66,6 +66,7 @@
         margin-bottom: 1rem;
         border-radius: 1rem;
         padding: 2rem 1rem 48px;
+        align-items: flex-start;
       }
       a.brand{
         position: absolute;
@@ -74,10 +75,12 @@
           bottom: 3rem;
         }
         @media  #{$medium-down}{
-          bottom: 2rem;
+          position: static!important;
+          bottom: auto;
         }
         @media  #{$small-only}{
-          bottom: 2.5rem;
+          position: static!important;
+          bottom: auto;
         }
         .home &{
           overflow: visible;
