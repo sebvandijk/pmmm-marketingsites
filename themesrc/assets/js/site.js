@@ -196,5 +196,27 @@ const initApp = () => {
 		})
 	}
 
+	// menu
+	let menuArrows = document.querySelectorAll('.menu__arrow')
+	if (menuArrows.length > 0) {
+		for (let index = 0; index < menuArrows.length; index++) {
+			const menuArrow = menuArrows[index]
+			menuArrow.addEventListener('click', function (e) {
+				menuArrow.parentElement.classList.toggle('_active')
+			})
+		}
+	}
+
+	// < menu burger
+	const iconMenu = document.querySelector('.menu__icon')
+	const menuBody = document.querySelector('.nav--top')
+	if (iconMenu) {
+		iconMenu.addEventListener('click', function (e) {
+			document.body.classList.toggle('lock')
+			iconMenu.classList.toggle('_active')
+			menuBody.classList.toggle('_active')
+		})
+	}
+
 }
 document.addEventListener('DOMContentLoaded', initApp)
