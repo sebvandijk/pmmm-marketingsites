@@ -104,6 +104,10 @@
   .button-row{
     display: flex;
     padding-bottom: 0rem;
+    @media  #{$small-only}{
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .button{
       &:first-child{
         margin-right: .75rem;

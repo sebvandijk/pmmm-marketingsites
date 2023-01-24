@@ -38,9 +38,10 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 						</g>
 					</svg>
 				</div>
-				<?= $fields['cta_scroll'] ?>
-			</a>
-		</div>
+					<?= $fields['cta_scroll'] ?>
+				</a>
+				<?php if ($fields['cta2_link']): ?><?= button( $fields['cta2_link'], 'naked' ) ?><?php endif; ?>
+			</div>
 		<?php endif; ?>
 		<?php if ($fields['cta1_color']): ?>
 		<div class="button-row">
