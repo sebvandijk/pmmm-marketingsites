@@ -1,9 +1,9 @@
-name: Deploy to maXusStaging
+name: Deploy to maxus
 
 on:
   push:
     branches:
-      - maXusStaging
+      - maxus
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
     env:
       FTP_SERVER: sftp.flywheelsites.com
       FTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-      FTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}  
+      FTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
   steps:
     - uses: MatiseAms/checkout@master
 
