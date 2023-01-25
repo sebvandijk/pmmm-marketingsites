@@ -17,7 +17,7 @@ $legal_menu = get_menu_items_by_registered_slug( 'footer_legal_menu' );
   <div class="inner">
     <a class="logo" href="<?= home_url() ?>">
       <span class="sr-only">Homepage</span>
-      <div class="big"><?= svg( 'pmmm-marketing' ) ?></div>
+      <div class="big"><?= svg( 'maxus-media' ) ?></div>
     </a>
     <?php if ( $legal_menu ): ?>
       <ul class="nav__list nav__list--main">

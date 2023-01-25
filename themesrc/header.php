@@ -45,8 +45,7 @@
         <div class="header__logo column">
           <a href="<?= home_url() ?>">
             <span class="sr-only">Homepage</span>
-            <div class="big"><?= svg( 'pmmm-marketing' ) ?></div>
-
+            <div class="big"><?= svg( 'maxus-media' ) ?></div>
           </a>
         </div>
         <div class="header__nav column">

@@ -3,8 +3,8 @@
     <title>turn 36</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+            <stop stop-color="#0d4c8c" offset="0%"></stop>
+            <stop stop-color="#0d4c8c" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="1440*900" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -13,9 +13,9 @@
                 <g id="model" transform="translate(263.000000, 844.000000)">
                     <g id="turn-36" transform="translate(0.000000, 26.000000)">
                         <path d="M187,12 C190.355848,12 193.690247,12.0918349 197.000821,12.2731288 L197.000622,20.2858899 C193.691278,20.0961648 190.356869,20 187,20 C92.007023,20 15,97.007023 15,192 C15,286.992977 92.007023,364 187,364 C190.356869,364 193.691278,363.903835 197.000622,363.71411 L197.000821,371.726871 C193.690247,371.908165 190.355848,372 187,372 C87.588745,372 7,291.411255 7,192 C7,92.588745 87.588745,12 187,12 Z" id="circ" fill="url(#linearGradient-1)"></path>
-                        <polygon id="triangle" fill="#FFFFFF" transform="translate(189.793604, 16.442463) rotate(90.000000) translate(-189.793604, -16.442463) " points="189.793604 0.442463484 205.793604 32.4424635 173.793604 32.4424635"></polygon>
+                        <polygon id="triangle" fill="#0d4c8c" transform="translate(189.793604, 16.442463) rotate(90.000000) translate(-189.793604, -16.442463) " points="189.793604 0.442463484 205.793604 32.4424635 173.793604 32.4424635"></polygon>
                         <path d="M367,12 C370.355848,12 373.690247,12.0918349 377.000821,12.2731288 L377.000622,20.2858899 C373.691278,20.0961648 370.356869,20 367,20 C272.007023,20 195,97.007023 195,192 C195,286.992977 272.007023,364 367,364 C370.356869,364 373.691278,363.903835 377.000622,363.71411 L377.000821,371.726871 C373.690247,371.908165 370.355848,372 367,372 C267.588745,372 187,291.411255 187,192 C187,92.588745 267.588745,12 367,12 Z" id="circ" fill="url(#linearGradient-1)" transform="translate(282.000410, 192.000000) rotate(-180.000000) translate(-282.000410, -192.000000) "></path>
-                        <polygon id="triangle" fill="#FFFFFF" transform="translate(187.000000, 368.000000) rotate(-90.000000) translate(-187.000000, -368.000000) " points="187 352 203 384 171 384"></polygon>
+                        <polygon id="triangle" fill="#0d4c8c" transform="translate(187.000000, 368.000000) rotate(-90.000000) translate(-187.000000, -368.000000) " points="187 352 203 384 171 384"></polygon>
                     </g>
                 </g>
             </g>

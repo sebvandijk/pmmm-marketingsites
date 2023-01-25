@@ -33,7 +33,6 @@
   .brands {
     display: flex;
     justify-content: center;
-    column-gap: 30px;
     padding: 0 60px;
     @media  #{$large-down}{
       padding: 0;
@@ -44,7 +43,7 @@
     div.brand {
       display: flex;
       flex-direction: column;
-      width: 340px;
+      width: 740px;
       background-color: color(Light);
       border-radius: $border-radius;
       box-shadow: $box-shadow;
@@ -53,7 +52,7 @@
       transition: all .3s ease;
       position: relative;
       @media  #{$large-down}{
-        width: calc(33% - 20px);
+        width: calc(100%);
         padding: 2.5rem 2rem 108px;
       }
       @media  #{$medium-down}{

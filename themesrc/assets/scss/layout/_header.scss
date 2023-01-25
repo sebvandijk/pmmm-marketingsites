@@ -25,6 +25,7 @@ body{
   }
   &__logo{
     height: 40px;
+    padding: 10px 0 8px;
     @media  #{$medium-down}{
       z-index: 6;
     }

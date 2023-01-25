@@ -133,7 +133,7 @@
       height: grid(32);
       border-radius: grid(16);
       position: absolute;
-      background: radial-gradient(circle, rgba(32,84,121,1) 0%, rgba(6,29,39,1) 50%);
+      background: radial-gradient(circle, #9e8600 0%, rgba(174,153,31,0) 50%);
       top: grid(-16);
       right: -50%;
       display: block;
@@ -153,7 +153,7 @@
       height: grid(24);
       border-radius: grid(6);
       position: absolute;
-      background: radial-gradient(circle, rgba(6,29,39,1) 0%, rgba(6,29,39,0) 50%);
+      background: radial-gradient(circle, #9e8600 0%, rgba(174,153,31,0) 50%);
       top: 0;
       left: grid(-6);
       display: block;
@@ -252,7 +252,7 @@
     height: grid(20);
     border-radius: grid(10);
     position: absolute;
-    background: radial-gradient(circle, rgba(183,20,44,1) 0%, rgba(242,17,43,0) 50%);
+    background: radial-gradient(circle, #9e8600 0%, rgba(174,153,31,0) 50%);
     bottom: 0;
     transform: translateY(50%);
     right: -50%;

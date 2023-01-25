@@ -1,5 +1,8 @@
 // Footer
 footer{
+  &.dark-bg{
+    background-color: color(BlueBrand);
+  }
   position: relative;
   z-index: 2;
   .inner{
