@@ -12,6 +12,7 @@ on:
           FTP_SERVER: sftp.flywheelsites.com
           FTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          PORT: 22
         steps:
           - uses: MatiseAms/checkout@master
 
