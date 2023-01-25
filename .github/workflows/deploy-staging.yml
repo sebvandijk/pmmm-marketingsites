@@ -1,4 +1,4 @@
-name: Deploy to production
+name: Deploy to staging
 
 on:
   push:
@@ -12,6 +12,7 @@ jobs:
       FTP_SERVER: sftp.flywheelsites.com
       FTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
       FTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+      PORT: 22
     steps:
       - uses: MatiseAms/checkout@master
 
@@ -20,8 +21,6 @@ jobs:
         uses: MatiseAms/setup-node@master
         with:
           node-version: 13.x
-      - name: Rebuild Sass
-        run: npm rebuild node-sass --force
       - name: npm install
         run: npm ci
         env:
@@ -35,4 +34,4 @@ jobs:
           METHOD: sftp
           LOCAL_DIR: dist/pmmm-marketing
           REMOTE_DIR: sebmatise/pmmm/wp-content/themes/pmmm-marketing
-          ARGS: --verbose
+          ARGS: --verbosee
