@@ -27,10 +27,10 @@ jobs:
     # Deploy
     - name: npm build
       run: npm run build
-             - name: sftp theme to flywheel
-             uses: MatiseAms/FTP-Deploy-Action@master
-             env:
-               METHOD: sftp
-               LOCAL_DIR: dist/pmmm-marketing
-               REMOTE_DIR: timborst1/maxus/wp-content/themes/pmmm-marketing
-               ARGS: --verbose
+    - name: sftp theme to flywheel
+    uses: MatiseAms/FTP-Deploy-Action@master
+    env:
+      METHOD: sftp
+      LOCAL_DIR: dist/pmmm-marketing
+      REMOTE_DIR: timborst1/maxus/wp-content/themes/pmmm-marketing
+      ARGS: --verbose
