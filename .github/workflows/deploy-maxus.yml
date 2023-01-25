@@ -3,7 +3,7 @@ name: Deploy to maxus
 on:
   push:
     branches:
-      - maxus
+      - maXus
 
       jobs:
         build:
