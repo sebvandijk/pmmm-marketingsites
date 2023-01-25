@@ -34,4 +34,4 @@ jobs:
           METHOD: sftp
           LOCAL_DIR: dist/pmmm-marketing
           REMOTE_DIR: sebmatise/pmmm/wp-content/themes/pmmm-marketing
-          ARGS: --verbosee
+          ARGS: --verbose
