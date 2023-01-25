@@ -27,7 +27,7 @@ on:
                   # Deploy
                   - name: npm build
                   run: npm run build
-                - name: sftp theme to flywheel
+                  - name: sftp theme to flywheel
                   uses: MatiseAms/FTP-Deploy-Action@master
                   env:
                     METHOD: sftp
