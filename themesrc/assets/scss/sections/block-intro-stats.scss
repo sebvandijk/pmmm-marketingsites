@@ -153,7 +153,7 @@
       height: grid(24);
       border-radius: grid(6);
       position: absolute;
-      background: radial-gradient(circle, #9e8600 0%, rgba(174,153,31,0) 50%);
+      background: radial-gradient(circle, #102F4F 0%, rgba(16,47,79,0) 50%);
       top: 0;
       left: grid(-6);
       display: block;
@@ -193,7 +193,7 @@
       left: 0;
       &.yes{
         width: 100%;
-        background-color: color(Brand);
+        // background-color: color(Brand);
         &:before{
           content: '';
           left: 0;
