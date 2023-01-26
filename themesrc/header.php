@@ -32,7 +32,7 @@
     />
     <script>
         window.markerConfig = {
-            project: '63d1451ba189f8eba0841711',
+            project: '63d2347bd3d532a8f8336f00',
             source: 'snippet'
         };
     </script>
@@ -55,6 +55,7 @@
             }
         }(window, document);
     </script>
+	
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class( ! is_front_page() ? 'subpage' : '' ); ?>>
