@@ -355,7 +355,7 @@
       }
       .size{
         margin: 0 10px;
-        max-width: 160px;
+        max-width: 150px;
         @media  #{$medium-down}{
           max-width: 100%;
           width: calc((100vw - 2rem - 4rem) / 4);
@@ -365,10 +365,9 @@
           }
         }
         @media  #{$small-only}{
-          max-width: auto;
+          max-width: 100%;
           margin-bottom: 1rem;
           width: calc((100vw - 3rem) / 2);
-          background: red;
           &:nth-child(even){
             margin-right: 0;
           }
