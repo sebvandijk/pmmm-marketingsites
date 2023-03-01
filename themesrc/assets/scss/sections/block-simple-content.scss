@@ -344,7 +344,7 @@
       margin-top: 30px;
       margin-bottom: 60px;
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       @media  #{$medium-down}{
         width: calc(100% + 1rem);
         margin-left: 0;
@@ -355,18 +355,20 @@
       }
       .size{
         margin: 0 10px;
-        max-width: 122px;
+        max-width: 160px;
         @media  #{$medium-down}{
           max-width: 100%;
-          width: calc((100vw - 2rem - 2rem - 4rem) / 5);
+          width: calc((100vw - 2rem - 4rem) / 4);
           margin: 0 1rem 0 0;
           &:nth-child(5), &:last-of-type{
             margin-right: 0;
           }
         }
         @media  #{$small-only}{
+          max-width: auto;
           margin-bottom: 1rem;
           width: calc((100vw - 3rem) / 2);
+          background: red;
           &:nth-child(even){
             margin-right: 0;
           }
@@ -393,17 +395,19 @@
           }
         }
         .image-holder{
-          max-width: 122px;
+          max-width: 160px;
           @media  #{$medium-down}{
-            max-width: 100%;
+            max-width: auto;
+            width: calc((100vw - 3rem) / 2);
           }
           img{
-            max-width: 122px;
+            max-width: 160px;
             width: 100%;
             height: auto;
             object-fit: contain;
             @media  #{$medium-down}{
-              max-width: 100%;
+              max-width: auto;
+              width: calc((100vw - 3rem) / 2);
             }
           }
         }
