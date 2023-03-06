@@ -38,23 +38,20 @@
   h5{
     width: auto;
     max-width: 420px;
-    margin-left: 30px;
     margin-right: 60px;
     font-weight: 400;
     margin-bottom: 0;
     padding-bottom: 0;
     @media  #{$medium-down}{
-      margin-left: 16px;
       margin-right: 16px;
       max-width: 100%;
-      width: calc(100% - 108px);
     }
     strong, b, span{
       font-weight: 800;
     }
   }
   .button{
-    @media  #{$medium-down}{
+    @media  #{$small-only}{
       margin-top: 1.5rem;
     }
   }

@@ -14,9 +14,6 @@ $fields['contact_cta']['icon'] = 'arrow';
 <section class="block contact">
 	<div class="inner">
 		<div class="row">
-			<div class="image-holder">
-				<?= $image ?>
-			</div>
 			<h5><?= $fields['content'] ?></h5>
 			<?= button( $fields['contact_cta'], 'brand' ) ?>
 		</div>
@@ -25,6 +22,6 @@ $fields['contact_cta']['icon'] = 'arrow';
 
 <!-- <pre style="background: black;"> -->
 <?php
-// debug( $fields ) 
+// debug( $fields )
 ?>
 <!-- </pre> -->
