@@ -17,7 +17,7 @@ if ( isset( $args ) ) {
 		<?= $fields['content'] ?>
 		</div>
 	</div>
-	<div class="inner">
+	<div class="inner mobileDoThings">
 	<?php if ( is_array( $fields['benefits'] ) ) { ?>
   	<div class="benefits row">
 		<?php foreach ( $fields['benefits'] as $benefit ) { $benefit['benefit_cta']['icon'] = 'arrow'; ?>
