@@ -222,7 +222,7 @@
                         },
                         {
                             "key": "field_638872ce34d27",
-                            "label": "Stats label",
+                            "label": "Side label",
                             "name": "stats_label",
                             "aria-label": "",
                             "type": "text",
@@ -242,7 +242,7 @@
                         },
                         {
                             "key": "field_6388789ed0cab",
-                            "label": "Stats title",
+                            "label": "Side title",
                             "name": "stats_title",
                             "aria-label": "",
                             "type": "text",
@@ -262,7 +262,7 @@
                         },
                         {
                             "key": "field_638878bed0cac",
-                            "label": "Stats content",
+                            "label": "Side content",
                             "name": "stats_content",
                             "aria-label": "",
                             "type": "wysiwyg",
@@ -282,10 +282,10 @@
                         },
                         {
                             "key": "field_638872ce34d6a",
-                            "label": "Stat",
+                            "label": "Side (red) content",
                             "name": "stat",
                             "aria-label": "",
-                            "type": "repeater",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -294,79 +294,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 3,
-                            "layout": "table",
-                            "button_label": "Add stat",
-                            "rows_per_page": 20,
-                            "sub_fields": [
-                                {
-                                    "key": "field_638872ce531e1",
-                                    "label": "Number",
-                                    "name": "number",
-                                    "aria-label": "",
-                                    "type": "number",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "min": "",
-                                    "max": "",
-                                    "step": "",
-                                    "parent_repeater": "field_638872ce34d6a"
-                                },
-                                {
-                                    "key": "field_638872ce5322b",
-                                    "label": "add plus",
-                                    "name": "plus",
-                                    "aria-label": "",
-                                    "type": "true_false",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "message": "",
-                                    "default_value": 0,
-                                    "ui": 0,
-                                    "ui_on_text": "",
-                                    "ui_off_text": "",
-                                    "parent_repeater": "field_638872ce34d6a"
-                                },
-                                {
-                                    "key": "field_638872ce5326f",
-                                    "label": "Label",
-                                    "name": "label",
-                                    "aria-label": "",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "parent_repeater": "field_638872ce34d6a"
-                                }
-                            ]
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -2292,5 +2224,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674040509
+    "modified": 1680007693
 }
