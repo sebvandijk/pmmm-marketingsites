@@ -6,7 +6,6 @@
 if ( isset( $args ) ) {
 	$fields = $args;
 }
-$fields['cta1_color']['icon'] = 'arrow';
 if ($fields['cta2_link']):
 $fields['cta2_link']['icon']  = 'arrow';
 endif;
