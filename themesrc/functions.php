@@ -96,3 +96,13 @@ function add_slug_body_class( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+// dirty trans
+function multi_change_translate_text( $translated ) {
+$text = array(
+'View more' => 'Lees meer',
+);
+$translated = str_ireplace( array_keys( $text ), $text, $translated );
+return $translated;
+}
+add_filter('gettext', 'multi_change_translate_text', 20 );
