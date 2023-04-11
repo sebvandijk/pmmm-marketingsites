@@ -9,7 +9,7 @@ if ( isset( $args ) ) {
 
 <!-- other brands -->
 <section class="block other-brands">
-	<div class="circle-bg"></div>
+	<!-- <div class="circle-bg"></div> -->
 	<div class="inner centered">
 		<h6><?= $fields['label'] ?></h6>
 		<h2><?= $fields['title'] ?></h2>

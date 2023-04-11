@@ -300,6 +300,29 @@
   .stats-container{
     width: 40%;
     padding: 3rem 60px;
+    ul{
+      position: relative;
+      list-style: none;
+      padding: 0 0 0 1rem;
+      margin: 0;
+      li{
+        margin-bottom: .5rem!important;
+        position: relative;
+        &:before{
+          content: '✔';
+          color: color(Light);
+          background: none;
+          font-size: 12px;
+          position: absolute;
+          top: 3px;
+          left: -1rem;
+        }
+
+      }
+    }
+    p{
+      margin-bottom: 0;
+    }
     @media  #{$large-down}{
       padding: 3rem 3rem;
     }

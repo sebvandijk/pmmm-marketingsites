@@ -210,11 +210,11 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_636a492805f0b",
-                            "label": "Stats label",
-                            "name": "stats_label",
+                            "key": "field_636a493905f0c",
+                            "label": "Stat content",
+                            "name": "stat",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -224,98 +224,10 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "Bereik de beslissers",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_636a493905f0c",
-                            "label": "Stat",
-                            "name": "stat",
-                            "aria-label": "",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 3,
-                            "layout": "table",
-                            "button_label": "Add stat",
-                            "sub_fields": [
-                                {
-                                    "key": "field_636a494905f0d",
-                                    "label": "Number",
-                                    "name": "number",
-                                    "aria-label": "",
-                                    "type": "number",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "min": "",
-                                    "max": "",
-                                    "step": "",
-                                    "parent_repeater": "field_636a493905f0c"
-                                },
-                                {
-                                    "key": "field_636a495705f0e",
-                                    "label": "add plus",
-                                    "name": "plus",
-                                    "aria-label": "",
-                                    "type": "true_false",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "message": "",
-                                    "default_value": 0,
-                                    "ui": 0,
-                                    "ui_on_text": "",
-                                    "ui_off_text": "",
-                                    "parent_repeater": "field_636a493905f0c"
-                                },
-                                {
-                                    "key": "field_636a497705f0f",
-                                    "label": "Label",
-                                    "name": "label",
-                                    "aria-label": "",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "parent_repeater": "field_636a493905f0c"
-                                }
-                            ],
-                            "rows_per_page": 20
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -1226,5 +1138,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680005065
+    "modified": 1681213473
 }
