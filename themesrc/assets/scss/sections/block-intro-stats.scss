@@ -347,6 +347,9 @@
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       border-bottom: 1px solid color(Brand-Dark, .2);
+      & + ul{
+        margin-top: 1.5rem!important;
+      }
       @media  #{$large-down}{
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
