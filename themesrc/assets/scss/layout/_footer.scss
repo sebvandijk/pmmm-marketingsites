@@ -28,6 +28,8 @@ footer{
     }
     .logo{
       height: 40px;
+      display: flex;
+      align-items: center;
       @media  #{$medium-down}{
         height: 1.5rem;
         .big{
