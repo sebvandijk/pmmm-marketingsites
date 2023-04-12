@@ -70,7 +70,8 @@ body{
           left: 0;
           transition: left .3s .15s ease;
           &:before{
-            top: 0;
+            height: calc(100vh + 2rem);
+            top: -2rem;
             left: 0;
             transition: .3s ease;
             border-radius: 0vw;
@@ -109,6 +110,7 @@ body{
         -webkit-transition: all .3s ease 0s;
         -o-transition: all .3s ease 0s;
         transition: all .3s ease 0s;
+        background: white;
       }
       &:after, &:before{
         content: '';

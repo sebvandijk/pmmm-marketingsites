@@ -60,19 +60,13 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 <?php if ($fields['stats_title']): ?>
 	<section class="block stats stats--brands">
 		<div class="row">
-			<?php if ( is_array( $fields['stat'] ) ) { ?>
+			<?php if ($fields['stat']): ?>
 				<div class="stats-container inner-round">
 					<div class="sticky">
-						<?php foreach ( $fields['stat'] as $stat ) { ?>
-							<div class="stat">
-								<span class="number"><?= $stat['number'] ?><i><?= $stat['plus'] ? '<sup>+</sup>' : false ?></i></span>
-								<div class="label">
-									<?= $stat['label'] ?>
-								</div>
-							</div>
-						<?php } ?>
+						<?= $fields['stat'] ?>
 					</div>
 				</div>
+				<?php endif; ?>
 				<div class="content-holder">
 					<h6><?= $fields['stats_label'] ?></h6>
 					<h2><?= $fields['stats_title'] ?></h2>
@@ -80,7 +74,6 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 						<?= $fields['stats_content'] ?>
 					</div>
 				</div>
-			<?php } ?>
 		</div>
 	</section>
 <?php endif; ?>
