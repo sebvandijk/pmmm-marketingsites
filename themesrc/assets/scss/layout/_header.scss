@@ -58,8 +58,8 @@ body{
           content: '';
           position: fixed;
           width: 100vw;
-          height: 100vh;
-          top: -100vh;
+          height: calc(100vh + 32px);
+          top: calc(-100vh - 32px);
           left: -100%;
           background: color(Dark, .95);
           transition: .3s .3s ease;
@@ -69,7 +69,7 @@ body{
           left: 0;
           transition: left .3s .15s ease;
           &:before{
-            top: 0;
+            top: -32px;
             left: 0;
             transition: .3s ease;
             border-radius: 0vw;
@@ -108,6 +108,7 @@ body{
         -webkit-transition: all .3s ease 0s;
         -o-transition: all .3s ease 0s;
         transition: all .3s ease 0s;
+        background: white;
       }
       &:after, &:before{
         content: '';
