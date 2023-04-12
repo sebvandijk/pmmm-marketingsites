@@ -8,22 +8,15 @@ if ( isset( $args ) ) {
 ?>
 
 <!-- other brands -->
-<section class="block other-brands">
-	<div class="inner centered">
-		<h6><?= $fields['label'] ?></h6>
-		<h2><?= $fields['title'] ?></h2>
-		<div class="content">
-		<?= $fields['content'] ?>
-		</div>
-	</div>
+<section class="block other-brands contact">
 	<div class="inner">
 	<?php if ( is_array( $fields['brands'] ) ) { ?>
   	<div class="brands row">
-		<?php foreach ( $fields['brands'] as $brand ) { $brand['brand_cta']['icon'] = 'arrow'; ?>
+		<?php foreach ( $fields['brands'] as $brand ) { ?>
     	<div class="brand">
-				<h5><?= $brand['brand_title'] ?></h5>
 				<div class="image-holder"><?= wp_get_attachment_image( $brand['brand_logo'], 'small' ) ?></div>
-				<?= button( $brand['brand_cta'], 'brand' ) ?>
+				<h5><?= $brand['brand_title'] ?></h5>
+				<?= $brand['brand_content'] ?>
       </div>
 			<?php } ?>
     </div>

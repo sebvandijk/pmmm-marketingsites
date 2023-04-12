@@ -94,7 +94,6 @@ body{
         cursor: pointer;
         right: 0;
         top: 8px;
-        background: color(Brand);
         right: 2rem;
         border-radius: .25rem;
       }
@@ -110,7 +109,6 @@ body{
         -webkit-transition: all .3s ease 0s;
         -o-transition: all .3s ease 0s;
         transition: all .3s ease 0s;
-        background-color: #fff
       }
       &:after, &:before{
         content: '';

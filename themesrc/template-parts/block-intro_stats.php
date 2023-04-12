@@ -38,19 +38,9 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 		<div class="image-holder">
 			<?= $image ?>
 		</div>
-		<?php if ( is_array( $fields['stat'] ) ) { ?>
     <div class="stats-container">
-			<h6><?= $fields['stats_label'] ?></h6>
-			<?php foreach ( $fields['stat'] as $stat ) { ?>
-      <div class="stat">
-      	<span class="number"><?= $stat['number'] ?><i><?= $stat['plus'] ? '<sup>+</sup>' : false ?></i></span>
-				<div class="label">
-					<?= $stat['label'] ?>
-				</div>
-      </div>
-			<?php } ?>
+			<?= $fields['stat'] ?>
     </div>
-		<?php } ?>
 	</div>
 </section>
 <!-- end stats -->
