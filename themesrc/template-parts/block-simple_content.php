@@ -23,21 +23,6 @@ if ( isset( $args ) ) {
 		<div class="content">
 			<?php } ?>
 			<?= $fields['simple_content'] ?>
-			<?php if ( is_array( $fields['ad_sizes'] ) ) { ?>
-				<!-- size container -->
-				<div class="size-container">
-					<?php foreach ( $fields['ad_sizes'] as $ad_size ) { ?>
-						<div class="size">
-							<h5 class="title"><strong><?= $ad_size['title'] ?></strong></h5>
-							<div class="image-holder"><?= wp_get_attachment_image( $ad_size['ad_image'], 'large' ) ?></div>
-							<div class="content">
-								<?= $ad_size['content'] ?>
-							</div>
-						</div>
-					<?php } ?>
-				</div>
-				<!-- end size container -->
-			<?php } ?>
 			<!-- table -->
 			<?php $table = $fields['table_name'];
 			if ( ! empty ( $table ) ) {
@@ -88,6 +73,21 @@ if ( isset( $args ) ) {
 				echo '</table>';
 			}?>
 			<!-- end table -->
+			<?php if ( is_array( $fields['ad_sizes'] ) ) { ?>
+				<!-- size container -->
+				<div class="size-container">
+					<?php foreach ( $fields['ad_sizes'] as $ad_size ) { ?>
+						<div class="size">
+							<h5 class="title"><strong><?= $ad_size['title'] ?></strong></h5>
+							<div class="image-holder"><?= wp_get_attachment_image( $ad_size['ad_image'], 'large' ) ?></div>
+							<div class="content">
+								<?= $ad_size['content'] ?>
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+				<!-- end size container -->
+			<?php } ?>
 		</div>
 	</div>
 </section>
