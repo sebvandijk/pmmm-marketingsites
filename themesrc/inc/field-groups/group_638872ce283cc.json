@@ -121,6 +121,33 @@
                             "append": ""
                         },
                         {
+                            "key": "field_6446d1915f230",
+                            "label": "CTA (scroll position)",
+                            "name": "cta_scroll_position",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Use '#buy' or '#top'",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6388c8c362b54",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_638872ce34c20",
                             "label": "CTA1 (color)",
                             "name": "cta1_color",
@@ -2325,5 +2352,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681243656
+    "modified": 1682363454
 }
