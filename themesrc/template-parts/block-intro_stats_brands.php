@@ -58,7 +58,7 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 
 <!-- stats -->
 <?php if ($fields['stats_title']): ?>
-	<section class="block stats stats--brands">
+	<section id="top" class="block stats stats--brands">
 		<div class="row">
 			<?php if ($fields['stat']): ?>
 				<div class="stats-container inner-round">
