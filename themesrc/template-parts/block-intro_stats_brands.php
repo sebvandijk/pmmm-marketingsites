@@ -23,7 +23,7 @@ $image                        = wp_get_attachment_image( $fields['image'], 'larg
 		</div>
 		<?php if ($fields['cta_scroll']): ?>
 			<div class="button-row">
-				<a href="#" id="to-buy" class="button scroll-icon arrow brand">
+				<a href="<?= $fields['cta_scroll_position'] ?>" class="button scroll-icon arrow brand">
 					<div class="svg-holder">
 						<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<title>arrow</title>

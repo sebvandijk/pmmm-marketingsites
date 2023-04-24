@@ -46,17 +46,17 @@ const initApp = () => {
 	headerMenu.to(".header__outer", {y: "-22px"})
 
 	// if buy
-	document.querySelectorAll('#to-buy').forEach((btn, index) => {
-	  btn.addEventListener('click', () => {
-	    gsap.to(window, {
-				duration: 1,
-				scrollTo:{
-					y: '#buy',
-					offsetY: 0
-				}
-			})
-	  })
-	})
+	// document.querySelectorAll('#to-buy').forEach((btn, index) => {
+	//   btn.addEventListener('click', () => {
+	//     gsap.to(window, {
+	// 			duration: 1,
+	// 			scrollTo:{
+	// 				y: '#buy',
+	// 				offsetY: 0
+	// 			}
+	// 		})
+	//   })
+	// })
 
 	// tabs
 	const ifTabs = document.getElementsByClassName('tab-content')
