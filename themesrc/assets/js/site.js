@@ -70,7 +70,7 @@ const initApp = () => {
 		tab[0].classList.add('active')
 		tabContent[0].classList.add('show')
 
-		document.getElementById('tabs').onclick= function (event) {
+		document.getElementById('tabs').onmouseover= function (event) {
 			var target=event.target;
 			if (target.className=='tab') {
 				for (var i=0; i<tab.length; i++) {
