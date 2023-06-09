@@ -9,7 +9,7 @@
     }
     #breadcrumbs{
       position: absolute;
-      margin-top: .5rem;
+      margin-top: 0rem;
       z-index: 2;
       display: flex;
       span, a{
@@ -191,6 +191,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      background: color(Dark);
       &.yes{
         width: 100%;
         background-color: color(Brand);
