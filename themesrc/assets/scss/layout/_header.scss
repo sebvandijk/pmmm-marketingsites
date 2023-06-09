@@ -10,17 +10,25 @@ body{
   position: relative;
   z-index: 5;
   &__outer{
-    top: 22px;
+    top: 0px;
     padding: 8px 0px;
     width: 100%;
     position: fixed;
     @media  #{$medium-down}{
-      top: 22px;
       padding: 8px 2rem;
     }
     @media  #{$small-only}{
-      top: 22px;
       padding: 8px 1rem;
+    }
+    .container{
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      background: color(Dark, .8);
+      backdrop-filter: blur(8px);
     }
   }
   &__logo{

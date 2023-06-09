@@ -23,27 +23,26 @@ const vw = (coef) => window.innerWidth * (coef/100)
 const initApp = () => {
 
 	// header
-	const headerMenu = gsap.timeline({
-		scrollTrigger: {
-			trigger: '.introduction',
-			scrub: 0.25,
-			start: 'center',
-			end: 'bottom',
-			onEnter: () => gsap.to('.header__outer', {
-		    backgroundColor: 'rgb(6, 29, 39, 0)',
-		    duration: .5
-		  }),
-		  onLeave: () => gsap.to('.header__outer', {
-		    backgroundColor: 'rgb(6, 29, 39, .95)',
-		    duration: .5
-		  }),
-			onEnterBack: () => gsap.to('.header__outer', {
-        backgroundColor: 'rgb(6, 29, 39, 0)',
-        duration: .5
-      }),
-		}
-	});
-	headerMenu.to(".header__outer", {y: "-22px"})
+	// const headerMenu = gsap.timeline({
+	// 	scrollTrigger: {
+	// 		trigger: '.introduction',
+	// 		scrub: 0.25,
+	// 		start: 'center',
+	// 		end: '100px',
+	// 		onEnter: () => gsap.to('.header__outer .container', {
+	// 	    backgroundColor: 'rgb(6, 29, 39, 1)',
+	// 	    // duration: .5
+	// 	  }),
+	// 	  onLeave: () => gsap.to('.header__outer .container', {
+	// 	    backgroundColor: 'rgb(6, 29, 39, 1)',
+	// 	    // duration: .5
+	// 	  }),
+	// 		onEnterBack: () => gsap.to('.header__outer .container', {
+  //       backgroundColor: 'rgb(6, 29, 39, 1)',
+  //       // duration: .5
+  //     }),
+	// 	}
+	// });
 
 	// if buy
 	// document.querySelectorAll('#to-buy').forEach((btn, index) => {
