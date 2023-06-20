@@ -1309,6 +1309,30 @@
                             "endpoint": 0
                         },
                         {
+                            "key": "field_6491a376cd413",
+                            "label": "Hide buttons",
+                            "name": "hide_buttons",
+                            "type": "radio",
+                            "instructions": "Select 'yes' to hide the links",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "no": "No",
+                                "yes": "Yes"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "No",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_639056593823d",
                             "label": "Package",
                             "name": "package",
@@ -2349,5 +2373,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1687255940
+    "modified": 1687266387
 }

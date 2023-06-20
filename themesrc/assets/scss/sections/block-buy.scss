@@ -45,6 +45,11 @@
     column-gap: 30px;
     padding: 0 60px;
     justify-content: center;
+    &.hide_buttons{
+      a{
+        display: none;
+      }
+    }
     & + .inner{
       opacity: .75;
       .content{
