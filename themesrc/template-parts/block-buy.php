@@ -36,7 +36,9 @@ if ( isset( $args ) ) {
 				<span class="right"><?= $package_line['right'] ?></span>
 			</div>
 			<?php } ?>
+			<?php if ($singlepackage['package_cta']): ?>
 			<?= button( $singlepackage['package_cta'], 'brand-ghost' ) ?>
+			<?php endif; ?>
     </div>
 		<?php } ?>
   </div>
