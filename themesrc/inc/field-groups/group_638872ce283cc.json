@@ -6,7 +6,6 @@
             "key": "field_638872ce30e89",
             "label": "Content Blocks",
             "name": "content_blocks",
-            "aria-label": "",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -16,6 +15,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "layouts": {
                 "layout_636a485c05f03": {
                     "key": "layout_636a485c05f03",
@@ -27,7 +27,6 @@
                             "key": "field_638872ce34b5b",
                             "label": "Intro content",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -37,6 +36,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -44,7 +44,6 @@
                             "key": "field_638872ce34b9c",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "use <span>text<\/span>  to create bold sections",
                             "required": 0,
@@ -54,6 +53,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "placeholder": "",
                             "prepend": "",
@@ -64,7 +64,6 @@
                             "key": "field_638875ec61871",
                             "label": "Subtitle",
                             "name": "subtitle",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -74,6 +73,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -84,7 +84,6 @@
                             "key": "field_638872ce34bdf",
                             "label": "Intro",
                             "name": "intro",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -94,6 +93,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
@@ -104,7 +104,6 @@
                             "key": "field_6388c8c362b54",
                             "label": "CTA (scroll)",
                             "name": "cta_scroll",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "If filled this CTA will scroll to #buy section, other CTA's will hide in front-end",
                             "required": 0,
@@ -114,6 +113,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -124,7 +124,6 @@
                             "key": "field_6446d1915f230",
                             "label": "CTA (scroll position)",
                             "name": "cta_scroll_position",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "Use '#buy' or '#top'",
                             "required": 0,
@@ -141,6 +140,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -151,7 +151,6 @@
                             "key": "field_638872ce34c20",
                             "label": "CTA1 (color)",
                             "name": "cta1_color",
-                            "aria-label": "",
                             "type": "link",
                             "instructions": "optional",
                             "required": 0,
@@ -161,13 +160,13 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "array"
                         },
                         {
                             "key": "field_638872ce34c62",
                             "label": "CTA2 link",
                             "name": "cta2_link",
-                            "aria-label": "",
                             "type": "link",
                             "instructions": "optional",
                             "required": 0,
@@ -177,13 +176,13 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "array"
                         },
                         {
                             "key": "field_638872ce34ca3",
                             "label": "Image (on brand page + stats)",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -193,6 +192,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -200,7 +200,6 @@
                             "key": "field_638872ce34ce4",
                             "label": "Image",
                             "name": "image",
-                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -210,6 +209,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "id",
                             "library": "all",
                             "min_width": "",
@@ -225,7 +225,6 @@
                             "key": "field_6399f3b5eca5a",
                             "label": "Fullscreen image",
                             "name": "fullscreen_image",
-                            "aria-label": "",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -235,6 +234,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "choices": {
                                 "yes": "Yes",
                                 "no": "No"
@@ -251,7 +251,6 @@
                             "key": "field_638872ce34d27",
                             "label": "Side label",
                             "name": "stats_label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -261,6 +260,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "Bereik de beslissers",
@@ -271,7 +271,6 @@
                             "key": "field_6388789ed0cab",
                             "label": "Side title",
                             "name": "stats_title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "If you leave this field empty the stats section won't appear",
                             "required": 0,
@@ -281,6 +280,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -291,7 +291,6 @@
                             "key": "field_638878bed0cac",
                             "label": "Side content",
                             "name": "stats_content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -301,6 +300,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
@@ -311,7 +311,6 @@
                             "key": "field_638872ce34d6a",
                             "label": "Side (red) content",
                             "name": "stat",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -321,6 +320,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
@@ -341,7 +341,6 @@
                             "key": "field_63be9869e60be",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "use <span>text<\/span>  to create bold sections",
                             "required": 0,
@@ -351,6 +350,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -361,7 +361,6 @@
                             "key": "field_63be9869e60be",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "use <span>text<\/span>  to create bold sections",
                             "required": 0,
@@ -371,6 +370,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -381,7 +381,6 @@
                             "key": "field_63be9869e60bf",
                             "label": "Subtitle",
                             "name": "subtitle",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -391,6 +390,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -401,7 +401,6 @@
                             "key": "field_63be9869e60bf",
                             "label": "Subtitle",
                             "name": "subtitle",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -411,6 +410,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -431,7 +431,6 @@
                             "key": "field_638872ce34acc",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -441,6 +440,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "placeholder": "",
                             "prepend": "",
@@ -451,7 +451,6 @@
                             "key": "field_638872ce34b17",
                             "label": "Image",
                             "name": "image",
-                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -461,6 +460,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "id",
                             "preview_size": "thumbnail",
                             "library": "all",
@@ -486,7 +486,6 @@
                             "key": "field_638872ce34dab",
                             "label": "Options",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -496,6 +495,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -503,7 +503,6 @@
                             "key": "field_638872ce34ded",
                             "label": "Layout",
                             "name": "layout",
-                            "aria-label": "",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -513,6 +512,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "choices": {
                                 "textleft-cta": "Text left, image right, CTA over image",
                                 "textleft": "Text left, image right, no CTA",
@@ -531,7 +531,6 @@
                             "key": "field_638872ce34e30",
                             "label": "Content",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -541,6 +540,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -548,7 +548,6 @@
                             "key": "field_638872ce34e72",
                             "label": "Label",
                             "name": "label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -558,6 +557,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -568,7 +568,6 @@
                             "key": "field_638872ce34eb4",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -578,6 +577,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "placeholder": "",
                             "prepend": "",
@@ -588,7 +588,6 @@
                             "key": "field_638872ce34ef5",
                             "label": "Content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -598,6 +597,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
@@ -608,7 +608,6 @@
                             "key": "field_638872ce34f37",
                             "label": "Image",
                             "name": "image",
-                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -633,6 +632,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "id",
                             "preview_size": "thumbnail",
                             "library": "all",
@@ -648,7 +648,6 @@
                             "key": "field_638872ce34f79",
                             "label": "Cta title",
                             "name": "cta_title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -673,6 +672,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "placeholder": "",
                             "prepend": "",
@@ -683,7 +683,6 @@
                             "key": "field_638872ce34fbb",
                             "label": "CTA button",
                             "name": "cta_button",
-                            "aria-label": "",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -708,6 +707,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "array"
                         }
                     ],
@@ -724,7 +724,6 @@
                             "key": "field_638872ce34ffc",
                             "label": "Content",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -734,6 +733,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -741,7 +741,6 @@
                             "key": "field_638872ce3503d",
                             "label": "Label",
                             "name": "label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -751,6 +750,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "Onze merken",
                             "placeholder": "",
                             "prepend": "",
@@ -761,7 +761,6 @@
                             "key": "field_638872ce3507e",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -771,6 +770,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
                             "placeholder": "",
                             "prepend": "",
@@ -781,7 +781,6 @@
                             "key": "field_638872ce350c0",
                             "label": "Content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -791,6 +790,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
@@ -801,7 +801,6 @@
                             "key": "field_638872ce35101",
                             "label": "Merken",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -811,6 +810,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -818,7 +818,6 @@
                             "key": "field_638872ce35142",
                             "label": "Brands",
                             "name": "brands",
-                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -828,6 +827,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "collapsed": "",
                             "min": 0,
                             "max": 0,
@@ -839,7 +839,6 @@
                                     "key": "field_638872ce85e6b",
                                     "label": "Brand logo",
                                     "name": "brand_logo",
-                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -849,6 +848,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "return_format": "id",
                                     "preview_size": "thumbnail",
                                     "library": "all",
@@ -858,14 +858,12 @@
                                     "max_width": "",
                                     "max_height": "",
                                     "max_size": "",
-                                    "mime_types": "",
-                                    "parent_repeater": "field_638872ce35142"
+                                    "mime_types": ""
                                 },
                                 {
                                     "key": "field_638872ce85eb6",
                                     "label": "Brand title",
                                     "name": "brand_title",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -875,18 +873,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": "",
-                                    "parent_repeater": "field_638872ce35142"
+                                    "maxlength": ""
                                 },
                                 {
                                     "key": "field_638872ce85efa",
                                     "label": "Brand intro",
                                     "name": "brand_intro",
-                                    "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
@@ -896,18 +893,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "placeholder": "",
                                     "maxlength": "",
                                     "rows": 3,
-                                    "new_lines": "",
-                                    "parent_repeater": "field_638872ce35142"
+                                    "new_lines": ""
                                 },
                                 {
                                     "key": "field_638872ce85f3b",
                                     "label": "Brand CTA",
                                     "name": "brand_cta",
-                                    "aria-label": "",
                                     "type": "link",
                                     "instructions": "",
                                     "required": 0,
@@ -917,8 +913,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "parent_repeater": "field_638872ce35142"
+                                    "aria-label": "",
+                                    "return_format": "array"
                                 }
                             ]
                         }
@@ -936,7 +932,6 @@
                             "key": "field_6397476044791",
                             "label": "Content",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -946,6 +941,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -953,7 +949,6 @@
                             "key": "field_6397476044792",
                             "label": "Label",
                             "name": "label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -963,6 +958,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "Onze merken",
                             "maxlength": "",
                             "placeholder": "",
@@ -973,7 +969,6 @@
                             "key": "field_6397476044793",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -983,6 +978,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
                             "maxlength": "",
                             "placeholder": "",
@@ -993,7 +989,6 @@
                             "key": "field_6397476044794",
                             "label": "Content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -1003,6 +998,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
@@ -1013,7 +1009,6 @@
                             "key": "field_6397476044795",
                             "label": "Merken",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -1023,6 +1018,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -1030,7 +1026,6 @@
                             "key": "field_6397476044796",
                             "label": "Brands",
                             "name": "brands",
-                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -1040,6 +1035,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "layout": "table",
                             "min": 0,
                             "max": 0,
@@ -1051,7 +1047,6 @@
                                     "key": "field_6397476044797",
                                     "label": "Brand logo",
                                     "name": "brand_logo",
-                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -1061,6 +1056,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "return_format": "id",
                                     "library": "all",
                                     "min_width": "",
@@ -1070,14 +1066,12 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": "",
-                                    "preview_size": "thumbnail",
-                                    "parent_repeater": "field_6397476044796"
+                                    "preview_size": "thumbnail"
                                 },
                                 {
                                     "key": "field_6397476044798",
                                     "label": "Brand title",
                                     "name": "brand_title",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1087,18 +1081,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_6397476044796"
+                                    "append": ""
                                 },
                                 {
                                     "key": "field_639747604479a",
                                     "label": "Brand CTA",
                                     "name": "brand_cta",
-                                    "aria-label": "",
                                     "type": "link",
                                     "instructions": "",
                                     "required": 0,
@@ -1108,8 +1101,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "parent_repeater": "field_6397476044796"
+                                    "aria-label": "",
+                                    "return_format": "array"
                                 }
                             ]
                         }
@@ -1127,7 +1120,6 @@
                             "key": "field_6435bc2819983",
                             "label": "Contact column",
                             "name": "brands",
-                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -1137,6 +1129,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "layout": "table",
                             "min": 0,
                             "max": 0,
@@ -1148,7 +1141,6 @@
                                     "key": "field_6435bc2819984",
                                     "label": "Icon",
                                     "name": "brand_logo",
-                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -1158,6 +1150,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "return_format": "id",
                                     "library": "all",
                                     "min_width": "",
@@ -1167,14 +1160,12 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": "",
-                                    "preview_size": "thumbnail",
-                                    "parent_repeater": "field_6435bc2819983"
+                                    "preview_size": "thumbnail"
                                 },
                                 {
                                     "key": "field_6435bc2819985",
                                     "label": "Title",
                                     "name": "brand_title",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1184,18 +1175,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_6435bc2819983"
+                                    "append": ""
                                 },
                                 {
                                     "key": "field_6435bc2819986",
                                     "label": "Content",
                                     "name": "brand_content",
-                                    "aria-label": "",
                                     "type": "wysiwyg",
                                     "instructions": "",
                                     "required": 0,
@@ -1205,12 +1195,12 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "tabs": "all",
                                     "toolbar": "full",
                                     "media_upload": 1,
-                                    "delay": 0,
-                                    "parent_repeater": "field_6435bc2819983"
+                                    "delay": 0
                                 }
                             ]
                         }
@@ -1228,7 +1218,6 @@
                             "key": "field_6390565938238",
                             "label": "Content",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -1238,6 +1227,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -1245,7 +1235,6 @@
                             "key": "field_6390565938239",
                             "label": "Label",
                             "name": "label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1255,6 +1244,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "Onze merken",
                             "maxlength": "",
                             "placeholder": "",
@@ -1265,7 +1255,6 @@
                             "key": "field_639056593823a",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1275,6 +1264,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
                             "maxlength": "",
                             "placeholder": "",
@@ -1285,7 +1275,6 @@
                             "key": "field_639056593823b",
                             "label": "Content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -1295,6 +1284,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
@@ -1305,7 +1295,6 @@
                             "key": "field_639056593823c",
                             "label": "Table",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -1315,6 +1304,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -1322,7 +1312,6 @@
                             "key": "field_639056593823d",
                             "label": "Package",
                             "name": "package",
-                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -1332,6 +1321,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "layout": "table",
                             "min": 0,
                             "max": 0,
@@ -1343,7 +1333,6 @@
                                     "key": "field_6390570a38244",
                                     "label": "Most chosen",
                                     "name": "most_chosen",
-                                    "aria-label": "",
                                     "type": "checkbox",
                                     "instructions": "",
                                     "required": 0,
@@ -1353,6 +1342,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "choices": {
                                         "yes": "Yes",
                                         "no": "No"
@@ -1364,14 +1354,12 @@
                                     "allow_custom": 0,
                                     "save_custom": 0,
                                     "layout": "vertical",
-                                    "toggle": 0,
-                                    "parent_repeater": "field_639056593823d"
+                                    "toggle": 0
                                 },
                                 {
                                     "key": "field_639056593823f",
                                     "label": "Package title",
                                     "name": "package_title",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1381,18 +1369,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_639056593823d"
+                                    "append": ""
                                 },
                                 {
                                     "key": "field_639056d338242",
                                     "label": "Package price",
                                     "name": "package_price",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1402,18 +1389,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_639056593823d"
+                                    "append": ""
                                 },
                                 {
                                     "key": "field_639056ed38243",
                                     "label": "Package amount",
                                     "name": "package_amount",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1423,18 +1409,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_639056593823d"
+                                    "append": ""
                                 },
                                 {
                                     "key": "field_6390565938241",
                                     "label": "Package CTA",
                                     "name": "package_cta",
-                                    "aria-label": "",
                                     "type": "link",
                                     "instructions": "",
                                     "required": 0,
@@ -1444,14 +1429,13 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "parent_repeater": "field_639056593823d"
+                                    "aria-label": "",
+                                    "return_format": "array"
                                 },
                                 {
                                     "key": "field_63905760daecc",
                                     "label": "Package Line",
                                     "name": "package_line",
-                                    "aria-label": "",
                                     "type": "repeater",
                                     "instructions": "",
                                     "required": 0,
@@ -1461,19 +1445,19 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "layout": "table",
                                     "pagination": 0,
                                     "min": 0,
                                     "max": 0,
                                     "collapsed": "",
-                                    "button_label": "Add Row",
+                                    "button_label": "",
                                     "rows_per_page": 20,
                                     "sub_fields": [
                                         {
                                             "key": "field_63905777daecd",
                                             "label": "Left",
                                             "name": "left",
-                                            "aria-label": "",
                                             "type": "text",
                                             "instructions": "",
                                             "required": 0,
@@ -1483,18 +1467,17 @@
                                                 "class": "",
                                                 "id": ""
                                             },
+                                            "aria-label": "",
                                             "default_value": "",
                                             "maxlength": "",
                                             "placeholder": "",
                                             "prepend": "",
-                                            "append": "",
-                                            "parent_repeater": "field_63905760daecc"
+                                            "append": ""
                                         },
                                         {
                                             "key": "field_6390578cdaece",
                                             "label": "Right",
                                             "name": "right",
-                                            "aria-label": "",
                                             "type": "text",
                                             "instructions": "",
                                             "required": 0,
@@ -1504,15 +1487,14 @@
                                                 "class": "",
                                                 "id": ""
                                             },
+                                            "aria-label": "",
                                             "default_value": "",
                                             "maxlength": "",
                                             "placeholder": "",
                                             "prepend": "",
-                                            "append": "",
-                                            "parent_repeater": "field_63905760daecc"
+                                            "append": ""
                                         }
-                                    ],
-                                    "parent_repeater": "field_639056593823d"
+                                    ]
                                 }
                             ]
                         },
@@ -1520,7 +1502,6 @@
                             "key": "field_639057b2f0678",
                             "label": "Additional content",
                             "name": "additional_content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -1530,6 +1511,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
@@ -1550,7 +1532,6 @@
                             "key": "field_6388ce09d3563",
                             "label": "Content",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -1560,6 +1541,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -1567,7 +1549,6 @@
                             "key": "field_6388ce09d3564",
                             "label": "Label",
                             "name": "label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1577,6 +1558,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "Onze merken",
                             "maxlength": "",
                             "placeholder": "",
@@ -1587,7 +1569,6 @@
                             "key": "field_6388ce09d3565",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1597,6 +1578,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
                             "maxlength": "",
                             "placeholder": "",
@@ -1607,7 +1589,6 @@
                             "key": "field_6388ce09d3566",
                             "label": "Content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -1617,6 +1598,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
@@ -1627,7 +1609,6 @@
                             "key": "field_6388ce09d3567",
                             "label": "Benefits",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -1637,6 +1618,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -1644,7 +1626,6 @@
                             "key": "field_6388ce09d3568",
                             "label": "Benefits",
                             "name": "benefits",
-                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -1654,6 +1635,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "layout": "table",
                             "min": 0,
                             "max": 0,
@@ -1665,7 +1647,6 @@
                                     "key": "field_6388ce09d3569",
                                     "label": "Benefit icon",
                                     "name": "benefit_icon",
-                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -1675,6 +1656,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "return_format": "id",
                                     "library": "all",
                                     "min_width": "",
@@ -1684,14 +1666,12 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": "",
-                                    "preview_size": "thumbnail",
-                                    "parent_repeater": "field_6388ce09d3568"
+                                    "preview_size": "thumbnail"
                                 },
                                 {
                                     "key": "field_6388ce09d356a",
                                     "label": "Benefit title",
                                     "name": "benefit_title",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1701,18 +1681,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_6388ce09d3568"
+                                    "append": ""
                                 },
                                 {
                                     "key": "field_6388ce09d356b",
                                     "label": "Benefit intro",
                                     "name": "benefit_intro",
-                                    "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
@@ -1722,12 +1701,12 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "rows": 3,
                                     "placeholder": "",
-                                    "new_lines": "",
-                                    "parent_repeater": "field_6388ce09d3568"
+                                    "new_lines": ""
                                 }
                             ]
                         }
@@ -1745,7 +1724,6 @@
                             "key": "field_6389f15acea1e",
                             "label": "Content",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -1755,6 +1733,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -1762,7 +1741,6 @@
                             "key": "field_6389f15acea1f",
                             "label": "Label",
                             "name": "label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1772,6 +1750,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "Onze merken",
                             "maxlength": "",
                             "placeholder": "",
@@ -1782,7 +1761,6 @@
                             "key": "field_6389f15acea20",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1792,6 +1770,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "<span>Het juiste startpunt<\/span> voor uw multimediale strategie",
                             "maxlength": "",
                             "placeholder": "",
@@ -1802,7 +1781,6 @@
                             "key": "field_6389f15acea21",
                             "label": "Content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -1812,6 +1790,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
@@ -1822,7 +1801,6 @@
                             "key": "field_6389f15acea22",
                             "label": "USPS",
                             "name": "",
-                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -1832,6 +1810,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -1839,7 +1818,6 @@
                             "key": "field_6389f15acea23",
                             "label": "USPS",
                             "name": "usps",
-                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -1849,6 +1827,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "layout": "table",
                             "min": 0,
                             "max": 0,
@@ -1860,7 +1839,6 @@
                                     "key": "field_6389f15acea24",
                                     "label": "UPS image",
                                     "name": "usp_image",
-                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -1870,6 +1848,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "return_format": "id",
                                     "library": "all",
                                     "min_width": "",
@@ -1879,14 +1858,12 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": "",
-                                    "preview_size": "thumbnail",
-                                    "parent_repeater": "field_6389f15acea23"
+                                    "preview_size": "thumbnail"
                                 },
                                 {
                                     "key": "field_6389f15acea25",
                                     "label": "USP title",
                                     "name": "usp_title",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1896,12 +1873,12 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_6389f15acea23"
+                                    "append": ""
                                 }
                             ]
                         }
@@ -1919,7 +1896,6 @@
                             "key": "field_638872ce353d2",
                             "label": "Label",
                             "name": "label",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1929,6 +1905,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -1939,7 +1916,6 @@
                             "key": "field_638872ce35415",
                             "label": "Image",
                             "name": "image",
-                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1949,6 +1925,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "id",
                             "library": "all",
                             "min_width": "",
@@ -1964,7 +1941,6 @@
                             "key": "field_638872ce35458",
                             "label": "Title",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1974,6 +1950,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "placeholder": "",
@@ -1984,7 +1961,6 @@
                             "key": "field_638872ce3549a",
                             "label": "content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -1994,6 +1970,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "maxlength": "",
                             "rows": 3,
@@ -2004,7 +1981,6 @@
                             "key": "field_638872ce354db",
                             "label": "CTA",
                             "name": "cta",
-                            "aria-label": "",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -2014,6 +1990,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "array"
                         }
                     ],
@@ -2027,10 +2004,33 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_64917b3073151",
+                            "label": "show block?",
+                            "name": "show_block",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "yes": "Yes",
+                                "no": "No"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "Yes",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_638872ce3551c",
                             "label": "image",
                             "name": "image",
-                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -2040,6 +2040,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "id",
                             "library": "all",
                             "min_width": "",
@@ -2055,7 +2056,6 @@
                             "key": "field_638872ce3555d",
                             "label": "content",
                             "name": "content",
-                            "aria-label": "",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -2065,6 +2065,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "<span>Meer weten?<\/span> Neem vandaag nog contact\r\nop met Erik ten Haaf.",
                             "maxlength": "",
                             "rows": 3,
@@ -2075,7 +2076,6 @@
                             "key": "field_638872ce3559f",
                             "label": "contact CTA",
                             "name": "contact_cta",
-                            "aria-label": "",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -2085,6 +2085,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "return_format": "array"
                         }
                     ],
@@ -2101,7 +2102,6 @@
                             "key": "field_6390971bc0c66",
                             "label": "Simple content",
                             "name": "simple_content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -2111,6 +2111,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
@@ -2121,7 +2122,6 @@
                             "key": "field_63c7d48d15d66",
                             "label": "Side content",
                             "name": "side_content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -2131,6 +2131,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
@@ -2141,7 +2142,6 @@
                             "key": "field_6399a5905f724",
                             "label": "Ad Sizes",
                             "name": "ad_sizes",
-                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -2151,6 +2151,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "layout": "table",
                             "min": 0,
                             "max": 0,
@@ -2162,7 +2163,6 @@
                                     "key": "field_6399a5af5f725",
                                     "label": "Title",
                                     "name": "title",
-                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -2172,18 +2172,17 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "Formaat",
                                     "maxlength": "",
                                     "placeholder": "",
                                     "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_6399a5905f724"
+                                    "append": ""
                                 },
                                 {
                                     "key": "field_6399a5c05f726",
                                     "label": "Image",
                                     "name": "ad_image",
-                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -2193,6 +2192,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "return_format": "id",
                                     "library": "all",
                                     "min_width": "",
@@ -2202,14 +2202,12 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": "",
-                                    "preview_size": "medium",
-                                    "parent_repeater": "field_6399a5905f724"
+                                    "preview_size": "medium"
                                 },
                                 {
                                     "key": "field_6399a5ca5f727",
                                     "label": "Content",
                                     "name": "content",
-                                    "aria-label": "",
                                     "type": "wysiwyg",
                                     "instructions": "",
                                     "required": 0,
@@ -2219,12 +2217,12 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "aria-label": "",
                                     "default_value": "",
                                     "tabs": "all",
                                     "toolbar": "full",
                                     "media_upload": 1,
-                                    "delay": 0,
-                                    "parent_repeater": "field_6399a5905f724"
+                                    "delay": 0
                                 }
                             ]
                         },
@@ -2232,7 +2230,6 @@
                             "key": "field_6390b98d5e36a",
                             "label": "Table",
                             "name": "table_name",
-                            "aria-label": "",
                             "type": "table",
                             "instructions": "",
                             "required": 0,
@@ -2242,6 +2239,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "use_header": 0,
                             "use_caption": 2
                         }
@@ -2259,7 +2257,6 @@
                             "key": "field_63ad7c372f430",
                             "label": "Simple content",
                             "name": "simple_content",
-                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -2269,6 +2266,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
@@ -2279,7 +2277,6 @@
                             "key": "field_63ad7c372f435",
                             "label": "Table",
                             "name": "table_name",
-                            "aria-label": "",
                             "type": "table",
                             "instructions": "",
                             "required": 0,
@@ -2289,6 +2286,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "aria-label": "",
                             "use_header": 0,
                             "use_caption": 2
                         }
@@ -2351,6 +2349,5 @@
     ],
     "active": true,
     "description": "",
-    "show_in_rest": 0,
-    "modified": 1682363454
+    "modified": 1687255940
 }
