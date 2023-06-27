@@ -55,16 +55,9 @@ sass/
 }
 
 html{
-  // overflow-x: hidden;
-  background: color(Light);
+  background-color: color(BlueBrand);
   color: color(Light);
-  // min-height: 100vh;
   scroll-behavior: smooth;
-}
-
-body{
-  // min-height: 100vh;
-  // overflow-x: hidden;
 }
 
 #main{
@@ -80,35 +73,20 @@ body{
     .home &{
       overflow: hidden;
     }
-  }
-  .home &{
-    &:after{
-      content: '';
-      width: grid(32);
-      height: grid(32);
-      border-radius: grid(16);
-      position: absolute;
-      background: radial-gradient(circle, rgba(32,84,121,1) 0%, rgba(6,29,39,1) 50%);
-      top: grid(-16);
-      right: 0%;
-      display: block;
-      z-index: -1;
-    }
-    &:before{
-      content: '';
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      background-color: color(Dark);
-      z-index: -1;
+    section:last-child{
+      padding-bottom: 4rem;
     }
   }
   section{
     position: relative;
     z-index: 1;
+    background-color: color(Light);
+    &.introduction{
+      background-color: transparent;
+    }
+  }
+  section.block.advertise{
+    background-color: color(Light)!important;
   }
   .inner{
     max-width: 1200px;

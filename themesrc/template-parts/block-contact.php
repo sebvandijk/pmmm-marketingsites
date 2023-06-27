@@ -11,6 +11,7 @@ $fields['contact_cta']['icon'] = 'arrow';
 
 ?>
 
+<?php if( $fields['show_block'] == 'yes'): ?>
 <section class="block contact">
 	<div class="inner">
 		<div class="row">
@@ -22,9 +23,10 @@ $fields['contact_cta']['icon'] = 'arrow';
 		</div>
 	</div>
 </section>
+<?php endif; ?>
 
 <!-- <pre style="background: black;"> -->
 <?php
-// debug( $fields ) 
+// debug( $fields )
 ?>
 <!-- </pre> -->

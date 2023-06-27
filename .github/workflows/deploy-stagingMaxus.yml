@@ -1,9 +1,9 @@
-name: Deploy to maXus
+name: Deploy to Staging - maXus
 
 on:
   push:
     branches:
-      - maXus
+      - maxus-staging
 
 jobs:
   build:
@@ -33,5 +33,5 @@ jobs:
         env:
           METHOD: sftp
           LOCAL_DIR: dist/pmmm-marketing
-          REMOTE_DIR: timborst1/maxus/wp-content/themes/pmmm-marketing
+          REMOTE_DIR: timborst1/maxus_staging/wp-content/themes/pmmm-marketing
           ARGS: --verbose

@@ -1,4 +1,4 @@
-name: Deploy to staging
+name: Deploy to Staging - Proces Media
 
 on:
   push:
@@ -33,5 +33,5 @@ jobs:
         env:
           METHOD: sftp
           LOCAL_DIR: dist/pmmm-marketing
-          REMOTE_DIR: sebmatise/pmmm/wp-content/themes/pmmm-marketing
+          REMOTE_DIR: sebmatise/pmmm_staging/wp-content/themes/pmmm-marketing
           ARGS: --verbose

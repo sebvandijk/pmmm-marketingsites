@@ -1,11 +1,11 @@
 // Advertise
 #main{
   .advertise{
-    &.inner-round{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .inner-round{
       max-width: 1080px;
       background-color: color(Brand);
-      margin-top: 60px;
-      margin-bottom: 60px;
       margin-left: auto;
       margin-right: auto;
       border-radius: $border-radius;
@@ -14,10 +14,21 @@
 
       }
       @media  #{$medium-down}{
-
+        margin: 0px 2rem;
       }
       @media  #{$small-only}{
-
+        margin: 0px 1rem;
+        .row{
+          div{
+            width: 100%;
+          }
+          .image-holder{
+            height: 320px;
+          }
+          .content-holder{
+            padding: 2rem 1rem 3rem;
+          }
+        }
       }
     }
     h6{
