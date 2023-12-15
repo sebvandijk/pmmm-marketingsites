@@ -8,8 +8,6 @@ if ( isset( $args ) ) {
 
 $logos = get_transient( 'brand_logos' );
 if ( false === $logos ) {
-// get logos trough api call and use the wordpress internal get method to load the api: https://solidsprocessing.nl/wp-json/custom-rest/get_logos
-	
 	$api_url = $fields['api_url'];
 	
 	$response = wp_remote_get( $api_url );
@@ -27,10 +25,11 @@ if ( false === $logos ) {
 if ( isset( $logos ) && is_array( $logos ) ) {
 	$brand_logos = '<div class="marquee">';
 	foreach ( $logos as $key => $logo ) {
-		
-		$brand_logos .= '<figure><img decoding="async" loading="lazy"
+		if ( $logo != '' ) {
+			$brand_logos .= '<figure><img decoding="async" loading="lazy"
                                     src="' . $logo . '"/>
                             </figure>';
+		}
 	}
 	$brand_logos .= '</div>';
 }
@@ -42,7 +41,6 @@ if ( isset( $logos ) && is_array( $logos ) ) {
     <div class="inner centered">
         <h6><?= $fields['label'] ?></h6>
         <h2><?= $fields['title'] ?></h2>
-
         <div class="content">
 
             <div class="marquee-full-width">
