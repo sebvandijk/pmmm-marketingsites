@@ -1,5 +1,7 @@
 // Footer
 footer{
+  position: relative;
+  z-index: 2;
   .inner{
     max-width: 1200px;
     margin: 1.875rem auto 0;
@@ -10,25 +12,53 @@ footer{
     justify-content: space-between;
     align-items: center;
     @media  #{$large-down}{
-
+      padding: 2rem 60px;
     }
     @media  #{$medium-down}{
-
+      padding: 2rem;
     }
     @media  #{$small-only}{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1.5rem 1rem;
     }
     .logo{
       height: 40px;
+      @media  #{$medium-down}{
+        height: 1.5rem;
+        .big{
+          height: 1.5rem;
+          width: 124px;
+          svg{
+            height: 1.5rem;
+            width: 124px;
+          }
+        }
+      }
+      @media  #{$small-only}{
+        margin-bottom: 1rem;
+      }
     }
     ul{
       display: flex;
       align-items: center;
       list-style: none;
       padding: 0;
+      @media  #{$small-only}{
+        flex-direction: column;
+        align-items: flex-start;
+      }
       li{
         padding-left: 2rem;
         &:first-child{
           padding-left: 0;
+        }
+        @media  #{$medium-down}{
+          padding-left: .5rem;
+        }
+        @media  #{$small-only}{
+          padding-left: 0rem;
         }
       }
       a{
@@ -39,6 +69,9 @@ footer{
         font-weight: 500;
         &:hover{
           text-decoration: underline;
+        }
+        @media  #{$medium-down}{
+          font-size: .875rem;
         }
       }
     }

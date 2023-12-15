@@ -1,0 +1,233 @@
+// Buy
+.buy{
+  background-color: color(Light);
+  color: color(Dark);
+  padding: 60px 0 30px;
+  @media  #{$large-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$medium-down}{
+    padding: 2rem 0;
+  }
+  .inner{
+    &.centered{
+      padding: 0 270px 36px;
+      &:last-of-type{
+        padding-bottom: 0;
+      }
+      &.additional{
+        padding-top: 1rem;
+        @media  #{$small-only}{
+          margin-bottom: 0!important;
+          padding-bottom: 0!important;
+        }
+        p{
+          font-size: .875rem;
+          opacity: .75;
+        }
+      }
+      @media  #{$large-down}{
+        max-width: 1264px;
+        width: 100%;
+        padding: 0 200px 1.5rem!important;
+      }
+      @media  #{$medium-down}{
+        max-width: 100%;
+        padding: 0 2rem 1.5rem!important;
+      }
+      @media  #{$small-only}{
+        padding: 0 1rem 1.5rem!important;
+      }
+    }
+  }
+  .packages{
+    display: flex;
+    column-gap: 30px;
+    padding: 0 60px;
+    justify-content: center;
+    & + .inner{
+      opacity: .75;
+      .content{
+        padding-top: 1.5rem;
+        @media  #{$small-only}{
+          padding-top: 1rem;
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    @media  #{$medium-down}{
+      column-gap: 0;
+      width: 100%!important;
+      padding: 0 2rem;
+    }
+    @media  #{$small-only}{
+      padding: 0 1rem;
+    }
+    div.package{
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+      background-color: color(Light);
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      padding: 3.75rem 0 60px;
+      overflow: hidden;
+      transition: all .3s ease;
+      position: relative;
+      @media  #{$medium-down}{
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 2.5rem 0 3rem;
+        border-radius: 1.25;
+      }
+      @media  #{$small-only}{
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+      }
+      &.selected{
+        .package_line{
+          .left{
+            color: color(Brand);
+          }
+        }
+        &:before{
+          content: 'Meest gekozen';
+          @extend h6;
+          text-align: center;
+          position: absolute;
+          width: 100px;
+          height: auto;
+          padding: 4rem 4rem 1rem;
+          top: -2.5rem;
+          right: -80px;
+          transform: rotate(30deg);
+          line-height: 1;
+          color: color(Light);
+          background-color: color(Brand);
+          @media  #{$small-only}{
+            font-size: 10px;
+            overflow-wrap: anywhere;
+            width: 72px;
+            right: -80px;
+            top: -2.75rem;
+          }
+        }
+        a.button{
+          align-self: center;
+          color: color(Light);
+          background-color: color(Brand);
+          svg{
+            path, g{
+              fill: color(Light);
+            }
+          }
+          &:hover{
+            color: color(Brand);
+            background-color: color(Light);
+            svg{
+              path, g{
+                fill: color(Brand);
+              }
+            }
+          }
+        }
+      }
+      h5{
+        text-align: center;
+        font-size: 1.75rem;
+        margin-bottom: .75rem;
+        padding-bottom: 0;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        line-height: 1;
+        span{
+          display: block;
+          color: color(Brand);
+          font-weight: 400;
+          font-size: 1rem;
+          padding-top: .5rem;
+        }
+      }
+      .package-price{
+        display: flex;
+        justify-content: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 20px;
+        span{
+          height: 30px;
+          line-height: 30px;
+          &.price{
+            font-size: 1.5rem;
+            padding-right: .5rem;
+          }
+          &.amount{
+            opacity: .75;
+            font-size: 12px;
+          }
+        }
+      }
+      .package_line{
+        .left{
+          font-weight: 700;
+          min-width: 1.5rem;
+          width: auto;
+          padding-right: .25rem;
+          display: inline-block;
+        }
+        .right{
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          b, strong, span{
+            font-weight: 400;
+            opacity: .25;
+          }
+        }
+        color: color(Dark, .75);
+        border-top: 1px solid color(Dark, .1);
+        padding: .5rem 1.5rem;
+        font-size: 14px;
+        line-height: 1.5;
+        &:last-of-type{
+          border-bottom: 1px solid color(Dark, .1);
+          margin-bottom: 1.5rem;
+        }
+      }
+      a.button{
+        align-self: center;
+        svg{
+          path, g{
+            fill: color(Brand);
+          }
+        }
+        &:hover{
+          color: color(Light);
+          background-color: color(Brand);
+          svg{
+            path, g{
+              fill: color(Light);
+            }
+          }
+        }
+      }
+      &:hover{
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .image-holder{
+        height: 1.75rem * 2;
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      img {
+        object-position: left;
+        object-fit: contain;
+        height: 1.75rem * 2;
+        .home &{
+          height: 1.75rem;
+        }
+      }
+    }
+  }
+}

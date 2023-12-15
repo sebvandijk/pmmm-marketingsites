@@ -1,0 +1,21 @@
+.intro{
+  &.simple-intro{
+    min-height: 0;
+    padding-bottom: 3rem;
+    h1{
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -1px;
+      font-weight: 800;
+      padding-bottom: 1.5rem;
+      // @media  #{$large-down}{
+      // 	font-size: 48px;
+      // }
+      & + h2{
+        font-size: 1.25rem;
+        line-height: 1.25;
+        letter-spacing: -.6px;
+      }
+    }
+  }
+}

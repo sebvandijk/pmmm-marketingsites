@@ -16,7 +16,27 @@ $fontprimary: (
         'woff2'
     ),
     use: (
-        'body'
+        'body, .ginput_container input, textarea, .gform_button'
+    ),
+    types: (
+        'normal'
+    )
+);
+
+$fontsecondary: (
+    font-family: (Inter, sans-serif),
+    load: true,
+    weights: (
+        'Bold': 700,
+    ),
+    font-weights: true,
+    path: '~Fonts',
+    files: (
+        'woff',
+        'woff2'
+    ),
+    use: (
+        '.left'
     ),
     types: (
         'normal'

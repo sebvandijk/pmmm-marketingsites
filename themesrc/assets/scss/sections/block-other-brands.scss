@@ -1,0 +1,115 @@
+// Our brands
+.other-brands{
+  background-color: color(Light);
+  color: color(Dark);
+  padding: 60px 0 120px;
+  margin-bottom: -30px;
+  overflow: hidden;
+  @media  #{$medium-down}{
+    padding: 3rem 0;
+  }
+  @media  #{$small-only}{
+    padding: 2rem 0;
+  }
+  .inner{
+    &.centered{
+      padding: 0 270px 36px;
+      @media  #{$large-down}{
+        padding: 0 200px 1.5rem !important;
+      }
+      @media  #{$medium-down}{
+        padding: 0 2rem 1.5rem !important;
+      }
+      @media  #{$small-only}{
+        padding: 0 1rem 1.5rem !important;
+      }
+    }
+  }
+  .brands {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 0 60px;
+    @media  #{$large-down}{
+      padding: 0;
+    }
+    @media  #{$medium-down}{
+      column-gap: 0;
+      flex-direction: column;
+    }
+    div.brand{
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+      background-color: color(Light);
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      padding: 3rem 2.5rem 60px;
+      overflow: hidden;
+      transition: all .3s ease;
+      overflow: hidden;
+      position: relative;
+      @media  #{$medium-down}{
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 1.25;
+      }
+      @media  #{$small-only}{
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 1rem;
+      }
+      a.brand{
+        position: relative;
+        overflow: initial;
+        height: 0;
+        text-indent: -9999px;
+        opacity: 0;
+        position: absolute;
+        margin-bottom: 0;
+        &:before{
+          position: absolute;
+          width: 100vw;
+          height: 100vw;
+          display: block;
+          content: '';
+          left: -25vw;
+          top: -25vw;
+        }
+      }
+      .image-holder{
+        height: 28px;
+        width: 100%;
+        margin-top: 1rem;
+        .home &{
+          height: 1.75rem;
+        }
+      }
+      img {
+        object-position: left;
+        object-fit: contain;
+        height: 28px;
+      }
+      &:hover{
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  .circle-bg{
+    width: grid(16);
+    height: grid(16);
+    left: -240px;
+    top: 0%;
+    border-radius: grid(8);
+    position: absolute;
+    background: radial-gradient(circle, rgba(62,139,195,.2) 0%, rgba(255,255,255,1) 50%);
+    display: block;
+    z-index: -1;
+  }
+}

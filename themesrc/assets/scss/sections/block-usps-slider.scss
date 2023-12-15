@@ -1,0 +1,197 @@
+// USPS slider
+.usps-slider{
+  background-color: color(Light);
+  color: color(Dark);
+  padding: 0 0 60px;
+  overflow: hidden;
+  @media  #{$medium-down}{
+    padding-bottom: 2rem;
+  }
+  @media  #{$small-only}{
+    padding-bottom: 1rem;
+  }
+  &--holder{
+    display: flex;
+    min-height: 100vh;
+    @media  #{$small-only}{
+      flex-direction: column;
+    }
+    .content-holder{
+      width: 50%;
+      padding: 120px 60px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @media  #{$medium-down}{
+        padding: 6rem 2rem 6rem;
+        align-items: flex-start;
+      }
+      @media  #{$small-only}{
+        width: 100%;
+        padding: 2rem 1rem 2rem;
+      }
+      .content{
+        max-width: 480px;
+        @media  #{$medium-down}{
+          max-width: 100%;
+        }
+        h6, h2, p{
+          max-width: 420px;
+          @media  #{$medium-down}{
+            max-width: 100%;
+          }
+        }
+      }
+      .make-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .tab {
+        width: 480px;
+        line-height: 1.5;
+        padding: 1.125rem 12px 1.125rem 56px;
+        border-top: 1px solid color(Dark, .1);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        color: color(Dark, .75);
+        font-size: 1rem;
+        font-weight: 600;
+        box-shadow: 0 0 0 0 color(Dark, .0);
+        font-weight: 400;
+        transition: .2s ease;
+        @media  #{$medium-down}{
+          width: 100%;
+        }
+        @media  #{$small-only}{
+          font-size: 14px;
+          padding: .75rem 12px .75rem 32px;
+        }
+        &:first-of-type{
+          border-top: none;
+        }
+        &.active{
+          background-color: color(Brand);
+          color: color(Light);
+          border-radius: .5rem;
+          border-top: 1px solid color(Dark, 0);
+          box-shadow: 0 .5rem 1rem 4px color(Dark, .1);
+          z-index: 1;
+          font-weight: 600;
+          &:before{
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: color(Brand);
+            box-shadow: inset 0 0 0 2px white;
+            border-radius: 100%;
+            position: absolute;
+            display: block;
+            left: 24px - 8px;
+            top: 50%;
+            transform: translate(0, -50%);
+            @media  #{$small-only}{
+              width: 14px;
+              height: 14px;
+              left: 18px - 7px;
+            }
+          }
+          &:hover{
+            color: color(Light);
+            &:before{
+              transform: translate(0, -50%) scale(1);
+            }
+          }
+        }
+        &:before{
+          content: '';
+          width: 4px;
+          height: 4px;
+          background: color(Dark, .5);
+          border-radius: 100%;
+          position: absolute;
+          display: block;
+          left: 24px;
+          top: 50%;
+          transform: translate(0, -50%);
+          transition: .2s ease;
+          @media  #{$small-only}{
+            left: 18px;
+          }
+        }
+        &:hover{
+          color: color(Dark);
+          &:before{
+            transform: translate(0, -50%) scale(2.5);
+            background-color: color(Brand);
+          }
+        }
+      }
+      .image-holder{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: color(Brand-Grey);
+        top: 0;
+        left: 50vw;
+        z-index: 1;
+        overflow: hidden;
+        @media  #{$small-only}{
+          position: absolute;
+          z-index: 2;
+          width: 100vw;
+          height: 100vw;
+          top: 100%;
+          left: 0;
+        }
+        img{
+          position: absolute;
+          min-width: 100%;
+          width: auto;
+          height: 100%;
+          object-fit: contain;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(1.25);
+          transition: 1s ease;
+        }
+      }
+      .hide {
+        display: none;
+        img{
+          transform: translate(-50%, -50%) scale(1.25);
+        }
+      }
+      .show {
+        display: block;
+        & + .tab{
+          border-top: 1px solid color(Light, .1)!important;
+        }
+        img{
+          animation: blowup 1.2s 0s forwards;
+        }
+      }
+
+    }
+    .grey-holder{
+      width: 50%;
+      background: color(Brand-Grey);
+      @media  #{$small-only}{
+        width: 100%;
+        height: 100vw;
+      }
+    }
+  }
+}
+
+// blowup
+@keyframes blowup {
+  0% {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

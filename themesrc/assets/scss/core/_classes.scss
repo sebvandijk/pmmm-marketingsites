@@ -19,22 +19,5 @@
   color: color(Light);
 }
 
-// variables
 $border-radius: 1.5rem;
 $box-shadow: 0 12px 30px 6px color(Dark, 0.05);
-
-// tests
-body{
-  @media  #{$large-up}{
-    // background: red;
-  }
-  @media  #{$large-down}{
-    background: green;
-  }
-  @media  #{$medium-down}{
-    background: teal;
-  }
-  @media  #{$small-only}{
-    background: violet;
-  }
-}
