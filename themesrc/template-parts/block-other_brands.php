@@ -5,10 +5,10 @@
 if ( isset( $args ) ) {
 	$fields = $args;
 }
-
-$logos = get_transient( 'brand_logos' );
+$api_url = $fields['api_url'];
+$logos   = get_transient( 'pmmm_brand_logos_' . md5( $api_url ) );
 if ( false === $logos ) {
-	$api_url = $fields['api_url'];
+	
 	
 	$response = wp_remote_get( $api_url );
 	if ( is_wp_error( $response ) ) {
@@ -18,7 +18,7 @@ if ( false === $logos ) {
 	$logos = json_decode( wp_remote_retrieve_body( $response ), true );
 	$logos = explode( ';', $logos );
 	
-	set_transient( 'brand_logos', $logos, 96 * HOUR_IN_SECONDS );
+	set_transient( 'pmmm_brand_logos_' . md5( $api_url ), $logos, 96 * HOUR_IN_SECONDS );
 }
 
 
@@ -45,7 +45,6 @@ if ( isset( $logos ) && is_array( $logos ) ) {
 
             <div class="marquee-full-width">
                 <div class="marquee-box">
-					<?= $brand_logos ?>
 					<?= $brand_logos ?>
 
                 </div>
