@@ -1,165 +1,181 @@
 // Our brands
-.our-brands{
-  background-color: color(Light);
-  color: color(Dark);
-  padding: 60px 0;
-  width: 100vw;
-  @media  #{$large-down}{
-    padding: 3rem 0;
-  }
-  @media  #{$medium-down}{
-    padding: 2rem 0;
-  }
-  .inner{
-    &.centered{
-      padding: 0 270px 36px;
-      @media  #{$large-down}{
-        padding: 0 200px 24px!important;
-      }
-      @media  #{$medium-down}{
-        padding: 0 2rem 8px!important;
-      }
-      @media  #{$small-only}{
-        padding: 0 1rem 8px!important;
-      }
-    }
-    &.makewide{
-      @media  #{$large-down}{
-        width: 100%!important;
-        margin: 0 2rem;
-      }
-    }
-  }
-  .brands {
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-    padding: 0 60px;
+.our-brands {
+    background-color: color(Light);
+    color: color(Dark);
+    padding: 60px 0;
+    width: 100vw;
     @media  #{$large-down}{
-      padding: 0;
+        padding: 3rem 0;
     }
     @media  #{$medium-down}{
-      column-gap: 0;
+        padding: 2rem 0;
     }
-    div.brand {
-      display: flex;
-      flex-direction: column;
-      width: 340px;
-      background-color: color(Light);
-      border-radius: $border-radius;
-      box-shadow: $box-shadow;
-      padding: 3rem 2.5rem 108px;
-      overflow: hidden;
-      transition: all .3s ease;
-      position: relative;
-      @media  #{$large-down}{
-        width: calc(33% - 20px);
-        padding: 2.5rem 2rem 108px;
-      }
-      @media  #{$medium-down}{
-        width: calc(100%);
-        margin-bottom: 2rem;
-        border-radius: 1.25rem;
-        padding: 2.5rem 2rem 48px;
-      }
-      @media  #{$small-only}{
-        margin-bottom: 1rem;
-        border-radius: 1rem;
-        padding: 2rem 1rem 48px;
-        align-items: flex-start;
-      }
-      a.brand{
-        position: absolute;
-        bottom: 60px;
+
+    .inner {
+        &.centered {
+            padding: 0 270px 36px;
+            @media  #{$large-down}{
+                padding: 0 200px 24px !important;
+            }
+            @media  #{$medium-down}{
+                padding: 0 2rem 8px !important;
+            }
+            @media  #{$small-only}{
+                padding: 0 1rem 8px !important;
+            }
+        }
+
+        &.makewide {
+            @media  #{$large-down}{
+                width: 100% !important;
+                margin: 0 2rem;
+            }
+        }
+    }
+
+    .brands {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        padding: 0 60px;
         @media  #{$large-down}{
-          bottom: 3rem;
+            padding: 0;
         }
         @media  #{$medium-down}{
-          position: static!important;
-          bottom: auto;
+            column-gap: 0;
         }
-        @media  #{$small-only}{
-          position: static!important;
-          bottom: auto;
+
+        div.brand {
+            display: flex;
+            flex-direction: column;
+            width: 340px;
+            background-color: color(Light);
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            padding: 3rem 2.5rem 108px;
+            overflow: hidden;
+            transition: all .3s ease;
+            position: relative;
+            @media  #{$large-down}{
+                width: calc(33% - 20px);
+                padding: 2.5rem 2rem 108px;
+            }
+            @media  #{$medium-down}{
+                width: calc(100%);
+                margin-bottom: 2rem;
+                border-radius: 1.25rem;
+                padding: 2.5rem 2rem 48px;
+            }
+            @media  #{$small-only}{
+                margin-bottom: 1rem;
+                border-radius: 1rem;
+                padding: 2rem 1rem 48px;
+                align-items: flex-start;
+            }
+
+            a.brand {
+                position: absolute;
+                bottom: 60px;
+                @media  #{$large-down}{
+                    bottom: 3rem;
+                }
+                @media  #{$medium-down}{
+                    position: static !important;
+                    bottom: auto;
+                }
+                @media  #{$small-only}{
+                    position: static !important;
+                    bottom: auto;
+                }
+
+                .home & {
+                    overflow: visible;
+                }
+
+                &:hover {
+                    color: color(Brand);
+                }
+
+                &:before {
+                    position: absolute;
+                    width: 100vw;
+                    height: 100vh;
+                    content: '';
+                    z-index: -1;
+                    left: -60px;
+                }
+
+                .home & {
+                    @extend .button, .transparent;
+                    position: absolute;
+                    box-shadow: none;
+
+                    &:hover {
+                        color: color(Dark);
+                    }
+                }
+            }
+
+            &:hover {
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .image-holder {
+                height: 1.75rem * 2;
+                width: 100%;
+                margin-bottom: 1.5rem;
+
+                .home & {
+                    height: 1.75rem;
+                    @media  #{$large-down}{
+                        height: 1.5rem;
+                    }
+                    @media  #{$medium-down}{
+                        height: 1.5rem;
+                        margin-bottom: 1.25rem;
+                    }
+                    @media  #{$small-only}{
+                        height: 1.25rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            img {
+                object-position: left;
+                object-fit: contain;
+                height: 1.75rem * 2;
+
+                .home & {
+                    height: 1.75rem;
+                    @media  #{$large-down}{
+                        height: 1.5rem;
+                    }
+                    @media  #{$medium-down}{
+                        height: 1.5rem;
+                    }
+                    @media  #{$small-only}{
+                        height: 1.25rem;
+                    }
+                }
+            }
         }
-        .home &{
-          overflow: visible;
-        }
-        &:hover{
-          color: color(Brand);
-        }
-        &:before{
-          position: absolute;
-          width: 100vw;
-          height: 100vh;
-          content: '';
-          z-index: -1;
-          left: -60px;
-        }
-        .home &{
-          @extend .button.transparent;
-          position: absolute;
-          box-shadow: none;
-          &:hover{
-            color: color(Dark);
-          }
-        }
-      }
-      &:hover{
-        border-radius: 0;
-        box-shadow: none;
-      }
-      .image-holder{
-        height: 1.75rem * 2;
-        width: 100%;
-        margin-bottom: 1.5rem;
-        .home &{
-          height: 1.75rem;
-          @media  #{$large-down}{
-            height: 1.5rem;
-          }
-          @media  #{$medium-down}{
-            height: 1.5rem;
-            margin-bottom: 1.25rem;
-          }
-          @media  #{$small-only}{
-            height: 1.25rem;
-            margin-bottom: 1rem;
-          }
-        }
-      }
-      img {
-        object-position: left;
-        object-fit: contain;
-        height: 1.75rem * 2;
-        .home &{
-          height: 1.75rem;
-          @media  #{$large-down}{
-            height: 1.5rem;
-          }
-          @media  #{$medium-down}{
-            height: 1.5rem;
-          }
-          @media  #{$small-only}{
-            height: 1.25rem;
-          }
-        }
-      }
     }
-  }
 }
 
-.circle-bg{
-  width: grid(16);
-  height: grid(16);
-  left: -240px;
-  top: 0%;
-  border-radius: grid(8);
-  position: absolute;
-  background: radial-gradient(circle, rgba(62,139,195,.2) 0%, rgba(255,255,255,1) 50%);
-  display: block;
-  z-index: -1;
-  .home &{
+.circle-bg {
+    width: grid(16);
+    height: grid(16);
     left: -240px;
-  }
+    top: 0%;
+    border-radius: grid(8);
+    position: absolute;
+    background: radial-gradient(circle, rgba(62, 139, 195, .2) 0%, rgba(255, 255, 255, 1) 50%);
+    display: block;
+    z-index: -1;
+
+    .home & {
+        left: -240px;
+    }
 }
