@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const path = require('path');
 const merge = require('webpack-merge');
 const config = require('./webpack.settings.js');

@@ -1,3 +1,5 @@
+// webpack.dev.js
+
 const webpack = require('webpack');
 const path = require('path');
 
@@ -20,6 +22,7 @@ module.exports = {
             }
         ]
     },
+    stats: 'minimal',
     devServer: {
         port: 8000,
         headers: {
@@ -27,12 +30,9 @@ module.exports = {
         },
         compress: true,
         hot: true,
-        inline: true,
-        stats: 'errors-only',
-        overlay: true
+        allowedHosts: 'all',
     },
     plugins: [
-        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ]
 };
