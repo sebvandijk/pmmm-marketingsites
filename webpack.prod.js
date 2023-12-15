@@ -58,17 +58,17 @@ module.exports = {
             },
             {
                 context: './themesrc',
+                from: './partials/**/*',
+                to: path.resolve(__dirname, 'dist/' + config.themeName)
+            },
+            {
+                context: './themesrc',
                 from: './woocommerce/**/*',
                 to: path.resolve(__dirname, 'dist/' + config.themeName)
             },
             {
                 context: './themesrc',
-                from: './templates/**/*',
-                to: path.resolve(__dirname, 'dist/' + config.themeName)
-            },
-            {
-                context: './themesrc',
-                from: './assets/svg/*',
+                from: './assets/svg/**/*',
                 to: path.resolve(__dirname, 'dist/' + config.themeName)
             },
             {
@@ -80,12 +80,8 @@ module.exports = {
                 context: './themesrc',
                 from: './assets/video/*',
                 to: path.resolve(__dirname, 'dist/' + config.themeName)
-            },
-            {
-                context: './themesrc',
-                from: './polylang/*',
-                to: path.resolve(__dirname, 'dist/' + config.themeName)
-            },
+            }
+
         ]),
         new MiniCssExtractPlugin({
             filename: '[name].css'
