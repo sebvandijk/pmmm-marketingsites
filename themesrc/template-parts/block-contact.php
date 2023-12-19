@@ -17,9 +17,6 @@ if ( isset( $fields['show_block'] ) && $fields['show_block'] == 'no' ) {
 <section class="block contact">
     <div class="inner">
         <div class="row">
-            <div class="image-holder">
-				<?= $image ?>
-            </div>
             <h5><?= $fields['content'] ?></h5>
 			<?= button( $fields['contact_cta'], 'brand' ) ?>
         </div>
