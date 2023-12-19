@@ -6,7 +6,7 @@ if ( isset( $args ) ) {
 	$fields = $args;
 }
 $api_url = $fields['api_url'];
-$logos   = get_transient( 'pmmm_brand_logos_' . md5( $api_url ) );
+$logos   = get_transient( 'pmmm_brand-logos-' . md5( $api_url ) );
 if ( false === $logos ) {
 	
 	
@@ -18,7 +18,7 @@ if ( false === $logos ) {
 	$logos = json_decode( wp_remote_retrieve_body( $response ), true );
 	$logos = explode( ';', $logos );
 	
-	set_transient( 'pmmm_brand_logos_' . md5( $api_url ), $logos, 96 * HOUR_IN_SECONDS );
+	set_transient( 'pmmm_brand-logos-' . md5( $api_url ), $logos, 12 * HOUR_IN_SECONDS );
 }
 
 
