@@ -137,6 +137,16 @@ body {
     }
 }
 
+ul {
+    li {
+        a {
+
+            color: color(Brand);
+
+        }
+    }
+}
+
 /*!
 Theme Name: pmmm-marketing 1.0
 Theme URI: developr.nl
@@ -312,10 +322,10 @@ header .lang-item-first:before {
     margin-top: 1.5rem;
     width: 100vw;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    //left: 50%;
+    //right: 50%;
+    //margin-left: -50vw;
+    //margin-right: -50vw;
 }
 
 .marquee-box {

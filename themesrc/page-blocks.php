@@ -8,10 +8,11 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 	$blocks = get_fields( get_the_ID() );
-	
+	debug( $blocks )
 	?>
     <div class="block-holder">
 		<?php
+		
 		if ( isset( $blocks ) && is_array( $blocks ) && is_array( $blocks['home_blocks'] ) ) {
 			foreach ( $blocks['home_blocks'] as $block ) {
 				if ( get_template_part( 'template-parts/block', str_replace( "&", "and", $block['acf_fc_layout'] ), $block ) === false ) {
@@ -20,6 +21,7 @@ while ( have_posts() ) :
 				}
 			}
 		}
+		
 		if ( isset( $blocks ) && is_array( $blocks ) && is_array( $blocks['content_blocks'] ) ) {
 			foreach ( $blocks['content_blocks'] as $block ) {
 				if ( get_template_part( 'template-parts/block', str_replace( "&", "and", $block['acf_fc_layout'] ), $block ) === false ) {
@@ -28,6 +30,7 @@ while ( have_posts() ) :
 				}
 			}
 		}
+		
 		?>
     </div>
 <?php

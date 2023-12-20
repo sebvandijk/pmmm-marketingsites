@@ -47,8 +47,9 @@ if ( $api_url != '' ) {
     </div>
 
     <div class="inner">
-		<?php if ( is_array( $fields['brands'] ) ) { ?>
-            <div class="brands row">
+
+        <div class="brands row">
+			<?php if ( is_array( $fields['brands'] ) ) { ?>
 				<?php foreach ( $fields['brands'] as $brand ) {
 					$brand['brand_cta']['icon'] = 'arrow'; ?>
                     <div class="brand">
@@ -57,16 +58,18 @@ if ( $api_url != '' ) {
 						<?= button( $brand['brand_cta'], 'brand' ) ?>
                     </div>
 				<?php } ?>
-				<?php if ( isset( $brand_logos ) && $brand_logos != '' ) { ?>
-                    <div class="marquee-full-width">
-                        <div class="marquee-box">
-							<?= $brand_logos ?>
+			<?php } ?>
+			<?php if ( isset( $brand_logos ) && $brand_logos != '' ) { ?>
+                <div class="marquee-full-width">
+                    <div class="marquee-box">
+						<?= $brand_logos ?>
 
-                        </div>
+
                     </div>
-				<?php } ?>
-            </div>
-		<?php } ?>
+                </div>
+			<?php } ?>
+        </div>
+
     </div>
 
 
