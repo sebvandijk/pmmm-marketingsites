@@ -18,7 +18,13 @@ if ( isset( $args ) ) {
 	</div>
 
 	<?php if ( is_array( $fields['package'] ) ) { ?>
-  <div class="packages row">
+		<?php if( $fields['hide_buttons'] == 'no'): ?>
+	<div class="packages row">
+	<?php endif; ?>
+
+	<?php if( $fields['hide_buttons'] == 'yes'): ?>
+	<div class="packages row hide_buttons">
+	<?php endif; ?>
 		<?php foreach ( $fields['package'] as $singlepackage ) { $singlepackage['package_cta']['icon'] = 'arrow'; ?>
 		<?php $selected = $singlepackage['most_chosen']; if( $selected && in_array('yes', $selected) ): ?>
 		<div class="package selected">

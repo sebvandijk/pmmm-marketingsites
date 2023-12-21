@@ -121,12 +121,12 @@
                             "append": ""
                         },
                         {
-                            "key": "field_6446d4d5236c4",
+                            "key": "field_6446d7141460c",
                             "label": "CTA (scroll - position)",
                             "name": "cta_scroll_position",
                             "aria-label": "",
                             "type": "text",
-                            "instructions": "Use #top, #brands or #buy",
+                            "instructions": "Use #brands, #buy or #top",
                             "required": 0,
                             "conditional_logic": [
                                 [
@@ -249,7 +249,7 @@
                         },
                         {
                             "key": "field_638872ce34d27",
-                            "label": "Side label",
+                            "label": "Stats label",
                             "name": "stats_label",
                             "aria-label": "",
                             "type": "text",
@@ -269,7 +269,7 @@
                         },
                         {
                             "key": "field_6388789ed0cab",
-                            "label": "Side title",
+                            "label": "Stats title",
                             "name": "stats_title",
                             "aria-label": "",
                             "type": "text",
@@ -289,7 +289,7 @@
                         },
                         {
                             "key": "field_638878bed0cac",
-                            "label": "Side content",
+                            "label": "Stats content",
                             "name": "stats_content",
                             "aria-label": "",
                             "type": "wysiwyg",
@@ -309,7 +309,7 @@
                         },
                         {
                             "key": "field_638872ce34d6a",
-                            "label": "Side (red) content",
+                            "label": "Side (yellow)content",
                             "name": "stat",
                             "aria-label": "",
                             "type": "wysiwyg",
@@ -1072,39 +1072,19 @@
                                     "parent_repeater": "field_6397476044796"
                                 }
                             ]
-                        },
-                        {
-                            "key": "field_657c4dafa2d21",
-                            "label": "API url",
-                            "name": "api_url",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
                         }
                     ],
                     "min": "",
                     "max": ""
                 },
-                "layout_6435c624d58a0": {
-                    "key": "layout_6435c624d58a0",
+                "layout_64380444ba64b": {
+                    "key": "layout_64380444ba64b",
                     "name": "contact_columns",
                     "label": "Contact columns",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_6435c624d58a6",
+                            "key": "field_64380444ba651",
                             "label": "Columns",
                             "name": "brands",
                             "aria-label": "",
@@ -1125,7 +1105,7 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_6435c624d58a7",
+                                    "key": "field_64380444ba652",
                                     "label": "Icon",
                                     "name": "brand_logo",
                                     "aria-label": "",
@@ -1148,10 +1128,10 @@
                                     "max_size": "",
                                     "mime_types": "",
                                     "preview_size": "thumbnail",
-                                    "parent_repeater": "field_6435c624d58a6"
+                                    "parent_repeater": "field_64380444ba651"
                                 },
                                 {
-                                    "key": "field_6435c624d58a8",
+                                    "key": "field_64380444ba653",
                                     "label": "Title",
                                     "name": "brand_title",
                                     "aria-label": "",
@@ -1169,10 +1149,10 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_6435c624d58a6"
+                                    "parent_repeater": "field_64380444ba651"
                                 },
                                 {
-                                    "key": "field_6435c624d58a9",
+                                    "key": "field_64380444ba654",
                                     "label": "Content",
                                     "name": "brand_content",
                                     "aria-label": "",
@@ -1190,7 +1170,7 @@
                                     "toolbar": "full",
                                     "media_upload": 1,
                                     "delay": 0,
-                                    "parent_repeater": "field_6435c624d58a6"
+                                    "parent_repeater": "field_64380444ba651"
                                 }
                             ]
                         }
@@ -1299,12 +1279,12 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_6491acab658c3",
+                            "key": "field_649ab0675d2c6",
                             "label": "Hide buttons",
                             "name": "hide_buttons",
                             "aria-label": "",
                             "type": "radio",
-                            "instructions": "Select 'yes' to hide the links",
+                            "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1371,7 +1351,7 @@
                                     "layout": "vertical",
                                     "toggle": 0,
                                     "parent_repeater": "field_639056593823d",
-                                    "custom_choice_button_text": "Nieuwe keuze toevoegen"
+                                    "custom_choice_button_text": "Add new choice"
                                 },
                                 {
                                     "key": "field_639056593823f",
@@ -2033,7 +2013,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_6491940f5fe23",
+                            "key": "field_649ab0bdace9e",
                             "label": "show block?",
                             "name": "show_block",
                             "aria-label": "",
@@ -2339,6 +2319,11 @@
                 "param": "page_template",
                 "operator": "==",
                 "value": "page-blocks.php"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
             }
         ]
     ],
@@ -2354,5 +2339,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702646451
+    "modified": 1687867248
 }
