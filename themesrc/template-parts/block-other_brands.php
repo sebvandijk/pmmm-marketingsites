@@ -5,51 +5,81 @@
 if ( isset( $args ) ) {
 	$fields = $args;
 }
-$api_url = $fields['api_url'];
-if ( $api_url != '' ) {
-	
-	$logos = get_transient( 'pmmm_brand-logos-' . md5( $api_url ) );
-	if ( false === $logos ) {
-		
-		
-		$response = wp_remote_get( $api_url );
-		if ( is_wp_error( $response ) ) {
-			return false;
-		}
-		
-		$logos = json_decode( wp_remote_retrieve_body( $response ), true );
-		$logos = explode( ';', $logos );
-		
-		set_transient( 'pmmm_brand-logos-' . md5( $api_url ), $logos, 12 * HOUR_IN_SECONDS );
+
+if ( isset( $fields['block_purpose'] ) && $fields['block_purpose'] == 'our_clients' ) {
+	$block_mode = 'api_logos';
+	switch ( $fields['platform'] ) {
+		case 'Solids':
+		default:
+			$api_url = 'https://solidsprocessing.nl/wp-json/custom-rest/get_logos';
+			break;
+		case 'Fluids':
+			$api_url = 'https://fluidsprocessing.nl/wp-json/custom-rest/get_logos';
+			break;
+		case 'Lab':
+			$api_url = 'https://labinsights.nl/wp-json/custom-rest/get_logos';
+			break;
+		case 'Maintenance':
+			$api_url = 'https://maintenancebenelux.nl/wp-json/custom-rest/get_logos';
+			break;
 	}
 	
+	$logos_html = get_transient( 'logos_' . $api_url );
 	
-	if ( isset( $logos ) && is_array( $logos ) ) {
-		$brand_logos = '<div class="marquee">';
-		foreach ( $logos as $key => $logo ) {
-			if ( $logo != '' ) {
-				$brand_logos .= '<figure><img decoding="async" loading="lazy"
-                                    src="' . $logo . '"/>
-                            </figure>';
+	// debug type of logos_html
+	
+	
+	if ( ! $logos_html ) {
+		// get the logos using wp_remote_get
+		$response = wp_remote_get( $api_url );
+		// Check for errors
+		if ( is_wp_error( $response ) ) {
+			// Handle error
+			echo 'Error: ' . $response->get_error_message();
+		} else {
+			// Get the body of the response
+			$body = wp_remote_retrieve_body( $response );
+			
+			// Decode the JSON string into an associative array
+			$data_array = json_decode( $body, true );
+			
+			// Check if decoding was successful
+			if ( $data_array === null ) {
+				// Handle JSON decoding error
+				echo 'Error decoding JSON';
+			} else {
+				// Now $data_array contains the data as an associative array
+				// create logo html
+				$logos_html = '';
+				foreach ( $data_array as $logo ) {
+					$logos_html .= '<figure><img src="' . $logo . '" /></figure>';
+				}
+				// set transient
+				set_transient( 'logos_' . $api_url, $logos_html, 60 * 60 * 24 );
+				
 			}
 		}
-		$brand_logos .= '</div>';
 	}
+	
+	
+} else {
+	$block_mode = 'our_brands';
 }
 ?>
 
 <!-- other brands -->
 <section class="block other-brands">
+    <!-- <div class="circle-bg"></div> -->
     <div class="inner centered">
         <h6><?= $fields['label'] ?></h6>
         <h2><?= $fields['title'] ?></h2>
-		<?= $fields['content'] ?>
+        <div class="content">
+			<?= $fields['content'] ?>
+        </div>
     </div>
-
     <div class="inner">
-
-        <div class="brands row">
-			<?php if ( is_array( $fields['brands'] ) ) { ?>
+		<?php if ( is_array( $fields['brands'] ) ) { ?>
+            <div class="brands row">
 				<?php foreach ( $fields['brands'] as $brand ) {
 					$brand['brand_cta']['icon'] = 'arrow'; ?>
                     <div class="brand">
@@ -58,20 +88,21 @@ if ( $api_url != '' ) {
 						<?= button( $brand['brand_cta'], 'brand' ) ?>
                     </div>
 				<?php } ?>
-			<?php } ?>
-			<?php if ( isset( $brand_logos ) && $brand_logos != '' ) { ?>
+            </div>
+		<?php } ?>
+		<?php if ( $block_mode == 'api_logos' ): ?>
+            <!--        create marquee with logos  -->
+			<?php if ( isset( $logos_html ) ): ?>
                 <div class="marquee-full-width">
                     <div class="marquee-box">
-						<?= $brand_logos ?>
-
-
+                        <div class="marquee">
+							<?= $logos_html ?>
+                        </div>
                     </div>
                 </div>
-			<?php } ?>
-        </div>
+			<?php endif; ?>
+		<?php endif; ?>
 
     </div>
-
-
 </section>
 <!-- end our brands -->

@@ -1134,7 +1134,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-blocks.php"
+                "value": "page-homeblocks.php"
             }
         ]
     ],
@@ -1150,5 +1150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702645367
+    "modified": 1687267489
 }

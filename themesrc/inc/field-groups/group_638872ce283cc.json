@@ -1074,11 +1074,11 @@
                             ]
                         },
                         {
-                            "key": "field_657c4dafa2d21",
-                            "label": "API url",
-                            "name": "api_url",
+                            "key": "field_6583fcbc5f3c6",
+                            "label": "Block settings",
+                            "name": "",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "tab",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1087,11 +1087,70 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6583fcce5f3c7",
+                            "label": "Block purpose",
+                            "name": "block_purpose",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "our_brands": "Onze merken, zoals Solids,Fluids etc. (gebruik Merken tab om in te vullen)",
+                                "our_clients": "Onze klanten, kies hieronder het bijbehorende platform"
+                            },
+                            "default_value": "our_brands",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6583fd0e5f3c8",
+                            "label": "Platform",
+                            "name": "platform",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6583fcce5f3c7",
+                                        "operator": "==",
+                                        "value": "our_clients"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Solids": "Solids",
+                                "Fluids": "Fluids",
+                                "Lab": "Lab",
+                                "Maintenance": "Maintenance"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -2354,5 +2413,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702645177
+    "modified": 1703151637
 }

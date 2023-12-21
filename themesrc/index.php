@@ -15,7 +15,7 @@ get_header();
     <article class="block simple-page-header switch-header-colors">
         <div class="simple-page-header__inner">
             <h1 class="simple-page-header__title page-heading">
-				<?php single_post_title(); ?>Template ready for development
+				<?php single_post_title(); ?>Template ready for development!
             </h1>
 
         </div>

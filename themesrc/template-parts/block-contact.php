@@ -6,18 +6,26 @@
 if ( isset( $args ) ) {
 	$fields = $args;
 }
-$image                         = wp_get_attachment_image( $fields['image'], 'medium' );
+$image                        = wp_get_attachment_image( $fields['image'], 'medium' );
 $fields['contact_cta']['icon'] = 'arrow';
-if ( isset( $fields['show_block'] ) && $fields['show_block'] == 'no' ) {
-	return;
-}
+
 ?>
 
+<?php if( isset($fields['show_block']) && $fields['show_block'] == 'yes'): ?>
+
 <section class="block contact">
-    <div class="inner">
-        <div class="row">
-            <h5><?= $fields['content'] ?></h5>
+	<div class="inner">
+		<div class="row">
+			<h5><?= $fields['content'] ?></h5>
 			<?= button( $fields['contact_cta'], 'brand' ) ?>
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
+
+<?php endif; ?>
+
+<!-- <pre style="background: black;"> -->
+<?php
+// debug( $fields )
+?>
+<!-- </pre> -->

@@ -31,6 +31,8 @@
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   />
 
+
+
   <?php wp_head(); ?>
 </head>
 <body <?php body_class( ! is_front_page() ? 'subpage' : '' ); ?>>
@@ -40,6 +42,7 @@
   ?>
   <header class="header" id="header">
     <div class="header__outer">
+      <div class="container"></div>
 
       <div class="header__inner row">
         <div class="header__logo column">
@@ -63,9 +66,8 @@
                     $classes = false;
                   }
                   ?>
-                  <?php $active = checkActive($item->object_id) ? 'active' : ''; ?>
                   <?php $target = $item->target ? 'target="_blank" rel="noopener"' : ''; ?>
-                  <li class="nav__item <?=$active?>">
+                  <li class="nav__item">
                     <a class="nav__link <?= $classes ?>"
                       href="<?= $item->url ?>" <?= $target ?>>
                       <?= $item->title ?>
@@ -81,26 +83,3 @@
     </div>
   </header>
   <main id="main">
-
-
-
-
-
-		<!-- <header class="header">
-			<div class="header__container _container">
-				<a href="#" class="header__logo">Menu JS</a>
-				<div class="header__menu menu">
-					<div class="menu__icon">
-						<span></span>
-					</div>
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li><a data-goto=".page__section_1" href="#" class="menu__link active">Section 1</a></li>
-							<li><a data-goto=".page__section_2" href="#" class="menu__link">Section 2</a></li>
-							<li><a data-goto=".page__section_3" href="#" class="menu__link">Section 3</a></li>
-							<li><a data-goto=".page__section_4" href="#" class="menu__link">Section 4</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header> -->
