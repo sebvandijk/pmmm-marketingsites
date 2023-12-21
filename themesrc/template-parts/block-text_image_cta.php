@@ -11,7 +11,8 @@ if ( isset( $args ) ) {
 	$fields = $args;
 }
 $image                       	= wp_get_attachment_image( $fields['image'], 'large' );
-$fields['cta_button']['icon'] = 'arrow';
+
+  $fields['cta_button']['icon'] = 'arrow';
 ?>
 
 <!-- text-image-cta -->

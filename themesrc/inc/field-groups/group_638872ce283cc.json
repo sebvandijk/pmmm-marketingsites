@@ -1072,6 +1072,74 @@
                                     "parent_repeater": "field_6397476044796"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_65845ce925a74",
+                            "label": "Block settings",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_65845cf825a75",
+                            "label": "Block Purpose",
+                            "name": "block_purpose",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "our_brands": "Onze merken",
+                                "our_clients": "Onze leveranciers (logos slider)"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_65845d2e25a76",
+                            "label": "Platform",
+                            "name": "platform",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Lab": "Lab"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -2319,11 +2387,6 @@
                 "param": "page_template",
                 "operator": "==",
                 "value": "page-blocks.php"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
             }
         ]
     ],
@@ -2339,5 +2402,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687867248
+    "modified": 1703173563
 }
