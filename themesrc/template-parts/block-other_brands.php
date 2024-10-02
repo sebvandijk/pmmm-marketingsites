@@ -51,8 +51,10 @@ if ( isset( $fields['block_purpose'] ) && $fields['block_purpose'] == 'our_clien
 				// Now $data_array contains the data as an associative array
 				// create logo html
 				$logos_html = '';
-				foreach ( $data_array as $logo ) {
-					$logos_html .= '<figure><img src="' . $logo . '" /></figure>';
+				if ( is_array( $data_array ) ) {
+					foreach ( $data_array as $logo ) {
+						$logos_html .= '<figure><img src="' . $logo . '" /></figure>';
+					}
 				}
 				// set transient
 				set_transient( 'logos_' . $api_url, $logos_html, 60 * 60 * 24 );
